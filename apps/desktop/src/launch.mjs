@@ -8,7 +8,7 @@ process.once('SIGINT', interrupt);
 process.once('SIGTERM', interrupt);
 try {
   await runDesktop({ env: process.env, signal: controller.signal, electronBinary,
-    backendRoot: fileURLToPath(new URL('../../grok-replica/', import.meta.url)),
+    backendRoot: fileURLToPath(new URL('../../web/', import.meta.url)),
     desktopRoot: fileURLToPath(new URL('../', import.meta.url)),
   });
 } catch (error) {

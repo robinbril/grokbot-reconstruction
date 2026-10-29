@@ -14,4 +14,4 @@ Only emoji data are included. This notice does not license proprietary applicati
 
 The four default exports were compared structurally, with object key order ignored and array order preserved, to respectively `en/compact.json`, `en/shortcodes/iamcal.json`, `en/shortcodes/emojibase.json`, and `nl/messages.json` in the verified npm tarball. All four comparisons passed. The dataset provenance is therefore stronger than a matching package declaration alone.
 
-Regenerate locally with `node outputs/grok-replica/scripts/vendor-composer-emoji.mjs`; verify determinism with the same command followed by `--check`. Supply another extracted native asset location with `--source=/absolute/path/to/assets`. Inputs are hash-pinned before module evaluation.
+Regenerate locally with `node apps/web/scripts/vendor-composer-emoji.mjs`; verify determinism with the same command followed by `--check`. Supply another extracted native asset location with `--source=/absolute/path/to/assets`. Inputs are hash-pinned before module evaluation.
