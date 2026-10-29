@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:37:19.318Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap option \"Nieuwe Bot\" in \"Alle\"",
+        "target": {
+          "role": "option",
+          "name": "Nieuwe Bot",
+          "within": "Alle"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/command-palette.e2e.ts::palette%20destinations%20open%20real%20settings%2C%20apps%2C%20new%20Bot%20and%20bot%20conversations",
+      "targetId": "web",
+      "instructionDigest": "c661c6a7a40fc6fe4c9ed40537df6ec0c211a9d30f52da806289b3c064818173",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped the selected 'Nieuwe Bot' option in the Spring naar palette. The 'Nieuwe Bot maken' dialog is now open, with a focused 'Bot-naam' field and a disabled 'Maken' button.",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Sluiten"
+      },
+      {
+        "role": "heading",
+        "name": "Nieuwe Bot maken"
+      },
+      {
+        "role": "button",
+        "name": "Personage"
+      },
+      {
+        "role": "textbox",
+        "name": "Bot-naam",
+        "placeholder": "Geef je Bot een naam"
+      },
+      {
+        "role": "button",
+        "name": "Vorm van personage blob"
+      },
+      {
+        "role": "button",
+        "name": "Vorm van personage wolk"
+      },
+      {
+        "role": "button",
+        "name": "Vorm van personage vierkant"
+      },
+      {
+        "role": "button",
+        "name": "Vorm van personage sprankel"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "combobox",
+        "name": "Spring naar",
+        "placeholder": "Spring naar...",
+        "value": "new bot",
+        "states": [
+          "expanded"
+        ]
+      },
+      {
+        "role": "tab",
+        "name": "Alle",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "tab",
+        "name": "Pagina’s"
+      },
+      {
+        "text": "Nieuwe Bot"
+      },
+      {
+        "role": "dialog",
+        "name": "Spring naar"
+      },
+      {
+        "role": "tablist",
+        "name": "Zoekbereik"
+      },
+      {
+        "role": "listbox",
+        "name": "Bots en acties"
+      },
+      {
+        "role": "option",
+        "name": "Nieuwe Bot",
+        "states": [
+          "selected"
+        ]
+      }
+    ],
+    "endWaitMs": 16013
+  }
+}

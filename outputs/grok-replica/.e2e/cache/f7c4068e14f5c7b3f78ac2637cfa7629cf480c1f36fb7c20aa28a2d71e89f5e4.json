@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-16T11:26:32.206Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Beantwoorden\" in \"# Eigen vraag Regel met **opmaak** en β.\"",
+        "target": {
+          "role": "button",
+          "name": "Beantwoorden",
+          "within": "# Eigen vraag Regel met **opmaak** en β."
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/chat-formats.e2e.ts::ordinary%20own-message%20toolbar%20and%20context%20reply%20preserve%20raw%20quote%20draft%20and%20single%20delivery",
+      "targetId": "web",
+      "instructionDigest": "7c9b3109da1a7fb24cae203a35d47941f6927503c8bc13577e034a321580fff2",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Op Beantwoorden getikt bij het eigen bericht; er verscheen een regio 'Antwoordcontext' met de tekst 'Eigen vraag Regel met **opmaak** en β.' en een verwijderknop. De invoer behield de waarde '  bewaar mijn antwoord  '.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "text": "Eigen vraag"
+      },
+      {
+        "text": "Eigen vraag Regel met **opmaak** en β."
+      },
+      {
+        "role": "button",
+        "name": "Antwoordcontext verwijderen",
+        "text": "×"
+      },
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "placeholder": "Antwoorden…",
+        "value": "bewaar mijn antwoord"
+      },
+      {
+        "role": "tooltip",
+        "name": "Beantwoorden"
+      },
+      {
+        "role": "region",
+        "name": "Antwoordcontext"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "placeholder": "Bericht sturen naar Marketing Agent",
+        "value": "bewaar mijn antwoord"
+      }
+    ],
+    "endWaitMs": 14223
+  }
+}

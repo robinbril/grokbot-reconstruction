@@ -1,0 +1,16 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {createPdfRenderer} from '../live-pdf-preview.js';
+function fixture({pages=1}={}){
+ let destroyed=0,rendered=0;const created=[];
+ const node=()=>({style:{},dataset:{},children:[],append(...items){this.children.push(...items);},replaceChildren(...items){this.children=items;},remove(){},setAttribute(){},getContext(){return {};},getBoundingClientRect(){return {width:800};}});
+ const container=node();container.ownerDocument={createElement(){const item=node();created.push(item);return item;}};
+ const engine={GlobalWorkerOptions:{},getDocument(options){assert.equal(options.isEvalSupported,false);assert.equal(options.enableXfa,false);assert.equal(options.disableAutoFetch,true);return {promise:Promise.resolve({numPages:pages,async getPage(){return {getViewport:({scale})=>({width:600*scale,height:800*scale}),render(){rendered++;return {promise:Promise.resolve(),cancel(){}};},cleanup(){}};}}),async destroy(){destroyed++;}};}};
+ return {container,engine,created,get destroyed(){return destroyed;},get rendered(){return rendered;}};
+}
+test('PDF engine allocates bounded canvases and releases buffers idempotently',async()=>{const f=fixture(),render=createPdfRenderer(f.engine);const result=await render({bytes:new Uint8Array([37,80,68,70,45]),container:f.container});assert.equal(f.rendered,1);assert.ok(f.created.some(n=>n.width>0&&n.height>0));await result.cleanup();await result.cleanup();assert.equal(f.destroyed,1);assert.ok(f.created.every(n=>!n.width));});
+test('PDF rejects page bombs and destroys parser',async()=>{const f=fixture({pages:201});await assert.rejects(createPdfRenderer(f.engine)({bytes:new Uint8Array([37,80,68,70,45]),container:f.container}),/200/);assert.equal(f.destroyed,1);});
+test('PDF pre-abort and stale render do not allocate canvases',async()=>{const f=fixture(),controller=new AbortController();controller.abort();await assert.rejects(createPdfRenderer(f.engine)({bytes:new Uint8Array([37,80,68,70,45]),container:f.container,signal:controller.signal}),{name:'AbortError'});assert.equal(f.rendered,0);});
+test('PDF refuses a stale selection before allocating a parser',async()=>{const f=fixture();await assert.rejects(createPdfRenderer(f.engine)({bytes:new Uint8Array([37,80,68,70,45]),container:f.container,isCurrent:()=>false}),{name:'AbortError'});assert.equal(f.destroyed,0);assert.equal(f.rendered,0);});
+test('PDF cancellation destroys an active parser',async()=>{const f=fixture(),controller=new AbortController();let reject,started;const ready=new Promise(resolve=>{started=resolve;});f.engine.getDocument=()=>{started();return {promise:new Promise((resolve,fail)=>{reject=fail;}),async destroy(){reject(new DOMException('Aborted','AbortError'));}};};const result=createPdfRenderer(f.engine)({bytes:new Uint8Array([37,80,68,70,45]),container:f.container,signal:controller.signal});await ready;controller.abort();await assert.rejects(result,{name:'AbortError'});});
+test('PDF canvas budget truncation is stated to the reader',async()=>{const f=fixture({pages:50});const result=await createPdfRenderer(f.engine)({bytes:new Uint8Array([37,80,68,70,45]),container:f.container});assert.ok(result.renderedPages<50);assert.match(f.container.children.at(-1).textContent,/Preview limited to \d+ of 50 pages/);await result.cleanup();});

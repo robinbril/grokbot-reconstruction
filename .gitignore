@@ -1,0 +1,42 @@
+# Dependencies and OS/editor noise
+node_modules/
+.DS_Store
+__pycache__/
+*.pyc
+*.tmp
+*.log
+*.bak
+*.orig
+*.rej
+
+# Private configuration and runtime stores
+.env
+.env.*
+!.env.example
+.harness-runtime/
+.harness-runtime-*/
+**/private-runtime/
+**/owner-secret
+**/oauth-accounts.enc
+**/oauth-store.key
+**/.claude/
+**/.cursor/
+**/.mcp.json
+
+# Test recordings are versioned; execution output stays local.
+**/.e2e/*
+!**/.e2e/cache/
+!**/.e2e/cache/**
+**/.e2e-*/
+**/.poort/state/
+**/.poort/logs/
+**/.run/
+.harness/loops/
+
+# Archived research and generated proof dumps do not return to the product repo.
+/work/
+/workflows/
+/NOTES.md
+/docs/repository/
+/outputs/grok-reconstruction/
+**/chat-evidence/

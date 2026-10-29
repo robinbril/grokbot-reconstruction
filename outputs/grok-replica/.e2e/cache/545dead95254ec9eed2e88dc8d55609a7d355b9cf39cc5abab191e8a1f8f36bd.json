@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:24:33.658Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Notion\"",
+        "target": {
+          "role": "button",
+          "name": "Notion"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/provider-catalog.e2e.ts::catalog%20cards%20open%20scoped%20live%20accounts%20and%20truthful%20missing%20setup%20without%20changing%20demo%20flags",
+      "targetId": "web",
+      "instructionDigest": "21b6d7535b773d5b2aed5590d5fbddb8283bb54c8823088a90cea4f22b6029b0",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Notion-appkaart geopend in Apps verbinden; dialoog 'Notion' toont 'Configuratie nodig' met uitgeschakelde knop 'Notion verbinden'. Geen authenticatie gestart, geen toegang verleend.",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Notion configuratie",
+        "text": "Configuratie nodig"
+      },
+      {
+        "role": "status",
+        "name": "Opnieuw authenticeren vereist"
+      },
+      {
+        "role": "button",
+        "name": "Terug"
+      },
+      {
+        "role": "heading",
+        "name": "Notion"
+      },
+      {
+        "role": "button",
+        "name": "Accounts beheren"
+      },
+      {
+        "role": "button",
+        "name": "Vernieuwen"
+      },
+      {
+        "text": "Verbind Notion via OAuth. Je geeft toestemming bij de dienst zelf."
+      },
+      {
+        "role": "button",
+        "name": "Notion verbinden"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "heading",
+        "name": "Apps verbinden"
+      },
+      {
+        "text": "10 lokale voorbeelden"
+      },
+      {
+        "role": "combobox",
+        "name": "Zoeken in apps en vaardigheden",
+        "placeholder": "Zoeken in apps en vaardigheden"
+      },
+      {
+        "role": "button",
+        "name": "Bot-sjablonen"
+      },
+      {
+        "role": "button",
+        "name": "Alle"
+      },
+      {
+        "role": "button",
+        "name": "Wachtwoordbeheerders"
+      },
+      {
+        "role": "button",
+        "name": "Productiviteit"
+      },
+      {
+        "role": "button",
+        "name": "Communicatie"
+      }
+    ],
+    "endWaitMs": 30825
+  }
+}

@@ -1,0 +1,2 @@
+ATS demo: exact bewaarde kandidaatpopulatie = 10.
+A = 4; B = 6.

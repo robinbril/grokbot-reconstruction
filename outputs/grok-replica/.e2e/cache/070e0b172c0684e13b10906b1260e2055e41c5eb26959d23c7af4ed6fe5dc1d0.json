@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-19T15:23:45.351Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Computer openen\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Computer openen",
+          "within": "Marketing Agent"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap tab \"Tools\" in \"Codex CLI op deze Mac · model via OpenA…\"",
+        "target": {
+          "role": "tab",
+          "name": "Tools",
+          "within": "Codex CLI op deze Mac · model via OpenAI · gpt-6.1-sol"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/connectors-controls.e2e.ts::invalid%20HTTP%20registration%20retains%20the%20form%20without%20claiming%20a%20connection",
+      "targetId": "web",
+      "instructionDigest": "a7a86df0327899cc7239ee6f45f2b50638196c702a107dec5dd06a560b9d0948",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Opened Computer panel and selected the Tools tab (Echte harness computer). Tools tabpanel shows 'Verbind de harness om echte MCP-tools te ontdekken.' No server connected, no message submitted.",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Gespreksdetails",
+        "states": [
+          "pressed"
+        ]
+      },
+      {
+        "role": "separator",
+        "name": "Breedte van gespreksdetails"
+      },
+      {
+        "role": "button",
+        "name": "Bot-avatar wijzigen"
+      },
+      {
+        "role": "heading",
+        "name": "Marketing Agent"
+      },
+      {
+        "text": "Alleen jij"
+      },
+      {
+        "role": "tab",
+        "name": "Details"
+      },
+      {
+        "role": "tab",
+        "name": "Bibliotheek"
+      },
+      {
+        "role": "tab",
+        "name": "Computer",
+        "states": [
+          "selected"
+        ]
+      }
+    ],
+    "endWaitMs": 22192
+  }
+}

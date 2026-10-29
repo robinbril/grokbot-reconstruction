@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:42:07.241Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "hover",
+        "summary": "hover over group \"Botbericht 2\" in \"Marketing Agent\"",
+        "target": {
+          "role": "group",
+          "name": "Botbericht 2",
+          "within": "Marketing Agent"
+        }
+      },
+      {
+        "name": "secondaryTap",
+        "summary": "secondary-tap group \"Botbericht 2\" in \"Marketing Agent\"",
+        "target": {
+          "role": "group",
+          "name": "Botbericht 2",
+          "within": "Marketing Agent"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Beantwoorden\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Beantwoorden",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/incoming-replies.e2e.ts::reply%20targets%20the%20selected%20second%20equal%20answer%20and%20survives%20authoritative%20reload",
+      "targetId": "web",
+      "instructionDigest": "426462542d8c9d018a1ebdf777233e205dc6935408e35d1f7fff56e9ab1f11ca",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Ik klikte met rechts op Botbericht 2 (n47) en tikte op Beantwoorden. Het antwoordconcept is geopend: de regio 'Antwoordcontext' toont Bot / EQUAL_REPLY_CONTENT en het invoerveld toont 'Antwoorden...'. Er is niets verzonden.",
+    "startPath": "http://127.0.0.1:18882/",
+    "endPath": "http://127.0.0.1:18882/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Reactie toevoegen"
+      },
+      {
+        "role": "button",
+        "name": "Beantwoorden"
+      },
+      {
+        "role": "button",
+        "name": "Meer berichtacties"
+      },
+      {
+        "text": "Bot"
+      },
+      {
+        "role": "button",
+        "name": "Antwoordcontext verwijderen",
+        "text": "×"
+      },
+      {
+        "role": "toolbar",
+        "name": "Berichtknoppen"
+      },
+      {
+        "role": "region",
+        "name": "Antwoordcontext"
+      }
+    ],
+    "endWaitMs": 20771
+  }
+}

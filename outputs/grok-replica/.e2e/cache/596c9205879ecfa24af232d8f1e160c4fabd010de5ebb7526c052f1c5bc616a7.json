@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-19T15:22:48.790Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Computer openen\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Computer openen",
+          "within": "Marketing Agent"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap tab \"Tools\" in \"Codex CLI op deze Mac · modelprovider n…\"",
+        "target": {
+          "role": "tab",
+          "name": "Tools",
+          "within": "Codex CLI op deze Mac · modelprovider nog niet geverifieerd"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/connectors-controls.e2e.ts::real%20discovered%20tool%20policy%20and%20connector%20enabled%20state%20survive%20reload",
+      "targetId": "web",
+      "instructionDigest": "7cbb71efe04586cc3ef7991f1b0daf8180a993e2f13795aafeea6cf300349ae1",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Computer openen is open and the Tools tab is selected. The Tools panel shows 'Werkelijk ontdekte MCP-tools van dit gesprek.' with a 'Context7 verbinden' button. I did not submit a chat message or connect Context7.",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Gespreksdetails",
+        "states": [
+          "pressed"
+        ]
+      },
+      {
+        "role": "separator",
+        "name": "Breedte van gespreksdetails"
+      },
+      {
+        "role": "button",
+        "name": "Bot-avatar wijzigen"
+      },
+      {
+        "role": "heading",
+        "name": "Marketing Agent"
+      },
+      {
+        "text": "Alleen jij"
+      },
+      {
+        "role": "tab",
+        "name": "Details"
+      },
+      {
+        "role": "tab",
+        "name": "Bibliotheek"
+      },
+      {
+        "role": "tab",
+        "name": "Computer",
+        "states": [
+          "selected"
+        ]
+      }
+    ],
+    "endWaitMs": 24696
+  }
+}

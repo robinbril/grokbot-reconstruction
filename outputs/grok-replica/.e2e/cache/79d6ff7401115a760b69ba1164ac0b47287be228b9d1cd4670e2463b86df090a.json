@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-19T19:19:43.150Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "check",
+        "summary": "uncheck checkbox \"Inschakelen na opslaan\" in \"Routine bewerken\"",
+        "target": {
+          "role": "checkbox",
+          "name": "Inschakelen na opslaan",
+          "within": "Routine bewerken"
+        },
+        "checked": false
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-workflows-edit-enabled.e2e.ts::editing%20an%20active%20routine%20checkbox%20durably%20pauses%20and%20prevents%20its%20future%20execution",
+      "targetId": "web",
+      "instructionDigest": "28986730d8682f64a02617a70b067b857225249ebcbff8b39a42e90b0a22afbc",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "In het formulier Routine bewerken heb ik 'Inschakelen na opslaan' uitgevinkt. De checkbox (#n81) staat nu niet meer aangevinkt.",
+    "startPath": "http://127.0.0.1:18876/",
+    "endPath": "http://127.0.0.1:18876/",
+    "endAnchors": [
+      {
+        "role": "checkbox",
+        "name": "Inschakelen na opslaan"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "checkbox",
+        "name": "Inschakelen na opslaan",
+        "states": [
+          "checked"
+        ]
+      }
+    ],
+    "endWaitMs": 19134
+  }
+}

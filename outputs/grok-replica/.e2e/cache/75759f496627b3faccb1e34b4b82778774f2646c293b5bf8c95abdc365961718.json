@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-19T17:20:48.692Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Computer openen\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Computer openen",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/provider-accounts.e2e.ts::provider%20consent%20remains%20pending%20and%20cancellation%20creates%20no%20account",
+      "targetId": "web",
+      "instructionDigest": "55df85ae29c93e675f221ade541cd0ad6332406b8aaea47c0bcee53ab5593791",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped 'Computer openen'; the Gespreksdetails panel opened with the Computer tab selected, showing 'Echte harness computer' with Terminal tab (no output yet). No message submitted, no provider connected, no command run.",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Gespreksdetails",
+        "states": [
+          "pressed"
+        ]
+      },
+      {
+        "role": "separator",
+        "name": "Breedte van gespreksdetails"
+      },
+      {
+        "role": "button",
+        "name": "Bot-avatar wijzigen"
+      },
+      {
+        "role": "heading",
+        "name": "Marketing Agent"
+      },
+      {
+        "text": "Alleen jij"
+      },
+      {
+        "role": "tab",
+        "name": "Details"
+      },
+      {
+        "role": "tab",
+        "name": "Bibliotheek"
+      },
+      {
+        "role": "tab",
+        "name": "Computer",
+        "states": [
+          "selected"
+        ]
+      }
+    ],
+    "endWaitMs": 16370
+  }
+}

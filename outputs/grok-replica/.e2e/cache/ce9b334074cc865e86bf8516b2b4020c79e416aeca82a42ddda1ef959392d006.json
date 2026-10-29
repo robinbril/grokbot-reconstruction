@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:15:48.853Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap tab \"Voorbeeld\" in \"Canvassen\"",
+        "target": {
+          "role": "tab",
+          "name": "Voorbeeld",
+          "within": "Canvassen"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-canvas-reference.e2e.ts::opened%20saved%20canvas%20is%20invisible%20send%20context%20resolved%20from%20actual%20source%20and%20closing%20its%20pane%20releases%20the%20hold",
+      "targetId": "web",
+      "instructionDigest": "69f7162735c8d198fc925acfc8eaa39f51d9c99e00b2a53b5dec4301d0ad9f34",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tab Voorbeeld is geselecteerd; het canvasvoorbeeld (iframe) toont heading CANVAS_SOURCE_NONCE_4827 en knop 'Teller 0'. Er is geen bericht verzonden.",
+    "startPath": "http://127.0.0.1:18968/",
+    "endPath": "http://127.0.0.1:18968/",
+    "endAnchors": [
+      {
+        "role": "tab",
+        "name": "Voorbeeld",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "tab",
+        "name": "Broncode"
+      },
+      {
+        "role": "button",
+        "name": "Een deel van de pagina selecteren"
+      },
+      {
+        "role": "button",
+        "name": "Teller 0"
+      },
+      {
+        "role": "iframe",
+        "name": "Canvasvoorbeeld"
+      },
+      {
+        "role": "document",
+        "name": "Held source"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "tab",
+        "name": "Voorbeeld"
+      },
+      {
+        "role": "tab",
+        "name": "Broncode",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "text": "Canvasbroncode"
+      }
+    ],
+    "endWaitMs": 14718
+  }
+}

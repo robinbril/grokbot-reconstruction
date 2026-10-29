@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-19T19:43:55.782Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Nieuw document\"",
+        "target": {
+          "role": "button",
+          "name": "Nieuw document"
+        }
+      },
+      {
+        "name": "type",
+        "summary": "type \"Testdocument\" into textbox \"Documentinhoud\" in \"Naamloos document\"",
+        "target": {
+          "role": "textbox",
+          "name": "Documentinhoud",
+          "within": "Naamloos document"
+        },
+        "value": "Testdocument"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Document opslaan\" in \"Naamloos document\"",
+        "target": {
+          "role": "button",
+          "name": "Document opslaan",
+          "within": "Naamloos document"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/product-primary-motion-proof.e2e.ts::document%20title%20rename%20cancels%20and%20commits%20while%20actual%20find%20navigates%20real%20sent%20text%20and%20restores%20focus",
+      "targetId": "web",
+      "instructionDigest": "5848fc1477c91e10a63f3bfda3afb74332f686503ce77667c753a147cff4f038",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Nieuw document gemaakt via 'Nieuw document', tekst 'Testdocument' ingevoerd en opgeslagen. Status toont 'Opgeslagen' en de Bibliotheek van Marketing Agent bevat nu 'Naamloos document'. De editor-dialog staat nog open.",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Opgeslagen"
+      },
+      {
+        "text": "Naamloos document"
+      },
+      {
+        "role": "button",
+        "name": "Sluiten"
+      },
+      {
+        "text": "B"
+      },
+      {
+        "text": "I"
+      },
+      {
+        "role": "button",
+        "name": "Link invoegen"
+      },
+      {
+        "role": "button",
+        "name": "Document koppelen"
+      },
+      {
+        "role": "button",
+        "name": "Ongedaan maken"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Pagina’s, bestanden en apps die deze Bot maakt, verschijnen hier"
+      }
+    ],
+    "endWaitMs": 14129
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:26:39.781Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Importeren\" in \"Controleer je import\"",
+        "target": {
+          "role": "button",
+          "name": "Importeren",
+          "within": "Controleer je import"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/skill-import.e2e.ts::multiple-file%20review%20preserves%20manual%20draft%2C%20imports%20exact%20source%20and%20carries%20skill%20body%20into%20real%20chat%20transport",
+      "targetId": "web",
+      "instructionDigest": "85fe0b5e7577b422b0949721921fe99198b16a6b7afa18206afe848c7b337f6c",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Op Importeren getikt; de melding '1 skill geïmporteerd.' verschijnt en het importpaneel is gesloten. Het handmatige concept (Naam 'Unsaved manual draft', Instructies 'Keep manual body 5719') is behouden.",
+    "startPath": "http://127.0.0.1:19042/",
+    "endPath": "http://127.0.0.1:19042/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "1 skill geïmporteerd."
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "heading",
+        "name": "Controleer je import"
+      },
+      {
+        "text": "Deze lokale import wordt pas na bevestiging opgeslagen. Bestaande versies blijven beschikbaar."
+      },
+      {
+        "text": "import-proof"
+      },
+      {
+        "text": "Nieuwe skill"
+      },
+      {
+        "text": "2 bestanden overgeslagen"
+      },
+      {
+        "role": "button",
+        "name": "Importeren"
+      },
+      {
+        "role": "button",
+        "name": "Import sluiten"
+      },
+      {
+        "role": "region",
+        "name": "Import controleren"
+      }
+    ],
+    "endWaitMs": 17834
+  }
+}

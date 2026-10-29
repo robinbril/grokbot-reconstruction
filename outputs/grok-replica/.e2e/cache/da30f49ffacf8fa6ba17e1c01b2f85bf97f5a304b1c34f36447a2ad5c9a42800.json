@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T09:04:56.533Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Bericht sturen\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Bericht sturen",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/tool-denial.e2e.ts::explicit%20refusal%20produces%20a%20safe%20answer%20and%20advances%20queued%20work%20without%20executing%20the%20rejected%20operation",
+      "targetId": "web",
+      "instructionDigest": "27060914e2b2b35b15d236a792c0ba68a08ea13fe499d801b86c1c0e30233ef1",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Bericht REA_DENIAL_SAFE één keer verstuurd; het staat als gebruikersbericht in het gesprek. De bot vraagt nu toestemming ('Toestemming nodig', SyntheticApprovedEffect) met knoppen Goedkeuren/Afwijzen; niets goedgekeurd of afgewezen.",
+    "startPath": "http://127.0.0.1:18886/",
+    "endPath": "http://127.0.0.1:18886/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Wacht op toestemming"
+      },
+      {
+        "role": "status",
+        "name": "Grok Bot-harness · Verbonden"
+      },
+      {
+        "text": "Lokaal"
+      },
+      {
+        "role": "button",
+        "name": "Stoppen"
+      },
+      {
+        "role": "heading",
+        "name": "Toestemming nodig"
+      },
+      {
+        "text": "{ \"name\": \"SyntheticApprovedEffect\", \"arguments\": {} }"
+      },
+      {
+        "role": "button",
+        "name": "Goedkeuren"
+      },
+      {
+        "role": "button",
+        "name": "Afwijzen"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "Grok Bot-harness · Model geconfigureerd"
+      },
+      {
+        "role": "button",
+        "name": "Bericht sturen"
+      },
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "value": "REA_DENIAL_SAFE"
+      }
+    ],
+    "endWaitMs": 20163
+  }
+}

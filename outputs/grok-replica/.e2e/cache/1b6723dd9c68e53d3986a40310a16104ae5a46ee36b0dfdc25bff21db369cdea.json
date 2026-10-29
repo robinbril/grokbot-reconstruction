@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-19T19:24:45.843Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Pauzeren\" in \"Protocol routine exact\"",
+        "target": {
+          "role": "button",
+          "name": "Pauzeren",
+          "within": "Protocol routine exact"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-workflows.e2e.ts::live%20routines%20create%20edit%20enable%20pause%20and%20canonical%20history%20survive%20reload",
+      "targetId": "web",
+      "instructionDigest": "6d05c76640a6f953e39ec7d76781e3e70d0e55f14ce38d860151ac959136a9ea",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped Pauzeren in the 'Protocol routine exact' dialog. Status changed from Actief to Gepauzeerd, 'Geen volgende uitvoering' is shown, and the button now reads Hervatten.",
+    "startPath": "http://127.0.0.1:18876/",
+    "endPath": "http://127.0.0.1:18876/",
+    "endAnchors": [
+      {
+        "text": "Gepauzeerd"
+      },
+      {
+        "text": "Geen volgende uitvoering"
+      },
+      {
+        "role": "button",
+        "name": "Hervatten"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Actief"
+      },
+      {
+        "role": "button",
+        "name": "Pauzeren"
+      }
+    ],
+    "endWaitMs": 15633
+  }
+}

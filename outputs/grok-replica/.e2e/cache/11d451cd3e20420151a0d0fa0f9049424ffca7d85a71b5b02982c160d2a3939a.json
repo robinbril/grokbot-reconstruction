@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-20T12:56:22.836Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Bijlage openen: report.csv\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Bijlage openen: report.csv",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/outgoing-delivery.e2e.ts::outgoing%20file-only%20delivery%20downloads%20exact%20owned%20bytes%20and%20quotes%20jump%20across%20reload%20in%20both%20themes",
+      "targetId": "web",
+      "instructionDigest": "5dde43a3f182f669769653ea9fee660bd72dd162d1171fd6c2f9979101cfdc26",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Bijlage openen: report.csv is aangeklikt (eerste poging mislukte door een re-render, tweede lukte). Er opent een dialoog 'report.csv' met een tabel: kolommen label/value, rij synthetic 42. Knoppen Downloaden en Sluiten zijn zichtbaar.",
+    "startPath": "http://127.0.0.1:18877/",
+    "endPath": "http://127.0.0.1:18877/",
+    "endAnchors": [
+      {
+        "role": "link",
+        "name": "Downloaden"
+      },
+      {
+        "role": "button",
+        "name": "Sluiten"
+      },
+      {
+        "role": "columnheader",
+        "name": "label"
+      },
+      {
+        "role": "columnheader",
+        "name": "value"
+      },
+      {
+        "role": "cell",
+        "name": "synthetic"
+      },
+      {
+        "role": "dialog",
+        "name": "report.csv"
+      },
+      {
+        "role": "row",
+        "name": "label value"
+      },
+      {
+        "role": "row",
+        "name": "synthetic 42"
+      }
+    ],
+    "endWaitMs": 30452
+  }
+}

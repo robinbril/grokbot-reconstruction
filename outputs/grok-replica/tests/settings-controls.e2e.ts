@@ -1,0 +1,83 @@
+import {expectComposerText} from './fixtures/composer-assertions';
+import { test } from '@e2e-dev/web';
+import { expect } from 'e2e';
+
+test('taalkiezer filtert sluit zonder wijziging en bewaart een lokale keuze', async ({ app, agent, screen }) => {
+  await app.open('/?reset=1');
+  await agent.act('Open Instellingen via het Accountmenu.');
+  await expect(screen.getByRole('heading', { name: 'Algemeen', exact: true })).toBeVisible();
+  await screen.getByRole('button', { name: 'Taal, Nederlands', exact: true }).click();
+  const search = screen.getByRole('textbox', { name: 'Taal zoeken', exact: true });
+  await search.fill('bestaat-niet-rea-20261015');
+  await expect(screen.getByText('Geen talen gevonden', { exact: true })).toBeVisible();
+  await search.press('Escape');
+  await expect(screen.getByRole('button', { name: 'Taal, Nederlands', exact: true })).toBeVisible();
+  await screen.getByRole('button', { name: 'Taal, Nederlands', exact: true }).click();
+  await search.fill('Türkçe');
+  await expect(screen.getByRole('option', { name: 'Türkçe', exact: true })).toBeVisible();
+  await screen.getByRole('option', { name: 'Türkçe', exact: true }).click();
+  await expect(screen.getByRole('button', { name: 'Taal, Türkçe', exact: true })).toBeVisible();
+  await app.screenshot('settings-language-choice');
+  await app.open('/');
+  await screen.getByRole('button', 'Accountmenu').click();
+  await screen.getByRole('menuitem', 'Instellingen').click();
+  await expect(screen.getByRole('button', { name: 'Taal, Türkçe', exact: true })).toBeVisible();
+  await screen.getByRole('button', { name: 'Taal, Türkçe', exact: true }).click();
+  await screen.getByRole('button', { name: 'Taalkiezer sluiten', exact: true }).click();
+  await expect(screen.getByRole('button', { name: 'Taal, Türkçe', exact: true })).toBeVisible();
+});
+
+test('accentkleur en spellingvoorkeur werken lokaal en blijven na herladen behouden', async ({ app, screen, browser }) => {
+  await app.open('/?reset=1');
+  await screen.getByRole('button', 'Marketing Agent').click();
+  await screen.getByRole('textbox', 'Bericht sturen naar Bot').fill('Onverzonden lokale instellingenproef');
+  await screen.getByRole('button', 'Accountmenu').click();
+  await screen.getByRole('menuitem', 'Instellingen').click();
+  const accent = screen.getByRole('combobox', { name: 'Accentkleur', exact: true });
+  await accent.selectOption({ value: 'black' });
+  await expect(accent).toHaveValue('black');
+  await screen.getByRole('switch', { name: 'Spelling controleren tijdens het typen', exact: true }).click();
+  await expect(screen.getByRole('switch', { name: 'Spelling controleren tijdens het typen', exact: true })).toHaveAttribute('aria-checked', 'false');
+  await screen.getByRole('button', 'Sluiten').click();
+  await expect(screen.getByRole('textbox', 'Bericht sturen naar Bot')).toHaveAttribute('spellcheck', 'false');
+  await expectComposerText(browser,'Onverzonden lokale instellingenproef');
+  expect(await browser.evaluate(() => getComputedStyle(document.documentElement).getPropertyValue('--accent').trim())).toBe('#1c1c1c');
+  await app.open('/');
+  await expect(screen.getByRole('textbox', 'Bericht sturen naar Bot')).toHaveAttribute('spellcheck', 'false');
+  await expectComposerText(browser,'Onverzonden lokale instellingenproef');
+  await screen.getByRole('button', 'Accountmenu').click();
+  await screen.getByRole('menuitem', 'Instellingen').click();
+  await expect(accent).toHaveValue('black');
+  await accent.selectOption({ value: 'bot' });
+  await expect(accent).toHaveValue('bot');
+  await screen.getByRole('switch', { name: 'Spelling controleren tijdens het typen', exact: true }).click();
+  await expect(screen.getByRole('switch', { name: 'Spelling controleren tijdens het typen', exact: true })).toHaveAttribute('aria-checked', 'true');
+  await app.screenshot('settings-accent-and-spelling');
+  await screen.getByRole('button', 'Sluiten').click();
+  await expect(screen.getByRole('textbox', 'Bericht sturen naar Bot')).toHaveAttribute('spellcheck', 'true');
+});
+
+test('mislukte voorkeur-opslag blijft zichtbaar en wordt niet als duurzaam gepresenteerd', async ({ app, screen, browser }) => {
+  await app.open('/?reset=1');
+  await screen.getByRole('button', 'Accountmenu').click();
+  await screen.getByRole('menuitem', 'Instellingen').click();
+  await browser.evaluate(() => {
+    Storage.prototype.setItem = function () { throw new DOMException('Synthetic settings quota failure', 'QuotaExceededError'); };
+  });
+  await screen.getByRole('combobox', { name: 'Accentkleur', exact: true }).selectOption({ value: 'black' });
+  await expect(screen.getByRole('status')).toContainText('Opslaan in deze browser is niet beschikbaar.');
+  await screen.getByRole('switch', { name: 'Spelling controleren tijdens het typen', exact: true }).click();
+  await expect(screen.getByRole('switch', { name: 'Spelling controleren tijdens het typen', exact: true })).toHaveAttribute('aria-checked', 'false');
+  await expect(screen.getByRole('status')).toContainText('Opslaan in deze browser is niet beschikbaar.');
+  await screen.getByRole('button', { name: 'Taal, Nederlands', exact: true }).click();
+  await screen.getByRole('textbox', { name: 'Taal zoeken', exact: true }).fill('Türkçe');
+  await screen.getByRole('option', { name: 'Türkçe', exact: true }).click();
+  await expect(screen.getByRole('status')).toContainText('Wijzigingen blijven alleen tot het herladen bewaard.');
+  await expect(screen.getByRole('button', { name: 'Taal, Türkçe', exact: true })).toBeVisible();
+  await app.open('/');
+  await screen.getByRole('button', 'Accountmenu').click();
+  await screen.getByRole('menuitem', 'Instellingen').click();
+  await expect(screen.getByRole('button', { name: 'Taal, Nederlands', exact: true })).toBeVisible();
+  await expect(screen.getByRole('combobox', { name: 'Accentkleur', exact: true })).toHaveValue('bot');
+  await expect(screen.getByRole('switch', { name: 'Spelling controleren tijdens het typen', exact: true })).toHaveAttribute('aria-checked', 'true');
+});

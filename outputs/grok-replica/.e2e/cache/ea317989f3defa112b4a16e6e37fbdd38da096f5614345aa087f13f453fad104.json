@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-18T17:02:05.651Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Gespreksdetails\" in \"Marketing Agent\" (1 of 2)",
+        "target": {
+          "role": "button",
+          "name": "Gespreksdetails",
+          "within": "Marketing Agent",
+          "position": {
+            "index": 0,
+            "of": 2
+          }
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Routines 0\" in \"Naam\"",
+        "target": {
+          "role": "button",
+          "name": "Routines 0",
+          "within": "Naam"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-workflows.e2e.ts::live%20routines%20create%20edit%20enable%20pause%20and%20canonical%20history%20survive%20reload",
+      "targetId": "web",
+      "instructionDigest": "a38b99cf16b449591afa8fb3c4f064f27c47b18bdfc0bf477cce134a48309dd0",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Opened Gespreksdetails for Marketing Agent and tapped 'Routines 0'. The Routines dialog is now open, with the text 'Nog geen routines op deze server.' and a 'Routine toevoegen' button.",
+    "startPath": "http://127.0.0.1:18876/",
+    "endPath": "http://127.0.0.1:18876/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Gespreksdetails",
+        "states": [
+          "pressed"
+        ]
+      },
+      {
+        "role": "separator",
+        "name": "Breedte van gespreksdetails"
+      },
+      {
+        "role": "button",
+        "name": "Bot-avatar wijzigen"
+      },
+      {
+        "role": "heading",
+        "name": "Marketing Agent"
+      },
+      {
+        "text": "Alleen jij"
+      },
+      {
+        "role": "tab",
+        "name": "Details",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "tab",
+        "name": "Bibliotheek"
+      },
+      {
+        "role": "tab",
+        "name": "Computer"
+      }
+    ],
+    "endWaitMs": 13775
+  }
+}

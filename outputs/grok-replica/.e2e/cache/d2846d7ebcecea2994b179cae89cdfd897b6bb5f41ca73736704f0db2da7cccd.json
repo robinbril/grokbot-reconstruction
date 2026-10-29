@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-19T19:45:31.953Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Apps verbinden\"",
+        "target": {
+          "role": "button",
+          "name": "Apps verbinden"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Notion\"",
+        "target": {
+          "role": "button",
+          "name": "Notion"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/replica.e2e.ts::catalogus%20opent%20een%20plugin%20vanuit%20zoeken%20en%20keert%20terug",
+      "targetId": "web",
+      "instructionDigest": "aeef0a0078ecfebeaa0352e67dc4bef81c0485507ad2c58425a727bcf5d9ccf8",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Apps verbinden geopend en op Notion getikt. De detailpagina van Notion staat open (dialog 'Notion', 14 vaardigheden, knop 'Toevoegen' aanwezig). Niets toegevoegd.",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Sluiten"
+      },
+      {
+        "role": "button",
+        "name": "Terug"
+      },
+      {
+        "role": "heading",
+        "name": "Notion"
+      },
+      {
+        "text": "github.com/makenotion/cursor-notion-plugin"
+      },
+      {
+        "role": "button",
+        "name": "Delen"
+      },
+      {
+        "role": "button",
+        "name": "Toevoegen"
+      },
+      {
+        "text": "Search Notion pages and databases, create and update records, and publish content to your workspace."
+      },
+      {
+        "text": "Notion"
+      }
+    ],
+    "endWaitMs": 14121
+  }
+}

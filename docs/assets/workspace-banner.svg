@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">Grok Bot reconstruction: a local workspace for agents</title>
+<desc id="desc">Chat, tools and a desktop client connected to an independent local harness. Concept illustration, not a product screenshot.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101014"/><stop offset="1" stop-color="#242031"/></linearGradient></defs>
+<rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+<circle cx="1050" cy="35" r="235" fill="#6750f5" opacity=".08"/>
+<rect x="54" y="46" width="207" height="28" rx="14" fill="#3a3156"/>
+<text x="70" y="65" fill="#cdc2ff" font-family="system-ui,sans-serif" font-size="12" font-weight="650" letter-spacing="2">LOCAL RECONSTRUCTION</text>
+<text x="54" y="143" fill="#fff" font-family="system-ui,sans-serif" font-size="50" font-weight="700" letter-spacing="-2">One workspace.</text>
+<text x="54" y="201" fill="#fff" font-family="system-ui,sans-serif" font-size="50" font-weight="700" letter-spacing="-2">Real agent workflows.</text>
+<text x="56" y="247" fill="#b8b5c4" font-family="system-ui,sans-serif" font-size="18">Chat, tools and a desktop client. Your local harness.</text>
+<text x="56" y="309" fill="#878291" font-family="ui-monospace,monospace" font-size="12" letter-spacing="2">SOURCE-INFORMED / INDEPENDENT / EVIDENCE-LED</text>
+<g stroke="#615376" stroke-width="2" fill="none"><path d="M830 100v76h110M830 176v85h110"/><path d="M740 176h90"/></g>
+<rect x="682" y="140" width="124" height="72" rx="20" fill="#765cf1"/>
+<ellipse cx="729" cy="175" rx="5" ry="10" fill="#fff" transform="rotate(-24 729 175)"/><ellipse cx="751" cy="169" rx="5" ry="10" fill="#fff" transform="rotate(-24 751 169)"/>
+<g fill="#2d2939" stroke="#4a425c"><rect x="855" y="65" width="277" height="64" rx="16"/><rect x="912" y="145" width="220" height="64" rx="16"/><rect x="855" y="229" width="277" height="64" rx="16"/></g>
+<g font-family="system-ui,sans-serif" font-size="17" fill="#eeebf7"><text x="882" y="104">Chat + shared history</text><text x="939" y="184">Terminal + MCP</text><text x="882" y="268">Browser + desktop</text></g>
+</svg>

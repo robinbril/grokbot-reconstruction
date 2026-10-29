@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-28T14:37:00.630Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Zoeken\"",
+        "target": {
+          "role": "button",
+          "name": "Zoeken"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/desktop-shell.e2e.ts::default%20web%20chrome%20keeps%20its%20controls%20and%20desktop%20flag%20requires%20an%20exact%20opt-in",
+      "targetId": "web",
+      "instructionDigest": "129defd379c9b87c0027d8d13d4002f501884f06a406e95c61d73a1747f993b0",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped the sidebar Zoeken button. The Zoeken dialog opened with a heading, a search textbox ('Zoeken in Bots en gesprekken'), a Sluiten button and the list of bots and conversations.",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Sluiten"
+      },
+      {
+        "role": "heading",
+        "name": "Zoeken"
+      },
+      {
+        "role": "textbox",
+        "name": "Zoeken in Bots en gesprekken",
+        "placeholder": "Zoeken in Bots en gesprekken"
+      },
+      {
+        "role": "dialog",
+        "name": "Zoeken"
+      }
+    ],
+    "endWaitMs": 18197
+  }
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>UI-overgangen · Grok reconstructie</title>
+  <link rel="stylesheet" href="./ui-motion-lab.css">
+  <script type="module" src="./ui-motion-lab.js"></script>
+</head>
+<body>
+  <main class="motion-workbench">
+    <header class="workbench-heading">
+      <div><a href="./">Grok reconstructie</a><h1>UI-overgangen</h1></div>
+      <span class="workbench-tag">0.71.2</span>
+    </header>
+    <div class="workbench-grid">
+      <section class="motion-controls" aria-label="Bediening">
+        <label for="motion-recipe">Overgang</label>
+        <select id="motion-recipe" aria-label="Overgang">
+          <option value="section">Sectie onthullen</option>
+          <option value="header">Header verplaatsen</option>
+          <option value="reactionX">Reacties horizontaal</option>
+          <option value="reactionY">Reacties verticaal</option>
+          <option value="lateShrink">Transcript verkleinen</option>
+          <option value="peek">Tijdstempel terugveren</option>
+          <option value="teamResize">Teamrij vergroten</option>
+          <option value="teamPin">Teamsetup: vaste header verplaatsen</option>
+          <option value="teamRetire">Teamrij verwijderen</option>
+          <option value="teamEnter">Teamrij toevoegen</option>
+          <option value="composerPadding">Composer padding</option>
+        </select>
+        <div class="control-switch"><span>Inspectiestand</span><button id="motion-inspect" type="button" role="switch" aria-label="Inspectiestand" aria-checked="true"></button></div>
+        <div class="control-switch"><span>Verminderde beweging</span><button id="motion-reduced" type="button" role="switch" aria-label="Verminderde beweging" aria-checked="false"></button></div>
+        <div class="motion-transport">
+          <button id="motion-start" class="primary" type="button">Starten</button>
+          <button id="motion-half" type="button">Halverwege</button>
+          <button id="motion-finish" type="button">Voltooien</button>
+          <button id="motion-interrupt" type="button">Onderbreken</button>
+          <button id="motion-reset" type="button">Herstellen</button>
+        </div>
+        <p class="fixture-note">Bronfixture. Dezelfde controller bestuurt de interface.</p>
+      </section>
+      <section class="preview-column" aria-label="Voorbeeld">
+        <div class="preview-top"><span id="motion-name">Sectie onthullen</span><output id="motion-play-state" aria-live="polite">Gereed</output></div>
+        <div class="motion-preview" data-testid="ui-motion-preview"></div>
+        <div class="motion-readouts">
+          <section><h2>Bronrecept</h2><dl><div><dt>Duur</dt><dd id="source-duration"></dd></div><div><dt>Curve</dt><dd id="source-easing"></dd></div></dl></section>
+          <section><h2>Browsermeting</h2><dl><div><dt>Tijd</dt><dd id="observed-time">Geen effect</dd></div><div><dt>Geometrie</dt><dd id="observed-geometry">Geen effect</dd></div></dl></section>
+        </div>
+      </section>
+    </div>
+    <details class="motion-observation"><summary>Web Animations API inspecteren</summary><pre id="motion-observed">[]</pre></details>
+  </main>
+</body>
+</html>

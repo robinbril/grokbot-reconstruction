@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:13:02.134Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/draft-retention.e2e.ts::unsaved%20typing%20survives%20Bot%20switching%2C%20rich%20paste%20and%20undo%20while%20atomic%20selection%20still%20rejects",
+      "targetId": "web",
+      "instructionDigest": "327a26ef8f7c73a5984a36436712e820db86ad79f62683108fc96777e0b1ccb0",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped Marketing Agent; the conversation opened (header 'Marketing Agent' in Gesprek region). No message was sent.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Gespreksopties"
+      },
+      {
+        "role": "button",
+        "name": "Gespreksdetails"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Aan:"
+      },
+      {
+        "role": "button",
+        "name": "Start a chat with..."
+      }
+    ],
+    "endWaitMs": 16333
+  }
+}

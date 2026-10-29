@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-19T19:23:22.794Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Routine opslaan\" in \"Routine toevoegen\"",
+        "target": {
+          "role": "button",
+          "name": "Routine opslaan",
+          "within": "Routine toevoegen"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-workflows-rejected-text.e2e.ts::real%20whitespace-only%20prompt%20rejection%20preserves%20input%20and%20accepts%20one%20corrected%20routine",
+      "targetId": "web",
+      "instructionDigest": "d55debd001aaa3da9e02a542618239172f572549259cbe1c94dbc6c3a5c8d9eb",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Clicked Routine opslaan (n79) once. Two status nodes appeared: 'Prompt text or ready uploaded attachments required'. The Opdracht field held only whitespace, so the dialog may still be open with the routine not saved.",
+    "startPath": "http://127.0.0.1:18876/",
+    "endPath": "http://127.0.0.1:18876/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Prompt text or ready uploaded attachments required"
+      }
+    ],
+    "endWaitMs": 15172
+  }
+}

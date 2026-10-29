@@ -1,0 +1,15 @@
+/* Source003 is a generation-pending placeholder, not an idle refresh icon. */
+[data-avatar-generation-status] { display:flex;align-items:center;justify-content:center;min-height:100px; }
+[data-avatar-generation-pulse] { display:block;width:96px;height:96px;background:var(--hover);border-radius:50%; }
+[data-avatar-editor-preview] { width:100px;height:100px; }
+[data-avatar-editor-preview][hidden] { display:none; }
+[data-avatar-editor-preview] > img { display:block;width:100%;height:100%;object-fit:contain; }
+/* Source os/Ae: one stable mark, compact only on a real child pane. */
+.product-template-detail .product-template-mark { display:block;width:80px;height:80px;flex:none;transform:translateY(0) scale(1);transform-origin:top;transition:transform 200ms cubic-bezier(.22,1,.36,1); }
+.product-template-detail .product-template-mark > .avatar { display:block;width:80px;height:80px; }
+.product-template-detail .product-template-mark[data-compact] { transform:translateY(36px) scale(.7); }
+[data-template-pane] { width:100%;display:flex;flex-direction:column;gap:16px; }
+[data-template-pane] p { margin:0;text-align:center; }
+[data-template-pane] textarea { width:100%;box-sizing:border-box;resize:vertical; }
+.product-template-detail:has([data-compact]) [data-template-pane] { margin-top:18px; }
+@media (prefers-reduced-motion:reduce) { .product-template-detail .product-template-mark { transition:none; } }

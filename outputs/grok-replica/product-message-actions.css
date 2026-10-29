@@ -1,0 +1,20 @@
+.conversation .message .message-actions{visibility:hidden!important;opacity:0!important;pointer-events:none!important;position:absolute;left:0;top:0;z-index:3;gap:2px;width:max-content;margin:0;border:0;background:transparent;padding:0;white-space:nowrap;user-select:none;transform:none!important}
+.conversation .message[data-message-active] .message-actions{visibility:visible!important;opacity:1!important;pointer-events:auto!important}
+.conversation .message .message-actions .icon-button{width:25px;height:25px;border-radius:7px}
+.conversation .message .message-actions .icon-button:hover{background:var(--hover)}
+.conversation .message:not([data-message-active]) .reaction-add{visibility:hidden!important;opacity:0!important;pointer-events:none!important}
+.conversation .message.user .message-actions{flex-direction:row-reverse}
+.conversation .message:focus-visible{outline:1px solid var(--line);outline-offset:5px;border-radius:8px}
+.message-selection-menu{min-width:205px}
+
+/* Keep the native peek translation inside this transcript viewport. */
+.conversation .message [data-message-timestamp]{inset-inline-end:var(--message-timestamp-inset,-74px)}
+
+/* Native selection action: one quiet, range-anchored toolbar above the text. */
+.quote-selection-actions{position:fixed;z-index:1000;width:max-content;padding:4px;border:1px solid var(--line);border-radius:8px;background:var(--pane,#fff);color:var(--ink);box-shadow:0 3px 14px #00000016;user-select:none}
+.quote-selection-actions[hidden]{display:none}
+.quote-selection-add{display:flex;align-items:center;gap:14px;min-height:30px;padding:4px 8px;border:0;border-radius:5px;background:transparent;color:inherit;font:inherit;font-size:13px;font-weight:500;cursor:pointer}
+.quote-selection-add:hover{background:var(--hover)}
+.quote-selection-add:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.quote-selection-add kbd{font:inherit;font-size:12px;font-weight:400;color:var(--muted)}
+@media(forced-colors:active){.quote-selection-actions{border-color:CanvasText;background:Canvas;color:CanvasText}.quote-selection-add:focus-visible{outline-color:Highlight}}

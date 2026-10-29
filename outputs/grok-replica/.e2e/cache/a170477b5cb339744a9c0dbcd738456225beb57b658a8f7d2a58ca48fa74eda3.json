@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-27T09:36:58.031Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Accountmenu\"",
+        "target": {
+          "role": "button",
+          "name": "Accountmenu"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap menuitem \"Apparaten\"",
+        "target": {
+          "role": "menuitem",
+          "name": "Apparaten"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/device-pairing.e2e.ts::device%20management%20is%20discoverable%20in%20the%20actual%20account%20menu",
+      "targetId": "web",
+      "instructionDigest": "d574341068952b8460f4d74837af0231ee6ca47df83ce29f2f14827f7abe7507",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Opened Accountmenu and tapped Apparaten. The Apparaten dialog is open with the sections Ander apparaat toelaten, Op dit apparaat koppelen and Apparaten met toegang. I did not create a koppelcode and did not revoke access.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Sluiten"
+      },
+      {
+        "role": "heading",
+        "name": "Apparaten"
+      },
+      {
+        "text": "Koppel je apparaten om gesprekken en leesstatus op dezelfde server te gebruiken."
+      },
+      {
+        "role": "heading",
+        "name": "Ander apparaat toelaten"
+      },
+      {
+        "text": "Maak hier een code en vul deze in op je andere apparaat."
+      },
+      {
+        "role": "button",
+        "name": "Koppelcode maken"
+      },
+      {
+        "role": "heading",
+        "name": "Op dit apparaat koppelen"
+      },
+      {
+        "text": "Gebruik de code van het apparaat waarop je gesprekken staan. Gebruik hiervoor een browserprofiel zonder eigen servergesprekken."
+      }
+    ],
+    "endWaitMs": 19094
+  }
+}

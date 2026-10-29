@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-17T11:26:18.204Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Nieuwe chat\"",
+        "target": {
+          "role": "button",
+          "name": "Nieuwe chat"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap menuitem \"Nieuwe groep\"",
+        "target": {
+          "role": "menuitem",
+          "name": "Nieuwe groep"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Marketing Agent\" (2 of 2)",
+        "target": {
+          "role": "button",
+          "name": "Marketing Agent",
+          "position": {
+            "index": 1,
+            "of": 2
+          }
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Find Customers\" (2 of 2)",
+        "target": {
+          "role": "button",
+          "name": "Find Customers",
+          "position": {
+            "index": 1,
+            "of": 2
+          }
+        }
+      },
+      {
+        "name": "pressKey",
+        "summary": "press \"Escape\" on the focused field",
+        "key": "Escape"
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/groups.e2e.ts::groep%20bewaart%20leden%20en%20verwijderbare%20ontvangers%20geven%20de%20juiste%20groep",
+      "targetId": "web",
+      "instructionDigest": "ed4741bcbbf32c7662dab5ba3195703f2e9102df3f3b26afa5e9f21b1293ca84",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Via Nieuwe chat > Nieuwe groep Marketing Agent en Find Customers geselecteerd als ontvangers. Met Escape de ontvangerkiezer gesloten; de groep is niet gemaakt. De ontvangers staan nog in het Aan-veld.",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Ontvanger verwijderen: Marketing Agent"
+      },
+      {
+        "role": "button",
+        "name": "Ontvanger verwijderen: Find Customers"
+      }
+    ],
+    "endWaitMs": 14177
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:11:34.744Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap option \"Find Customers\"",
+        "target": {
+          "role": "option",
+          "name": "Find Customers"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/composer-mention-popup.e2e.ts::member%20popup%20anchors%20to%20the%20matched%20query%20across%20lines%20and%20paints%20above%20the%20composer",
+      "targetId": "web",
+      "instructionDigest": "88b77616c0937db272cf0c1e162ff4597db0ab28b4206e4e5c2b80ef41437a3a",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped 'Find Customers' in the Vermelding list. The list closed and the textbox now holds the mention '@Find Customers' (chip n6006). The message was not sent and stays as a draft.",
+    "startPath": "http://127.0.0.1:18924/",
+    "endPath": "http://127.0.0.1:18924/",
+    "endAnchors": [
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "value": "Synthetische eerste regel lange tweede regel Find Customers"
+      },
+      {
+        "text": "Synthetische eerste regellange tweede regel"
+      },
+      {
+        "name": "@Find Customers"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Synthetische eerste regellange tweede regel @Find"
+      },
+      {
+        "text": "Bot"
+      },
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "value": "Synthetische eerste regel lange tweede regel @Find",
+        "states": [
+          "expanded"
+        ]
+      },
+      {
+        "role": "listbox",
+        "name": "Vermelding"
+      },
+      {
+        "role": "option",
+        "name": "Find Customers",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "option",
+        "name": "dealfinder"
+      }
+    ],
+    "endWaitMs": 15195
+  }
+}

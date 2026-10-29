@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:14:20.523Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap option \"Donker thema\" in \"Marketing Agent\"",
+        "target": {
+          "role": "option",
+          "name": "Donker thema",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/inline-document.e2e.ts::persisted%20inline%20skill%20stays%20in%20its%20sentence%20after%20reload%20in%20light%20and%20dark%20themes",
+      "targetId": "web",
+      "instructionDigest": "d9dd0060c1f99cfbdc6798eaacdb89743ab45e40866c29c14391928343f9ccab",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Ik heb 'Donker thema' (Actie) in de slashsuggesties getikt. De lijst met suggesties is gesloten en het berichtveld is geleegd. Er is niets verzonden. Of het thema echt is veranderd, kon ik niet uit de elementenboom afleiden.",
+    "startPath": "http://127.0.0.1:18889/",
+    "endPath": "http://127.0.0.1:18889/",
+    "endAnchors": [
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot"
+      },
+      {
+        "role": "button",
+        "name": "Spraakmodus"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "/donker"
+      },
+      {
+        "role": "button",
+        "name": "Bericht sturen"
+      },
+      {
+        "text": "Donker thema"
+      },
+      {
+        "text": "Gebruik de donkere weergave"
+      },
+      {
+        "text": "Actie"
+      },
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "value": "/donker",
+        "states": [
+          "expanded"
+        ]
+      },
+      {
+        "role": "listbox",
+        "name": "Vaardigheden en acties"
+      },
+      {
+        "role": "option",
+        "name": "Donker thema",
+        "states": [
+          "selected"
+        ]
+      }
+    ],
+    "endWaitMs": 16444
+  }
+}

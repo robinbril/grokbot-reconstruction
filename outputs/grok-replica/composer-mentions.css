@@ -1,0 +1,18 @@
+.composer-inline-mention,.inline-mention-reference{display:inline-flex;align-items:center;gap:3px;max-width:240px;vertical-align:baseline;padding:1px 4px;border-radius:5px;background:var(--pill);color:var(--ink);white-space:nowrap;font:inherit}
+.composer-inline-mention{user-select:all;cursor:default}
+.composer-inline-mention .mention-glyph{display:inline-flex;align-items:center;justify-content:center;width:14px;height:14px;flex-shrink:0}
+.composer-inline-mention .mention-glyph svg{width:14px;height:14px}
+.composer-inline-mention .mention-label{overflow:hidden;text-overflow:ellipsis}
+.composer-command-menu[data-member-menu]{box-sizing:border-box;width:360px;max-width:calc(100vw - 16px);padding:0;overflow:hidden;animation:none}
+.composer-command-menu[data-member-menu] [role=listbox]{position:relative;box-sizing:border-box;max-height:var(--sand-suggestion-max-height,320px);padding:0;overflow:auto}
+.composer-command-menu[data-member-menu] .composer-command-option{box-sizing:border-box;height:28px;min-height:28px;padding:6px 8px;gap:7px;margin-bottom:2px;border-radius:6px;line-height:16px}
+.composer-command-menu[data-member-menu] .composer-command-option:last-child{margin-bottom:0}
+.composer-command-menu[data-member-menu] .composer-command-copy{display:flex;align-items:baseline;gap:6px;overflow:hidden}
+.composer-command-menu[data-member-menu] .composer-command-copy strong{font-size:13px;flex-shrink:1}
+.composer-command-menu[data-member-menu] .composer-command-copy>span{font-size:11px;flex-shrink:4}
+.composer-command-menu[data-member-menu] .composer-command-kind{display:inline;font-size:11px}
+.composer-command-menu[data-member-menu] .composer-command-option>.avatar{width:16px;height:16px;flex-shrink:0}
+.composer-inline-mention .mention-glyph>.avatar{width:14px;height:14px}
+.composer-command-menu[data-member-menu] .composer-command-empty>span{display:block}.composer-command-menu[data-member-menu] .composer-command-empty>span+span{margin-top:4px;color:var(--tertiary)}
+.composer-command-menu[data-member-menu] [data-member-rows]{position:relative;width:100%}
+.composer-command-menu[data-member-menu] [data-member-rows]>.composer-command-option{position:absolute;left:6px;right:6px;width:calc(100% - 12px);margin:0}

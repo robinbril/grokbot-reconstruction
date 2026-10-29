@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><title>Bronovergangen · Grok 0.71.2</title><link rel="stylesheet" href="./ui-motion-catalogue.css"></head>
+<body><main>
+  <header><a href="./ui-motion.html">UI-overgangen</a><h1>Bronovergangen</h1><p>Grok 0.71.2. Lokale bronfixtures, gemeten door de browser.</p></header>
+  <section class="controls" aria-label="Bronselectie">
+    <label>Familie<select id="catalogue-family"></select></label>
+    <label>Brongeval<select id="catalogue-instance"></select></label>
+    <div class="navigation"><button id="catalogue-previous" aria-label="Vorig brongeval">Vorige</button><button id="catalogue-next" aria-label="Volgend brongeval">Volgende</button><button id="catalogue-restart">Herstart fixture</button></div>
+    <label class="reduced"><input id="catalogue-reduced" type="checkbox" role="switch">Verminderde beweging</label>
+  </section>
+  <div class="workspace"><section class="specimen" aria-label="Bronfixture"><div class="specimen-heading"><h2 id="catalogue-case-title">Bron laden</h2><span id="catalogue-runtime-status" role="status">Laden</span></div><iframe id="catalogue-stage" title="Bron CSS-fixture" sandbox="allow-same-origin"></iframe><p class="hint">Beweeg over het brononderdeel of gebruik Tab voor echte hover- en focuscondities.</p><div id="catalogue-states" aria-label="Bronvoorwaarden"></div></section>
+  <aside><h2>Browserbewijs</h2><p id="catalogue-coverage"></p><div id="catalogue-evidence"></div><details><summary>Actuele browsermeting</summary><pre id="catalogue-inspection"></pre></details></aside></div>
+  <footer>Een werkende lokale CSS-fixture bewijst geen native componentactivatie. Onbekende geometrie, props en bronvoorwaarden blijven apart vermeld.</footer>
+</main><script type="module" src="./ui-motion-catalogue.js"></script></body></html>

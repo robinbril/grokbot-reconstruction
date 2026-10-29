@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:14:53.838Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Naar laatste bericht\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Naar laatste bericht",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/jump-latest.e2e.ts::jump%20is%20an%20immediate%20native%20bottom%20navigation%20after%20reload%20with%20normal%20motion",
+      "targetId": "web",
+      "instructionDigest": "7598ccfa8a0d25053d9000de12ee9e0e0446d7005cb10478a6601c286957fce8",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Eén keer op 'Naar laatste bericht' getapt; de knop is daarna verdwenen (transcript onderaan, laatste bericht FINAL_RELOADED_READER_1847). Geen bericht verzonden.",
+    "startPath": "/",
+    "endPath": "/",
+    "goneAnchors": [
+      {
+        "role": "button",
+        "name": "Naar laatste bericht"
+      }
+    ],
+    "endWaitMs": 17859
+  }
+}

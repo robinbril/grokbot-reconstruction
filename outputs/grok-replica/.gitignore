@@ -1,0 +1,9 @@
+node_modules/
+.e2e/logs/
+.e2e/results/
+.e2e/report.json
+.e2e/summary.md
+.e2e/screenshots/
+.poort/state/
+
+.harness-runtime/

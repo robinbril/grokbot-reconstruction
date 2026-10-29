@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T09:12:49.451Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/transcript-reader.e2e.ts::actual%201px%20upward%20reader%20input%20survives%20canonical%20arrival%20inside%20the%20old80px%20zone",
+      "targetId": "web",
+      "instructionDigest": "cfe4ace91c04b62d2a6c8253dda0d8692d09e85ae23a677435380c21c6e136e8",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped Marketing Agent in the sidebar. The conversation opened with header 'Marketing Agent' and an empty message box. No message was sent.",
+    "startPath": "http://127.0.0.1:19047/",
+    "endPath": "http://127.0.0.1:19047/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Gespreksopties"
+      },
+      {
+        "role": "button",
+        "name": "Gespreksdetails"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Aan:"
+      },
+      {
+        "role": "button",
+        "name": "Start a chat with..."
+      }
+    ],
+    "endWaitMs": 14383
+  }
+}

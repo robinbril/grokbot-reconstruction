@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-19T19:39:13.523Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Taak starten\" in \"Lokale taak\"",
+        "target": {
+          "role": "button",
+          "name": "Taak starten",
+          "within": "Lokale taak"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/product-faithful-workflows.e2e.ts::real%20computed%20output%20flows%20at50ms%20then%20disclosure%20and%20copying%20expose%20its%20exact%20payload",
+      "targetId": "web",
+      "instructionDigest": "c0beea646bfd9458b8c30b26682978cd52ebb142429184ea1280969c7c28219d",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Taak starten gedrukt met 'een twee drie'. Dialoog sloot; taak 'Woorden tellen' toont Bezig en '3 woorden · 13 tekens · 1 regel'.",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "text": "Tekst lokaal verwerken"
+      },
+      {
+        "text": "een twee drie"
+      },
+      {
+        "role": "button",
+        "name": "Woorden tellen"
+      },
+      {
+        "text": "Bezig"
+      },
+      {
+        "role": "progressbar",
+        "name": "Taakvoortgang"
+      },
+      {
+        "text": "3 woorden"
+      },
+      {
+        "name": "Lokale deelnemers"
+      },
+      {
+        "text": "woorden"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "What should I focus on for you?"
+      },
+      {
+        "role": "button",
+        "name": "Sluiten"
+      },
+      {
+        "role": "heading",
+        "name": "Lokale taak"
+      },
+      {
+        "text": "Verwerk tekst in deze browser. Er wordt geen model of externe tool aangeroepen."
+      },
+      {
+        "text": "Tekst voor lokale taak"
+      },
+      {
+        "role": "textbox",
+        "name": "Tekst voor lokale taak",
+        "value": "een twee drie"
+      },
+      {
+        "text": "Bewerking"
+      },
+      {
+        "role": "option",
+        "name": "Woorden tellen",
+        "states": [
+          "selected"
+        ]
+      }
+    ],
+    "endWaitMs": 16211
+  }
+}

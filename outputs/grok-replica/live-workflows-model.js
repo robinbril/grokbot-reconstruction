@@ -1,0 +1,8 @@
+const terminal=new Set(['completed','failed','cancelled','interrupted']);
+export const queueStatusLabel=status=>({queued:'In wachtrij',preparing:'Voorbereiden',sending:'Verzenden',running:'Bezig',blocked:'Geblokkeerd',completed:'Voltooid',failed:'Mislukt',cancelled:'Geannuleerd',interrupted:'Onderbroken',waiting_approval:'Wacht op toestemming'}[status]||status||'Onbekend');
+export const queueRows=rows=>(Array.isArray(rows)?rows:[]).filter(row=>!terminal.has(row.status)).slice().sort((a,b)=>(a.enqueueSequence||0)-(b.enqueueSequence||0)||String(a.createdAt||'').localeCompare(String(b.createdAt||'')));
+export const scheduleHistory=(id,queue=[],runs=[])=>queue.filter(row=>row.source?.scheduleId===id).map(row=>({...row,executionStatus:runs.find(run=>run.id===row.runId)?.status||row.status}));
+export const liveDraftSignature=draft=>JSON.stringify({text:draft.text||'',attachments:(draft.attachments||[]).map(ref=>ref.id),quote:draft.quote,skillReferences:draft.skillReferences||[]});
+export const uploadIdentity=(conversationId,fileId)=>JSON.stringify([conversationId,fileId]);
+export function readyAttachmentRefs(conversationId,files,mappings){return files.map(file=>{const record=mappings[uploadIdentity(conversationId,file.id)];if(record?.state!=='ready'||!record.attachmentId)throw new Error('Wacht tot alle uploads gereed zijn.');return {attachmentId:record.attachmentId,sha256:record.sha256,size:record.size};});}
+export function scheduleRuleText(rule){if(!rule)return '';if(rule.kind==='once')return rule.at;return (rule.kind==='weekly'?'Wekelijks '+(rule.weekdays||[]).map(day=>['','ma','di','wo','do','vr','za','zo'][day]).join(', '):'Dagelijks')+' om '+rule.time;}

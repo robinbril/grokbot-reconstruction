@@ -1,0 +1,2068 @@
+{
+  "pins": {
+    "mermaid": "11.17.2",
+    "shiki": "4.5.0",
+    "katex": "0.19.0",
+    "esbuild": "0.28.2",
+    "marked-footnote": "1.4.0"
+  },
+  "bundled": [
+    {
+      "name": "@braintree/sanitize-url",
+      "version": "7.1.2",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@iconify/utils",
+      "version": "3.1.7",
+      "license": "MIT",
+      "licenseFiles": [
+        "license.txt"
+      ]
+    },
+    {
+      "name": "@mermaid-js/parser",
+      "version": "1.2.1",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@shikijs/core",
+      "version": "4.5.0",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@shikijs/engine-javascript",
+      "version": "4.5.0",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@shikijs/langs",
+      "version": "4.5.0",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@shikijs/primitive",
+      "version": "4.5.0",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@shikijs/themes",
+      "version": "4.5.0",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@shikijs/types",
+      "version": "4.5.0",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@shikijs/vscode-textmate",
+      "version": "10.0.2",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "@upsetjs/venn.js",
+      "version": "2.0.0",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "ccount",
+      "version": "2.0.1",
+      "license": "MIT",
+      "licenseFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "character-entities-html4",
+      "version": "2.1.0",
+      "license": "MIT",
+      "licenseFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "character-entities-legacy",
+      "version": "3.0.0",
+      "license": "MIT",
+      "licenseFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "comma-separated-tokens",
+      "version": "2.0.3",
+      "license": "MIT",
+      "licenseFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "cose-base",
+      "version": "1.0.3",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "cytoscape",
+      "version": "3.34.4",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE",
+        "license-update.mjs"
+      ]
+    },
+    {
+      "name": "cytoscape-cose-bilkent",
+      "version": "4.1.0",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "cytoscape-fcose",
+      "version": "2.2.0",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "cose-base",
+      "version": "2.2.0",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "layout-base",
+      "version": "2.0.1",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3",
+      "version": "7.9.0",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-array",
+      "version": "3.2.4",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-axis",
+      "version": "3.0.0",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-brush",
+      "version": "3.0.0",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-chord",
+      "version": "3.0.1",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-color",
+      "version": "3.1.0",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-contour",
+      "version": "4.0.2",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-delaunay",
+      "version": "6.0.4",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-dispatch",
+      "version": "3.0.1",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-drag",
+      "version": "3.0.0",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-dsv",
+      "version": "3.0.1",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-ease",
+      "version": "3.0.1",
+      "license": "BSD-3-Clause",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-fetch",
+      "version": "3.0.1",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-force",
+      "version": "3.0.0",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-format",
+      "version": "3.1.2",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-geo",
+      "version": "3.1.1",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-hierarchy",
+      "version": "3.1.2",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-interpolate",
+      "version": "3.0.1",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-path",
+      "version": "3.1.0",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-polygon",
+      "version": "3.0.1",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-quadtree",
+      "version": "3.0.1",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-random",
+      "version": "3.0.1",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-sankey",
+      "version": "0.12.3",
+      "license": "BSD-3-Clause",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-array",
+      "version": "2.12.1",
+      "license": "BSD-3-Clause",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-path",
+      "version": "1.0.9",
+      "license": "BSD-3-Clause",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-shape",
+      "version": "1.3.7",
+      "license": "BSD-3-Clause",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "internmap",
+      "version": "1.0.1",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-scale",
+      "version": "4.0.2",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-scale-chromatic",
+      "version": "3.1.0",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-selection",
+      "version": "3.0.0",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-shape",
+      "version": "3.2.0",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-time",
+      "version": "3.1.0",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-time-format",
+      "version": "4.1.0",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-timer",
+      "version": "3.0.1",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-transition",
+      "version": "3.0.1",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "d3-zoom",
+      "version": "3.0.0",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "dagre-d3-es",
+      "version": "7.0.14",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "dayjs",
+      "version": "1.11.23",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "delaunator",
+      "version": "5.1.0",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "dompurify",
+      "version": "3.4.17",
+      "license": "(MPL-2.0 OR Apache-2.0)",
+      "licenseFiles": [
+        "LICENSE",
+        "LICENSE-MPL"
+      ]
+    },
+    {
+      "name": "es-toolkit",
+      "version": "1.52.0",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE",
+        "NOTICE"
+      ]
+    },
+    {
+      "name": "fastdom",
+      "version": "1.0.12",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE-from-README.md"
+      ]
+    },
+    {
+      "name": "hast-util-to-html",
+      "version": "9.0.5",
+      "license": "MIT",
+      "licenseFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "hast-util-whitespace",
+      "version": "3.0.0",
+      "license": "MIT",
+      "licenseFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "html-void-elements",
+      "version": "3.0.0",
+      "license": "MIT",
+      "licenseFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "internmap",
+      "version": "2.0.3",
+      "license": "ISC",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "katex",
+      "version": "0.19.0",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "khroma",
+      "version": "2.1.0",
+      "licenseFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "layout-base",
+      "version": "1.0.2",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "lodash-es",
+      "version": "4.18.1",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "mermaid",
+      "version": "11.17.2",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "marked",
+      "version": "16.4.2",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "oniguruma-parser",
+      "version": "0.12.2",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "oniguruma-to-es",
+      "version": "4.3.6",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "property-information",
+      "version": "7.2.0",
+      "license": "MIT",
+      "licenseFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "regex",
+      "version": "6.1.0",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "regex-recursion",
+      "version": "6.0.2",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "regex-utilities",
+      "version": "2.3.0",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "robust-predicates",
+      "version": "3.0.3",
+      "license": "Unlicense",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "roughjs",
+      "version": "4.6.6",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "shiki",
+      "version": "4.5.0",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "space-separated-tokens",
+      "version": "2.0.2",
+      "license": "MIT",
+      "licenseFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "stringify-entities",
+      "version": "4.0.4",
+      "license": "MIT",
+      "licenseFiles": [
+        "license"
+      ]
+    },
+    {
+      "name": "stylis",
+      "version": "4.4.0",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "ts-dedent",
+      "version": "2.3.0",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "uuid",
+      "version": "14.0.3",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "zwitch",
+      "version": "2.0.4",
+      "license": "MIT",
+      "licenseFiles": [
+        "license"
+      ]
+    }
+  ],
+  "footnoteLicenseSource": "https://raw.githubusercontent.com/bent10/marked-extensions/faab750f00af4788397948286fb8f7fe0c929a7e/license",
+  "recipe": "npm ci && npm run vendor:chat-renderer",
+  "nativeVersionBoundary": "Native declares Mermaid ^11.16.0 and KaTeX ^0.16.45; exact native lock resolution is unavailable. Mermaid 11.17.2 satisfies that range and includes maintained security fixes; exact layout parity with an unknown native lock resolution is not asserted. Mermaid nested KaTeX is overridden to that same safe 0.19.0, avoiding a vulnerable older nested copy. Replica KaTeX 0.19.0 remains the pre-existing frozen maintained pin, not a native version-parity claim.",
+  "security": "Self-hosted ESM, Shiki JavaScript regex engine, no eval or WASM. Mermaid strict, htmlLabels:false; generated SVG receives a separate strict allowlist. KaTeX upstream CSS includes its global equation counter reset.",
+  "artifacts": [
+    {
+      "file": "assets/vendor/chat-licenses/@braintree__sanitize-url@7.1.2/LICENSE",
+      "bytes": 1066,
+      "sha256": "0984740e0c3d725c8044dec7edcefe1dbce180ef5a7bc710c251e19607000158"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/@iconify__utils@3.1.7/license.txt",
+      "bytes": 1083,
+      "sha256": "a86793ac023162ce98b91899601c15f6712f44943163c4f92a0a4bf89152b3bf"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/@mermaid-js__parser@1.2.1/LICENSE",
+      "bytes": 1077,
+      "sha256": "d374061c40bfb6f99c5033290caefda97a9b3e7e477e5ee02f487143ef2177e8"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/@shikijs__core@4.5.0/LICENSE",
+      "bytes": 1121,
+      "sha256": "7a9d8d01038aeacf9e5bcdabbddf2a7815200dce9fc1118468cc553e00ae3eee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/@shikijs__engine-javascript@4.5.0/LICENSE",
+      "bytes": 1121,
+      "sha256": "7a9d8d01038aeacf9e5bcdabbddf2a7815200dce9fc1118468cc553e00ae3eee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/@shikijs__langs@4.5.0/LICENSE",
+      "bytes": 1121,
+      "sha256": "7a9d8d01038aeacf9e5bcdabbddf2a7815200dce9fc1118468cc553e00ae3eee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/@shikijs__primitive@4.5.0/LICENSE",
+      "bytes": 1121,
+      "sha256": "7a9d8d01038aeacf9e5bcdabbddf2a7815200dce9fc1118468cc553e00ae3eee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/@shikijs__themes@4.5.0/LICENSE",
+      "bytes": 1121,
+      "sha256": "7a9d8d01038aeacf9e5bcdabbddf2a7815200dce9fc1118468cc553e00ae3eee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/@shikijs__types@4.5.0/LICENSE",
+      "bytes": 1121,
+      "sha256": "7a9d8d01038aeacf9e5bcdabbddf2a7815200dce9fc1118468cc553e00ae3eee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/@shikijs__vscode-textmate@10.0.2/LICENSE.md",
+      "bytes": 1083,
+      "sha256": "b5cb7ff7859e7d282d98fc43ab081b0dda5dc659dc3385cf65740c759a7e6a6c"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/@upsetjs__venn.js@2.0.0/LICENSE",
+      "bytes": 1106,
+      "sha256": "6a3508febf2cfccfee96597394543a6154a4bb0b1f91f28404be42c09e9fcb54"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/ccount@2.0.1/license",
+      "bytes": 1099,
+      "sha256": "63cb98b3f6abfb3c3592c16f88253c1bdc834087bf52671e8ce5609e4eb693cf"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/character-entities-html4@2.1.0/license",
+      "bytes": 1099,
+      "sha256": "63cb98b3f6abfb3c3592c16f88253c1bdc834087bf52671e8ce5609e4eb693cf"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/character-entities-legacy@3.0.0/license",
+      "bytes": 1099,
+      "sha256": "63cb98b3f6abfb3c3592c16f88253c1bdc834087bf52671e8ce5609e4eb693cf"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/comma-separated-tokens@2.0.3/license",
+      "bytes": 1099,
+      "sha256": "ca4662cb5d1b738fbe5350c0d5485ba11773b4b7208974082ae6e129a52d631d"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/cose-base@1.0.3/LICENSE",
+      "bytes": 1081,
+      "sha256": "5fb3cf4a14c3c5af6e473a192df8bca10c77754e3a0c6492c79fb92a76a5478a"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/cose-base@2.2.0/LICENSE",
+      "bytes": 1081,
+      "sha256": "5fb3cf4a14c3c5af6e473a192df8bca10c77754e3a0c6492c79fb92a76a5478a"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/cytoscape-cose-bilkent@4.1.0/LICENSE",
+      "bytes": 1084,
+      "sha256": "440fc58a56a12814e417d2b341da89b050da052dc75bdb235607d37ec5fe74ef"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/cytoscape-fcose@2.2.0/LICENSE",
+      "bytes": 1079,
+      "sha256": "2837634f403949215760fcdd2fa1ed0c64875d02099ecc8318c704b852f1421d"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/cytoscape@3.34.4/LICENSE",
+      "bytes": 1082,
+      "sha256": "eb319c6e6f233607f71e8e2f450391751883cfc0eeb3ca7ef574c13d1d9c2203"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/cytoscape@3.34.4/license-update.mjs",
+      "bytes": 1416,
+      "sha256": "4a5a644717fc90d678e8fbbc537a08452d0566726710eef47b196abd6363e635"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-array@2.12.1/LICENSE",
+      "bytes": 1475,
+      "sha256": "0747bebeb06b10954913149be9b9a8bdf6fad3e6fdcbd9f9524e7a94c13d2cea"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-array@3.2.4/LICENSE",
+      "bytes": 731,
+      "sha256": "3e6849627f74ff73c257a3ae1efb574015d94fc1035c05ec3c15805165efcbc4"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-axis@3.0.0/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-brush@3.0.0/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-chord@3.0.1/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-color@3.1.0/LICENSE",
+      "bytes": 731,
+      "sha256": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-contour@4.0.2/LICENSE",
+      "bytes": 731,
+      "sha256": "e51cba0e4fa1d8c078e15319868f2b90188f413f9ce9dac1043b62db32901e93"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-delaunay@6.0.4/LICENSE",
+      "bytes": 757,
+      "sha256": "582c3022bd01942336095f92b58a90b1be624dc547d987555c6c956512dd24c1"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-dispatch@3.0.1/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-drag@3.0.0/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-dsv@3.0.1/LICENSE",
+      "bytes": 731,
+      "sha256": "7842a82012622e5a37bfe4f6c1b67cd3bae6350716b5bf87f36cea0bdc1319dc"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-ease@3.0.1/LICENSE",
+      "bytes": 1504,
+      "sha256": "b989d9085148d21ff64a75e14462aefa06b2589a55553b07b1460c70081c7d08"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-fetch@3.0.1/LICENSE",
+      "bytes": 731,
+      "sha256": "ffdc17dc9040006bddeb891c95bfbb492e86d6bc64a4a4233666febab1be35e0"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-force@3.0.0/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-format@3.1.2/LICENSE",
+      "bytes": 731,
+      "sha256": "2a6d2d5f32ba0b755ddbc1c833f766e30cdbe6ebe9a6d4e3e24427721f0b63d3"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-geo@3.1.1/LICENSE",
+      "bytes": 1857,
+      "sha256": "3e3edc1224eec9c39cd26491a21304a62883c1e5b6a65c5283ccc7a6cc94baee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-hierarchy@3.1.2/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-interpolate@3.0.1/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-path@1.0.9/LICENSE",
+      "bytes": 1475,
+      "sha256": "b8265327ab678f554800e71188b1cc6b1ff57522e292d2b1c0be66f27cf328b6"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-path@3.1.0/LICENSE",
+      "bytes": 731,
+      "sha256": "a09b0d6d76e768fca2085fad05743ee81ddd11946bcda160a3cf5e1081a479aa"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-polygon@3.0.1/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-quadtree@3.0.1/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-random@3.0.1/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-sankey@0.12.3/LICENSE",
+      "bytes": 1471,
+      "sha256": "2bf785e778d67a4f5266cffcd4f2cc5bb98cde73791666e7efeb8002ba32dfa5"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-scale-chromatic@3.1.0/LICENSE",
+      "bytes": 1423,
+      "sha256": "0986d93944902cca9af86824b6a641b4b7c2d10602fc510c433a8bcd443919fe"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-scale@4.0.2/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-selection@3.0.0/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-shape@1.3.7/LICENSE",
+      "bytes": 1475,
+      "sha256": "7eea8533ea92bd8c32a901e89ecb0305890905bb12711449565ddff96891146d"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-shape@3.2.0/LICENSE",
+      "bytes": 731,
+      "sha256": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-time-format@4.1.0/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-time@3.1.0/LICENSE",
+      "bytes": 731,
+      "sha256": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-timer@3.0.1/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-transition@3.0.1/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3-zoom@3.0.0/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/d3@7.9.0/LICENSE",
+      "bytes": 731,
+      "sha256": "3e6849627f74ff73c257a3ae1efb574015d94fc1035c05ec3c15805165efcbc4"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/dagre-d3-es@7.0.14/LICENSE.md",
+      "bytes": 1328,
+      "sha256": "d01eb84ccce437dbf5fd40853bceea0f287930920acea066597a4a25ead63858"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/dayjs@1.11.23/LICENSE",
+      "bytes": 1072,
+      "sha256": "5faab7526d055651be3aab769d58897be6bd91f3d39d137f25f12dba1b31d5dc"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/delaunator@5.1.0/LICENSE",
+      "bytes": 738,
+      "sha256": "0b348fff56384b43dbb37593906904e56d0f9deb51eae590d4dc6d427fbf1808"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/dompurify@3.4.17/LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/dompurify@3.4.17/LICENSE-MPL",
+      "bytes": 16726,
+      "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/es-toolkit@1.52.0/LICENSE",
+      "bytes": 1077,
+      "sha256": "51f3674294d988d89dbebd31273baaeb3c697a15482d9699b14d1fded2e132a7"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/es-toolkit@1.52.0/NOTICE",
+      "bytes": 1698,
+      "sha256": "11ee5e3bce9b0a4dde7f73811caf98978e710228d891c3111ad8ef8d7d2a916f"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/fastdom@1.0.12/LICENSE-from-README.md",
+      "bytes": 1106,
+      "sha256": "df2ae14f12f31864acef768195afe4584b08a257f25925f49884619279f02f37"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/hast-util-to-html@9.0.5/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/hast-util-whitespace@3.0.0/license",
+      "bytes": 1099,
+      "sha256": "ca4662cb5d1b738fbe5350c0d5485ba11773b4b7208974082ae6e129a52d631d"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/html-void-elements@3.0.0/license",
+      "bytes": 1099,
+      "sha256": "ca4662cb5d1b738fbe5350c0d5485ba11773b4b7208974082ae6e129a52d631d"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/internmap@1.0.1/LICENSE",
+      "bytes": 726,
+      "sha256": "9ea8903938dab5f12c4572d60725069bec2d1b0dc3bcc210b09bae946a5ebb1f"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/internmap@2.0.3/LICENSE",
+      "bytes": 726,
+      "sha256": "9ea8903938dab5f12c4572d60725069bec2d1b0dc3bcc210b09bae946a5ebb1f"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/katex@0.19.0/LICENSE",
+      "bytes": 1107,
+      "sha256": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/khroma@2.1.0/license",
+      "bytes": 1105,
+      "sha256": "66b333b0f66759a0b710459e03f7029abe17f4358114a128d2c972e642961b49"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/layout-base@1.0.2/LICENSE",
+      "bytes": 1069,
+      "sha256": "eabb762d8a95109a39c9be3247325529a5239a7aca327d909c3ccdc41f3a06bf"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/layout-base@2.0.1/LICENSE",
+      "bytes": 1069,
+      "sha256": "eabb762d8a95109a39c9be3247325529a5239a7aca327d909c3ccdc41f3a06bf"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/lodash-es@4.18.1/LICENSE",
+      "bytes": 1952,
+      "sha256": "f71e8ed126b46346494aad5486874cd8f0aafe95092ed67d2e3cb6110f939abc"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/marked@16.4.2/LICENSE.md",
+      "bytes": 2942,
+      "sha256": "8e3a3f82f59a60958f56ca08f445647c32a4733dc7ca6c2c46f6eb898471ab9c"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/mermaid@11.17.2/LICENSE",
+      "bytes": 1089,
+      "sha256": "ec9fb67dcb25eccc416ed56e1aab819222c805a2a4bfe4cb19e7556bf2ffde80"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/oniguruma-parser@0.12.2/LICENSE",
+      "bytes": 1077,
+      "sha256": "5fe78c91b36c6147ed0b6ab1631ce731165b7dd5e00482be1f027d46d12a8082"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/oniguruma-to-es@4.3.6/LICENSE",
+      "bytes": 1077,
+      "sha256": "c1a5a1ebc88f3e0f3caa04c0af52bf8f3a5405a467337a09594ae1ad149cec83"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/property-information@7.2.0/license",
+      "bytes": 1101,
+      "sha256": "5d0698266086f217bb11ea0499d33453e401fe479fb9126ad04e625e63d3557b"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/regex-recursion@6.0.2/LICENSE",
+      "bytes": 1072,
+      "sha256": "3d19c2b6246b3072547af2bd05e6b4c09bd3d15955590f1f1e1d20382c919a49"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/regex-utilities@2.3.0/LICENSE",
+      "bytes": 1072,
+      "sha256": "8ca7af4f6c753e5ab8388e1078d94ce4650723bba4b0d4dfe562fbd45fb4a4e6"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/regex@6.1.0/LICENSE",
+      "bytes": 1072,
+      "sha256": "3d19c2b6246b3072547af2bd05e6b4c09bd3d15955590f1f1e1d20382c919a49"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/robust-predicates@3.0.3/LICENSE",
+      "bytes": 1210,
+      "sha256": "88d9b4eb60579c191ec391ca04c16130572d7eedc4a86daa58bf28c6e14c9bcd"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/roughjs@4.6.6/LICENSE",
+      "bytes": 1068,
+      "sha256": "dca9a392272606ac748ac0976a2a1133f14eef841c27beaa51a844d53c56a09d"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/shiki@4.5.0/LICENSE",
+      "bytes": 1121,
+      "sha256": "7a9d8d01038aeacf9e5bcdabbddf2a7815200dce9fc1118468cc553e00ae3eee"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/space-separated-tokens@2.0.2/license",
+      "bytes": 1099,
+      "sha256": "ca4662cb5d1b738fbe5350c0d5485ba11773b4b7208974082ae6e129a52d631d"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/stringify-entities@4.0.4/license",
+      "bytes": 1106,
+      "sha256": "9f084fac69d8cf1e6ce983ba5a3499c7695ed74a26ec625c38f0fd19fddd5e10"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/stylis@4.4.0/LICENSE",
+      "bytes": 1078,
+      "sha256": "88c579c6ee44b41137a21321190d177982e5b17d4fa1b83a4a2e3ea325a8fc9a"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/ts-dedent@2.3.0/LICENSE",
+      "bytes": 1073,
+      "sha256": "eff13095d9d762c3bd9dda74370c81e2130c28f2691bc455603abf973bac25b9"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/uuid@14.0.3/LICENSE.md",
+      "bytes": 1109,
+      "sha256": "beaa6b04fb82e41dd2ad679e19e27953afb5999b1abbb455b6564e78ebfeb332"
+    },
+    {
+      "file": "assets/vendor/chat-licenses/zwitch@2.0.4/license",
+      "bytes": 1099,
+      "sha256": "ca4662cb5d1b738fbe5350c0d5485ba11773b4b7208974082ae6e129a52d631d"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_AMS-Regular.ttf",
+      "bytes": 63632,
+      "sha256": "68534840bcfdd2bffb6f0e8deb48684dd01e7f04ea2813267577afb906de1d13"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_AMS-Regular.woff",
+      "bytes": 33516,
+      "sha256": "30da91e84c893f875e252689faebdc590b2871145e8adc7f9a9d4dbd8ce0b251"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_AMS-Regular.woff2",
+      "bytes": 28076,
+      "sha256": "0cdd387c9590a1a9f9794560022dbb59654a7d86f187aa0c81495ad42d3a7308"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Caligraphic-Bold.ttf",
+      "bytes": 12368,
+      "sha256": "07d8e303ce4fc12b4bb54f1004170dd190a1f3db45d400fe68060df3e0897268"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Caligraphic-Bold.woff",
+      "bytes": 7716,
+      "sha256": "1ae6bd7475590e97e7f145a89e09ccde322f7a6bc0b91607b1c8b8ee28290fed"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Caligraphic-Bold.woff2",
+      "bytes": 6912,
+      "sha256": "de7701e42cf1f4cf0b766c03fb27977207eee2f4fd5d76fa82188406da43ea4c"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Caligraphic-Regular.ttf",
+      "bytes": 12344,
+      "sha256": "ed0b74372feefcbb9c0666b2e210da37b7e49fa7fbbf3eeb11db5f693dacfbb7"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Caligraphic-Regular.woff",
+      "bytes": 7656,
+      "sha256": "3398dd02302557a793f2863f88e02d96ce10df2abffa07c8e9fa90775116e65c"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Caligraphic-Regular.woff2",
+      "bytes": 6908,
+      "sha256": "5d53e70ad607c2352162dec9e0923fb54ecdafaccbf604cd8dcf7d00facb989b"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Fraktur-Bold.ttf",
+      "bytes": 19584,
+      "sha256": "9163df9c7122432e6495b4229fa9071cf9ae86a758ae5efc4924ec2e1a6dbce1"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Fraktur-Bold.woff",
+      "bytes": 13296,
+      "sha256": "9be7ceb88004ab8ad124082246fbfcca4091e36385d4ec6ed1df67375dad50fb"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Fraktur-Bold.woff2",
+      "bytes": 11348,
+      "sha256": "74444efd593c005e3f4573b44524704c0af0a937fe911cca9e94068d0d140d3f"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Fraktur-Regular.ttf",
+      "bytes": 19572,
+      "sha256": "1e6f9579e90e2cac37f8f60a597c436e075c114385652b7cbeb0dec0421291b3"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Fraktur-Regular.woff",
+      "bytes": 13208,
+      "sha256": "5e28753be717dac97f559f49bc10be9cf3c124ddcabda6659d11cb68febc6463"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Fraktur-Regular.woff2",
+      "bytes": 11316,
+      "sha256": "51814d270d06ff0255dba0799994fa4d8c84d11f09951d47595f4abb1f3602dc"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Main-Bold.ttf",
+      "bytes": 51336,
+      "sha256": "138ac28d1663b3037e9c5f52371fa5c63d8324f4a38d22cd573e6ea3a3fd0cf8"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Main-Bold.woff",
+      "bytes": 29912,
+      "sha256": "c76c5d696297d51b9cb1639c7da4334f0e7dec81b42b11213b5e25ef671bb822"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Main-Bold.woff2",
+      "bytes": 25324,
+      "sha256": "0f60d1b897938ec918c8ce073092411baf9438f6739465693ff18b0f9d20b021"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Main-BoldItalic.ttf",
+      "bytes": 32968,
+      "sha256": "70ee1f64a20f2048c21940ef46d0144fd215baa953ca69afd1e31e98544f708f"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Main-BoldItalic.woff",
+      "bytes": 19412,
+      "sha256": "a6f7ec0d846ac7ad975adb8959c37ed49b94acbc4ae436db9ce9e20287e4a64c"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Main-BoldItalic.woff2",
+      "bytes": 16780,
+      "sha256": "99cd42a3c072d918f2f44984a807cf7aa16e13545fd0875fc07c6c65f99e715b"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Main-Italic.ttf",
+      "bytes": 33580,
+      "sha256": "0d85ae7cc30f23790a7f1a58c4a112fdca8aae769b6ba11429af1d98b1b6cb3a"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Main-Italic.woff",
+      "bytes": 19676,
+      "sha256": "f1d6ef86f3b11a528bd5185199bd2443ecb2b0dead96d88674b5a2c12be24bdf"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Main-Italic.woff2",
+      "bytes": 16988,
+      "sha256": "97479ca6cce906abc961ecac96faa5f9ca2e61b8e7670d475826bcdee9a7c267"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Main-Regular.ttf",
+      "bytes": 53580,
+      "sha256": "d0332f52868370fd83ae7fa46470f90c8f2eab2fcf12bc4f88080b340c95a830"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Main-Regular.woff",
+      "bytes": 30772,
+      "sha256": "c6368d87e8a1a3a5d337623d83d8dc4b868f242a9ad476237d6f8d1e0f168cdc"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Main-Regular.woff2",
+      "bytes": 26272,
+      "sha256": "c2342cd8b869e01752a9321dc17213fc40d4d04c79688c1d43f2cf316abd7866"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Math-BoldItalic.ttf",
+      "bytes": 31196,
+      "sha256": "f9377ab0271cda59af24bcffbd46a4d0c8a3572ffafdbb38de2ad5ea7b0d5ee5"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Math-BoldItalic.woff",
+      "bytes": 18668,
+      "sha256": "850c0af5c2238497febaf5e461d880bf458c341f42f4f330f1b1ab5698b1998e"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Math-BoldItalic.woff2",
+      "bytes": 16400,
+      "sha256": "dc47344dbb6cb5b655c8460d561f4df5f501b90c804ad3c6cec65fe322351ab1"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Math-Italic.ttf",
+      "bytes": 31308,
+      "sha256": "08ce98e51b04d58945a301e639e02b6998af29fdfd61a7b8afdd07bbfc479d4a"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Math-Italic.woff",
+      "bytes": 18748,
+      "sha256": "8a8d244581371912b8f3f5a23e2437cb2a59cd9bcaebb0346e722c05737a2571"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Math-Italic.woff2",
+      "bytes": 16440,
+      "sha256": "7af58c5ec8f132a2ddde9027c6d7814decce4d3b822a11192a42a20e2e973264"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_SansSerif-Bold.ttf",
+      "bytes": 24504,
+      "sha256": "1ece03f79f95277d57dc7f6b435a74e1379b0d46104a8530286b60ff49369ea0"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_SansSerif-Bold.woff",
+      "bytes": 14408,
+      "sha256": "ece03cfd83e22c212cdef66feb8442d25a083beb988db3f1883f3f9738d750ba"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_SansSerif-Bold.woff2",
+      "bytes": 12216,
+      "sha256": "e99ae51144bf1232efcc1bfe5add36262c6866b0faab24fa75740e1b98577a62"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_SansSerif-Italic.ttf",
+      "bytes": 22364,
+      "sha256": "3931dd81faed86ba021bb2bbdc36f5bed9a38d6b4f4077aca59b265aa1b02083"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_SansSerif-Italic.woff",
+      "bytes": 14112,
+      "sha256": "91ee67500cc0129aa0ace3ac5c61ff1692102f0f31d02b69347fba35dcb75bf2"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_SansSerif-Italic.woff2",
+      "bytes": 12028,
+      "sha256": "00b26ac825e2095056396e0553b8ac26d3f8ad158c3826e28b4c45b385c4714a"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_SansSerif-Regular.ttf",
+      "bytes": 19436,
+      "sha256": "f36ea897e19f4a2e571d1e900e4e3710e438deb05a842486045ba0a3e616a4ad"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_SansSerif-Regular.woff",
+      "bytes": 12316,
+      "sha256": "11e4dc8a6471ff6d6ee561d53d10fde8f7489e798257ff449c5d37c197435605"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_SansSerif-Regular.woff2",
+      "bytes": 10344,
+      "sha256": "68e8c73ef42afd3ccec58bf0fba302cce448938e7fc020a5e31f8a952eee1342"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Script-Regular.ttf",
+      "bytes": 16648,
+      "sha256": "1c67f068fea8bb09bf099c088b1cf64bd27516a6e07f4684344873564bb66a67"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Script-Regular.woff",
+      "bytes": 10588,
+      "sha256": "d96cdf2b3bdd4d64a8fd5f74a4c467f123a8a73931cd435889f08ffaf9bf947a"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Script-Regular.woff2",
+      "bytes": 9644,
+      "sha256": "036d4e95149b69ff9bcc0cd55771efeb25ffa3947293e69acd78d5ac328c684b"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Size1-Regular.ttf",
+      "bytes": 12228,
+      "sha256": "95b6d2f1a50173bfedb8c63e1d1c99b10427d0a4df4201cb44513b226951a22b"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Size1-Regular.woff",
+      "bytes": 6496,
+      "sha256": "c943cc986384f59e86bea5fd7dc50a9c4dfe567a7c05eb40d6790720dead97c9"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Size1-Regular.woff2",
+      "bytes": 5468,
+      "sha256": "6b47c40166b6dbe21a5dfca7718413f2147fd2399be1ba605d8ad39cedf25dfe"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Size2-Regular.ttf",
+      "bytes": 11508,
+      "sha256": "a6b2099fb555c60e3a0db3a08842ebf1d732c6eb4e4bf44913613bed4fc4e39b"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Size2-Regular.woff",
+      "bytes": 6188,
+      "sha256": "2014c523c3210bcc166648c4d4cc57f05b747df07a24277bf71c51e67dc79e3d"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Size2-Regular.woff2",
+      "bytes": 5208,
+      "sha256": "d04c54219f9eaec6d4d4fd42dfb28785975a4794d6b2fc71e566b9cd6db842dd"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Size3-Regular.ttf",
+      "bytes": 7588,
+      "sha256": "500e04d54f0d51666332c9d2089aa803be22aa878eca539e59fa53c6e522b082"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Size3-Regular.woff",
+      "bytes": 4420,
+      "sha256": "6ab6b62e9b62dae2c00dd90f791bd10950be0ecc3490d7d6045f51c2e8fe0949"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Size3-Regular.woff2",
+      "bytes": 3624,
+      "sha256": "73d591271b1604960cb10bb90fee021670af7297017e0e98480b332d11f51995"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Size4-Regular.ttf",
+      "bytes": 10364,
+      "sha256": "c647367d1dd4e162468717d020e1fc0f1dc5c26ebfdffbe55261713bf88c5877"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Size4-Regular.woff",
+      "bytes": 5980,
+      "sha256": "99f9c6750b489c9462bf04900bd3f939df9b829339daaaaa99ef5495cdddea58"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Size4-Regular.woff2",
+      "bytes": 4928,
+      "sha256": "a4af7d414440a1c1790825cfb700cf9cf43b0f2c4b04f0ebc523011ad9853ec0"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Typewriter-Regular.ttf",
+      "bytes": 27556,
+      "sha256": "f01f3e87d9c6a61c0c081ceb577abd864eb00a612f7ac1620dd6915fad2ef5aa"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Typewriter-Regular.woff",
+      "bytes": 16028,
+      "sha256": "e14fed02b1aba7ce9f5afd5844b5d0321b22351febc720e0de8b8723527609f7"
+    },
+    {
+      "file": "assets/vendor/katex/fonts/KaTeX_Typewriter-Regular.woff2",
+      "bytes": 13568,
+      "sha256": "71d517d67827787cfabdf186914cc3358eda539e37931941f2b2fd4a21f68c0b"
+    },
+    {
+      "file": "assets/vendor/katex/katex.css",
+      "bytes": 33084,
+      "sha256": "b7982e2cec4d22ce352e4ab96b71302496237795206ade87ddb67710ffdb7e36"
+    },
+    {
+      "file": "assets/vendor/katex/katex.js",
+      "bytes": 602889,
+      "sha256": "e5bc26598084ad869939ecaa262673814f26ed586312a409b5f8427c01e4f681"
+    },
+    {
+      "file": "assets/vendor/katex/LICENSE",
+      "bytes": 1107,
+      "sha256": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3"
+    },
+    {
+      "file": "assets/vendor/marked-footnote/LICENSE",
+      "bytes": 1109,
+      "sha256": "9359f7399b808813111a91c5d28656d5843d8f6d337168541938286dbf273a32"
+    },
+    {
+      "file": "assets/vendor/marked-footnote/marked-footnote.js",
+      "bytes": 4101,
+      "sha256": "54a18d565b59131205ef8c24d21b7dcf7ebe56a719a0a8aad508f58d21f2a952"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/abnfDiagram-VCTEODGH-TET4QEW2.js",
+      "bytes": 2294,
+      "sha256": "7889954e0c265163bf94378f96331bcf99f7a4ebb1b9faa908c891d624d0fcd7"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/architecture-7GRP2DOG-WR4J3MHE.js",
+      "bytes": 168,
+      "sha256": "54988f86aa7105cafe9397b49aea6aa5190c128dd3f7fe8569781aa5004a1d06"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/architectureDiagram-5GKGNRK7-5KTMC4UI.js",
+      "bytes": 152967,
+      "sha256": "b1e8bdc91c62667645a5c01557cff1b3a642ed6a2c119d304c678c8a7b454577"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/blockDiagram-I7D4REHJ-N24EOY45.js",
+      "bytes": 40254,
+      "sha256": "aefc699c9020bf376edc3e97d00b8d635043c14de1ac1ef8a4bb219356b5db7a"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/c4Diagram-7LVT6UL2-4NDIUQF2.js",
+      "bytes": 65815,
+      "sha256": "27ad75b9e2506829d7577af6d29e3f8b710ababa56347a0618a9a1950937a501"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-22DRK7VS.js",
+      "bytes": 1895,
+      "sha256": "9c95a6565ab0f2984a05118f6a294b7f4f713f7d0aa4a2060e093db47bdfe874"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-2NDGMSQX.js",
+      "bytes": 240183,
+      "sha256": "81cfbb4977f7bb648286b46fc820b746d85da178dbfa00aabe761e2cb190bd07"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-2NDGMSQX.js.LEGAL.txt",
+      "bytes": 417,
+      "sha256": "4245c420f535f6b11e3f590606105d70565d76e4ba670d1f1497c1f39c57800a"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-2PPLC5NE.js",
+      "bytes": 1667,
+      "sha256": "ceb58ce12da4cca9876741991e7ca004e09e9b9a95d0a2dab974ef827edd18c4"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-2QZPSGY4.js",
+      "bytes": 36720,
+      "sha256": "4240b54f273c18bb3d353bae7ff89222ab7ea4f77f0652b0e73d694396c5b5b6"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-2WCXLVGM.js",
+      "bytes": 469,
+      "sha256": "fd17959da68a56e569e82860541c907067e1a968866d58b8b9eff7fe18c7867a"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-34YWUEJT.js",
+      "bytes": 557,
+      "sha256": "de351e5cae47628c1d8da5f3e74f8c91f0ef98f8f2ca95e995ddeb62a7f361b1"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-35JADD5X.js",
+      "bytes": 1031,
+      "sha256": "d2aa86d7ded9f2e650c7c53bc973b5b796663dc5837dd68afd7534b7658a9207"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-54FUIP3P.js",
+      "bytes": 1412,
+      "sha256": "025afc89f4987ae35450c0bba20b502cbfe2400df751c164ea87e58fcf03d287"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-5MU5OGQU.js",
+      "bytes": 9729,
+      "sha256": "0e903181ad2191d636638e4ae26b887e21474556ffb250dede276f0abac9d399"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-6DHFEWGX.js",
+      "bytes": 577,
+      "sha256": "11247d28c5c2fb3d976002c2b55fecb6ba19fd88153e11d2c7af5832fd6ff331"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-7Y2IF3B2.js",
+      "bytes": 443244,
+      "sha256": "b80f0fbedf500a65d9944866e1743c7d0293cb39f86e470d2abc94d855d79b06"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-7Y2IF3B2.js.LEGAL.txt",
+      "bytes": 760,
+      "sha256": "9aca14ef8d4b303c6666aa8d58ef291346f64af381a0aa1aecdbf238a06f2931"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-AB7X7QGE.js",
+      "bytes": 49258,
+      "sha256": "335e1c91201b1222377b15528a10dbafc47a9bdff137b1d9093dbabdd8e74d16"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-BAF7ZGRF.js",
+      "bytes": 595,
+      "sha256": "4a8aeab79e326526c585f673e4e7f95cbb334c66b875722dd3484ce1ff552b24"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-COIHDRVA.js",
+      "bytes": 458,
+      "sha256": "a09c09894125a196d25a950c53441dfcc10944c1333835e52fb8bfa4933c7d06"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-CSW25XL5.js",
+      "bytes": 3309,
+      "sha256": "62c527457ac4a2b2f643550387b7756bb4344375e58481c5723d22e153d958b2"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-DAREE254.js",
+      "bytes": 18227,
+      "sha256": "eecb0b6bed89cc0d03e6be1fe2a0d0dd62a3511f39f12c4c06b57b68bb2f8d77"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-EIBFAW37.js",
+      "bytes": 156,
+      "sha256": "db25c7615162582a9a162279563ba063a43b7823caea8a77f0517f8d2dc5385e"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-EKMRFEOQ.js",
+      "bytes": 15725,
+      "sha256": "32d4090a3ee013c64585df6c6cb90309dfacdf8dde2f08fa5fe3bd1fe3cda2f5"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-HTPJDU3J.js",
+      "bytes": 108714,
+      "sha256": "ff09b9e6f0fcd9aa741a0fef117290c21104d00f3a3edda8ced52f763d54564a"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-IFY6T4KI.js",
+      "bytes": 105563,
+      "sha256": "1b86eb7d26e8ea823cf67c78abaf447dd9f7c0016235fde61896414e005b3832"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-ITQXB6AD.js",
+      "bytes": 1048,
+      "sha256": "2d6d24b602ee2613ad8c042c733556111752fd94cc84406284820949aea28b02"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-J4YPNJFZ.js",
+      "bytes": 261,
+      "sha256": "122f5f0cf79f729986077e5bbd4f7f22dca7f1e4805903461b4361332e2f6fae"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-JRAHLUQM.js",
+      "bytes": 47128,
+      "sha256": "32fbfc3dba00282c453ee63e308be4ee619bc04beb48609a717708eda3928f88"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-JSQL4NYR.js",
+      "bytes": 62035,
+      "sha256": "855adcdd2075841254ee250df8b69bed085b1db57ad01851b4f3ba1ef51924eb"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-L3X3JOH2.js",
+      "bytes": 5870,
+      "sha256": "328e80bd2ce330e16142dcf058917664611355fd96b5ea09ad1a775989866289"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-L555IGF7.js",
+      "bytes": 898,
+      "sha256": "94326ae408364ebab39a8819697ed8568a982b93c9c5934d636d7ef0744f1bf6"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-L7BMR7WL.js",
+      "bytes": 188,
+      "sha256": "ac8165a7d675319bbafb5263bf6c7291163f30e4f6cc1965dadcdea04f4cee82"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-M7VBR5K3.js",
+      "bytes": 1118,
+      "sha256": "8658b5351f39cd5a823b1d65748c3d1dd6d9db1e6ff0ca22726220bde34eb2b6"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-NBH7YOBD.js",
+      "bytes": 359,
+      "sha256": "88d9ff0c7ed2b6836eb640415a2df19558038a17c876a62d99727fa19909330c"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-NCOVM3YF.js",
+      "bytes": 220,
+      "sha256": "838d515866e7ec1b7276fc3150e4507022a204f3638b451f9591fe57bd1c345d"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-NKW4W5CA.js",
+      "bytes": 308,
+      "sha256": "ba60d8bd128c8cb33e69c5c2390019e3781ce2dd2281a3a729903f2cc95bfd1e"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-NTHIXMIH.js",
+      "bytes": 453,
+      "sha256": "feaf223d0b399a6e15ea581cd45128b22ddc00943814690d5c32458cd06f870d"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-O3ENVDX7.js",
+      "bytes": 38374,
+      "sha256": "409eaf6eb35396f352826cf1970871bbaebb4ea3b73ccbeaca0f7c63cf2434ef"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-OITSMTQA.js",
+      "bytes": 459,
+      "sha256": "6a772ae2401a6d67e5f644661efd657500106ce839c2782cd8055c5b6280a53d"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-OJMGLL74.js",
+      "bytes": 2020,
+      "sha256": "dc3aa47b107a2421d215a5a7de56f36b7729d50a3337535218f63f49a6b596a1"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-PQ6FROJI.js",
+      "bytes": 1579,
+      "sha256": "fee47ec0b61a6a448935ada35ed77a16cb31b912b5b9bb7b53e836e842c079e5"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-QJN2KBYF.js",
+      "bytes": 667847,
+      "sha256": "cb84d43792eb2c4f349ac871767846a72f650bd808e7cb3502191b1b8a29f23e"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-QJN2KBYF.js.LEGAL.txt",
+      "bytes": 603,
+      "sha256": "d7775cb7e11ff052896456388b072b6c234c4ecf13254e902d1fd0a0a5d7288f"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-SZDFKH2A.js",
+      "bytes": 829,
+      "sha256": "4eebf1135c9ef23beeb5cd5886fb6fb95b296f4f4c413459cf0aea294dee189c"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-U3NFKVGZ.js",
+      "bytes": 451,
+      "sha256": "2f8f720823617dc4b23f2986254aa791dc3db7115539be3b6eac7705d748e7a8"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-U5UOAM4F.js",
+      "bytes": 2527,
+      "sha256": "027005e02a53bfbb56cf18599c7fd357d9b403885940e611af5f63d260614960"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-UDHKC5JZ.js",
+      "bytes": 1942,
+      "sha256": "0cad29a7f8e597e32c72390ae68c5d9ea43571895c1c9a74f9dd61bf80ed71cd"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-UOHPTUKR.js",
+      "bytes": 10097,
+      "sha256": "b67dadccdd9833d3d6370aa47fefd700fd10be17e86072e6cb930f2057a7aba5"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-URIQ3D3O.js",
+      "bytes": 921,
+      "sha256": "7cf64e3dc1a16e6133b77ad57b2a5d5952490a16571619ed91077fd3afe7eec3"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-UZNLKM6V.js",
+      "bytes": 25645,
+      "sha256": "e66f3270c4b1a744c726d8ad80edacf9caad4101f40c73db9ce5cc61bee9fd79"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-W2REJJP3.js",
+      "bytes": 445,
+      "sha256": "80e1caa78017d5a79d5e09e2c831d1d9b1df0a68fe7b9784c7dd81dd39f5d62a"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-XNE7MA4H.js",
+      "bytes": 52558,
+      "sha256": "7efae86c4126773599ce163e88a944168d7a4d707a35d425790407066dcd30a3"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-YIN5CSIF.js",
+      "bytes": 37954,
+      "sha256": "0b2d6ee7bf77a8bc1e184d6f1d9d6863fb45cd3c4be79673504e20ddcca0eb8a"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-YIN5CSIF.js.LEGAL.txt",
+      "bytes": 497,
+      "sha256": "6b6975fa54d238102e8167e3b9e0d8a9eb8cbc72ba50dd3211da266c74a02822"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/chunk-YORIST7Z.js",
+      "bytes": 27373,
+      "sha256": "a808a0b9549904d5c6a26f05b50176dbc2bbae52aabb9ef683c11d1f3c6823f6"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/classDiagram-v2-VYDZK3BY-4HMECC7O.js",
+      "bytes": 779,
+      "sha256": "3f20d256cef2f13d94b28257c303cf68d133620dadc1b11ac807f04847883836"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/classDiagram-ZZMXUADV-JBQJK47C.js",
+      "bytes": 779,
+      "sha256": "3f20d256cef2f13d94b28257c303cf68d133620dadc1b11ac807f04847883836"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/cose-bilkent-JH36ORCC-RTBLTT5H.js",
+      "bytes": 82453,
+      "sha256": "106148762117105a8f8f836ff829273611517613d4f7010703b8ea98102cc64f"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/cynefin-OW5HDTMX-6DAYGPVS.js",
+      "bytes": 158,
+      "sha256": "de20cda1aeab05f01faf60e27aa11cecf76464b86a98620814026897fe628ece"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/cynefinDiagram-5FMLGOSQ-FCASPFS6.js",
+      "bytes": 10592,
+      "sha256": "8d347d8fa2eb2b5f5205aa38bd600911ce2c993d5cdb24660fa093c5892bbdf4"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/dagre-GXQ25YYZ-UP6QLZXH.js",
+      "bytes": 10999,
+      "sha256": "5ea0169f928e89c5d6e92ce5ca612c7cc22a61a9879e8c0fb20721648b41a393"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/diagram-S7CK7UJ4-6T2TGYMI.js",
+      "bytes": 8717,
+      "sha256": "54c09feb3271c71e8922ad8d3a89e518e1ade1001c2675781e7f95ad4bcfef4a"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/diagram-UQ7AKVKN-LFINAPEI.js",
+      "bytes": 6601,
+      "sha256": "a28e270faa3dd965ebd908b995112410b26b51112be20c02872058bc99149745"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/diagram-VSXAHHWV-Y2VWDSPB.js",
+      "bytes": 11195,
+      "sha256": "6892ba295fd7eaba0bb3d53c465ec001afb17da442cf3312fa2fa2ea8f10b4ee"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/diagram-VX7I27RA-7KVYU5NI.js",
+      "bytes": 11611,
+      "sha256": "14aed2af8feb9217e565066e1d02b04b028cdcf5a8288cff0ea683968eabb3b2"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/diagram-Z3DM3KII-5I2HQN3D.js",
+      "bytes": 4762,
+      "sha256": "26bc42ccc18642da59d69766b21f3806c7427693b9198522714bd81750227d65"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/ebnfDiagram-PWID7BFC-QSZZEYCG.js",
+      "bytes": 2508,
+      "sha256": "6c861cf9df898c01c50569b98e86bb07e1715cc5130e03e28c257ac4473778de"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/erDiagram-RLTQ6QDP-ALW5B5UJ.js",
+      "bytes": 31108,
+      "sha256": "a29e0e4a4de8e50ae5ec98d61bcb8b33278315e262a32854c940baee499b7144"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/eventmodeling-NTZA5JFV-HFG5RFT7.js",
+      "bytes": 170,
+      "sha256": "a790273a159dd29e9b828063c984268a42050cc1dc22d763558c6fa97f06226b"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/flowDiagram-HODETNUW-MIN42KNU.js",
+      "bytes": 652,
+      "sha256": "7fd3766863c4928278dde48d7bb5744db11756649f1b1579f562c2b5338c3da3"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/ganttDiagram-EL5Y4UJY-NX7Z3F7E.js",
+      "bytes": 50364,
+      "sha256": "d31cdb857a85f76103f9ee6130c7f05f4d5ade83f762580273f1d4f40c7e5bb0"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/gitGraph-4MIJSDKK-XWFQLYIG.js",
+      "bytes": 160,
+      "sha256": "5cbae6cf177e648890bb343c24c2eac672ab180947f515ea2d91fe1bc31905bc"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/gitGraphDiagram-WWUBYQGX-VLM6TIHS.js",
+      "bytes": 29703,
+      "sha256": "1e745c99eb14b6307fc818e4a338f7415e471d745ce2e7bedc0808e4395de830"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/info-A6RAGUB7-KBMDBELO.js",
+      "bytes": 152,
+      "sha256": "3b03f2dc7cf2a5af33de3268524d660bf5b8ae729d289419a281f34f7cc58cfb"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/infoDiagram-27XIBGKW-LIL5KWZ2.js",
+      "bytes": 1112,
+      "sha256": "d90e73d9628ddddf4449f63deefc522f027a44cb5846fddde47ddc894bfd9a71"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/ishikawaDiagram-5VMMS53U-EQ4WRFB2.js",
+      "bytes": 17606,
+      "sha256": "4ad85d22a955a2bfa53b3600e8f861ddf0e4fcb6a8dd3914a395d22e522d3925"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/journeyDiagram-3NMN7TZE-DJK6LSMU.js",
+      "bytes": 23545,
+      "sha256": "c5e6832c041460c1cec611716f5cda3b656bf4cdef8474f8c74e6f528c95f6b8"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/kanban-definition-UXKFOSKX-L7HEMZYZ.js",
+      "bytes": 20780,
+      "sha256": "457957b834b815d28d642c5cd92a4277f375651e072b9fd1c82e41f676c2296d"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/katex-7YHTLMBX.js",
+      "bytes": 268234,
+      "sha256": "101cb50e8080622af404fd97edda6872667cfe654761a8f05debc849b99d0d7e"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/mindmap-definition-YA3MSWOX-Q2AGBACH.js",
+      "bytes": 23825,
+      "sha256": "a20d19f8c1251a76792197f4c497d8f03c8471be5ccdda87129393767c385ea5"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/packet-AYTQ26CC-KHVWPOQA.js",
+      "bytes": 156,
+      "sha256": "77ace817ed439555758bc2bd781ac8a0d0fe9556c055a143277c0328131e1f87"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/pegDiagram-XKGWAZYB-LOZRMUQT.js",
+      "bytes": 2450,
+      "sha256": "fce66b9bd4ce51f3a84b17723cd04d86af09270bbd225fbc0b06c660a3ce52ec"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/pie-WAS4IAKB-XXFHNSP7.js",
+      "bytes": 150,
+      "sha256": "bfe5fb2a370e98eea35e087553c60247b7d4b9ef2aa30796ab0fbe711a53dec9"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/pieDiagram-E7YTZNPT-7O44MD3K.js",
+      "bytes": 5597,
+      "sha256": "f3711e2069a195d340847dd772469148a329e84399b109c160faa0fa57285e28"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/quadrantDiagram-AXDQQJYC-N2K7EZJI.js",
+      "bytes": 34046,
+      "sha256": "349849cd5dfda497b4f5640b13ef6d09677cd5ac9a9758bb599985a5d9c7d93c"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/radar-RG4KPBEZ-63DWSAYS.js",
+      "bytes": 154,
+      "sha256": "eb3c83b72403ecff4a6d9250f0aa5a4ee12cb87c2cd2544d80b13339e037da2d"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/railroad-74A4TZTK-HFEBED3O.js",
+      "bytes": 160,
+      "sha256": "aca5522c00979ad2114c549d6af711521d901a41b98af2cb021843fdb18ffc02"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/railroad-abnf-HS5TGJTU-FOAJXW7P.js",
+      "bytes": 168,
+      "sha256": "6b1a6e160a5ce1faadd849cd96a96d02c429df290f42ade2cb944757baef8332"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/railroad-ebnf-LZEXJU2U-VWTDRX7F.js",
+      "bytes": 168,
+      "sha256": "dcb6a43a9b95e9fcb7743008322421be5769cfa43f9f1be3b0ab681b6123cc46"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/railroad-peg-WCYAUIDC-3T4MTFYX.js",
+      "bytes": 166,
+      "sha256": "3a10a148e4770a519995c06767d76bcedf5fbdad727e3769f183c66dfa33d229"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/railroadDiagram-O6MQD6OU-EQ46V7CA.js",
+      "bytes": 2116,
+      "sha256": "fa62b60bbcc14b905863593e05d1968a9a25e7de999a6a1b1aada86005133820"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/requirementDiagram-BXWQKSXE-PODJTR3R.js",
+      "bytes": 31413,
+      "sha256": "32280dd190005870d52888ac437676b49d93931b80a4c43d77d8b9430acb7242"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/sankeyDiagram-P5KCCOFB-PWI7JFOG.js",
+      "bytes": 23001,
+      "sha256": "d94c486d3803bc150a209cbf3c1756417bc679cbcfdc4f42c796b616d4d73b38"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/sequenceDiagram-WJ2MYXX4-XC6QTWHP.js",
+      "bytes": 116936,
+      "sha256": "95a9b60dcff5503ce6f89d5e542e11c7b44d74c4522bc5a54ecd219467551654"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/sizeCapture-INFHLROL-LSH57I4Y.js",
+      "bytes": 919,
+      "sha256": "6fef37e743e0fea7e09a0803a4ddab7ff8b675810a77ba48da62c99a4a7d5955"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/stateDiagram-D77RDMKH-7OMEBLZK.js",
+      "bytes": 10680,
+      "sha256": "05e9258b03d4110b52334d6d431eaa9e4f0bf92c3811e83e298572a25de7d386"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/stateDiagram-v2-MP3YSRHH-73QPED7M.js",
+      "bytes": 754,
+      "sha256": "2bc33cbc283f5bf313abdc06ce5111e9f9d4e47f6b4be1ff48489686e52d80fb"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/swimlanes-42K2YHIH-JMMSOP3T.js",
+      "bytes": 113509,
+      "sha256": "2ef9a5544aecaa5cff57a30571e60779fd28c350815b5d3277fc01a76ed39ec2"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/swimlanesDiagram-VR7AAH4N-OUVMPC7Z.js",
+      "bytes": 852,
+      "sha256": "c50795a8265c7b0ca6889e7f5b26b18feb8ea51728cea2ddd1ecbba6ee09392c"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/timeline-definition-24CTP7MA-JBGWLOYZ.js",
+      "bytes": 30814,
+      "sha256": "8976d5b1cb456127ebfe8b899bf8491dcfdbb74cb1e2c18b4d0fa4a34042cc08"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/treemap-WGGIJYW6-F3A3Q7KG.js",
+      "bytes": 158,
+      "sha256": "b4a0d9d8ac9652b5ca0ffc700d8ff97725b5ec36120df0fbf50db424183e0461"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/treeView-Q6P3EWNA-Y4PVEKJ7.js",
+      "bytes": 160,
+      "sha256": "7da600ec65a504a99d125079df6cf97d8124b6dcbd6859337f38e04878ae92d3"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/vennDiagram-4TSXK5OY-LRCHFAH6.js",
+      "bytes": 41691,
+      "sha256": "ae94297a9601403330eb1c3c1f9aaa544900c7932f4465fd9f3118e691766266"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/wardley-WFR3VGLG-ULY27NYD.js",
+      "bytes": 158,
+      "sha256": "23ab849ed4b1ebe0e9b4291f76af7c6ab245ccfddfd78977f4b4caf7a3d69b10"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/wardleyDiagram-VM6X3IG4-JE7UW57I.js",
+      "bytes": 25891,
+      "sha256": "3eb59370bff8e5b45fd5c73bcc2fdb18c84ad5e900a2de33d7cb8c228b810931"
+    },
+    {
+      "file": "assets/vendor/mermaid/chunks/xychartDiagram-S5SC5T6Z-UCBI45N3.js",
+      "bytes": 43308,
+      "sha256": "f1365faea2499395d9c8c38f38b34ba846b078aeb24893d5cb25adbecf7b2af4"
+    },
+    {
+      "file": "assets/vendor/mermaid/LICENSE",
+      "bytes": 1089,
+      "sha256": "ec9fb67dcb25eccc416ed56e1aab819222c805a2a4bfe4cb19e7556bf2ffde80"
+    },
+    {
+      "file": "assets/vendor/mermaid/mermaid.js",
+      "bytes": 28835,
+      "sha256": "750e3230c56f7e2a9c8259e22cd6a0ba0cd40fb1be70faf5eea65febfd6c867e"
+    },
+    {
+      "file": "assets/vendor/mermaid/mermaid.js.LEGAL.txt",
+      "bytes": 172,
+      "sha256": "108b77c578b750eb21d34748148ce6a0c86e552be7e54ea96a6ffa103ccb9720"
+    },
+    {
+      "file": "assets/vendor/shiki/LICENSE",
+      "bytes": 1121,
+      "sha256": "7a9d8d01038aeacf9e5bcdabbddf2a7815200dce9fc1118468cc553e00ae3eee"
+    },
+    {
+      "file": "assets/vendor/shiki/shiki.js",
+      "bytes": 853718,
+      "sha256": "14cc12a856c05865024e6b0bd49d7a4857fb3f01c918e1d6d063dbc8522d619a"
+    }
+  ]
+}

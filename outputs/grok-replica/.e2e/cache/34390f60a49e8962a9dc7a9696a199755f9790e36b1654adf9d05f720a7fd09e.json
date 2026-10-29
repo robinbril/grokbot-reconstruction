@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:45:04.857Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Gespreksdetails\" in \"Marketing Agent\" (1 of 2)",
+        "target": {
+          "role": "button",
+          "name": "Gespreksdetails",
+          "within": "Marketing Agent",
+          "position": {
+            "index": 0,
+            "of": 2
+          }
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Routines 1\" in \"Naam\"",
+        "target": {
+          "role": "button",
+          "name": "Routines 1",
+          "within": "Naam"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Routine openen: Owned malformed action …\" in \"Routines\"",
+        "target": {
+          "role": "button",
+          "name": "Routine openen: Owned malformed action routine",
+          "text": "Openen",
+          "within": "Routines"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-workflows-invalid-action.e2e.ts::malformed%20persisted%20action%20visibly%20blocks%20an%20owned%20routine%20after%20reload%20without%20replacing%20its%20identity",
+      "targetId": "web",
+      "instructionDigest": "44f5d22778832f785254a424201bfa5b8c1451f1b40812f670efdfe05bfedcd0",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Via Gespreksdetails > Routines de routine \"Owned malformed action routine\" geopend. Status Actief; melding: \"Een opgeslagen actieaanvraag is ongeldig. Nieuwe acties blijven geblokkeerd; de identiteit blijft behouden.\" Bewerken, Pauzeren, Nu uitvoeren en Verwijderen zijn uitgeschakeld; geschiedenis:…",
+    "startPath": "http://127.0.0.1:18876/",
+    "endPath": "http://127.0.0.1:18876/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Gespreksdetails",
+        "states": [
+          "pressed"
+        ]
+      },
+      {
+        "role": "separator",
+        "name": "Breedte van gespreksdetails"
+      },
+      {
+        "role": "button",
+        "name": "Bot-avatar wijzigen"
+      },
+      {
+        "role": "heading",
+        "name": "Marketing Agent"
+      },
+      {
+        "text": "Alleen jij"
+      },
+      {
+        "role": "tab",
+        "name": "Details",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "tab",
+        "name": "Bibliotheek"
+      },
+      {
+        "role": "tab",
+        "name": "Computer"
+      }
+    ],
+    "endWaitMs": 19982
+  }
+}

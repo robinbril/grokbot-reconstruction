@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-20T12:59:35.391Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Bijlage openen: rea-proof.txt\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Bijlage openen: rea-proof.txt",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/attachment-preview.e2e.ts::text%20JSON%20table%20markdown%20HTML%20and%20unsupported%20bytes%20dispatch%20safely",
+      "targetId": "web",
+      "instructionDigest": "5c4b71059496e9eb0d20df496122510064b60a457e87e9470a7ce8e0719f045a",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped \"Bijlage openen: rea-proof.txt\"; a dialog \"rea-proof.txt\" opened showing the content \"REA_FILE_2046\", with a Downloaden link and a Sluiten button.",
+    "startPath": "http://127.0.0.1:18880/",
+    "endPath": "http://127.0.0.1:18880/",
+    "endAnchors": [
+      {
+        "role": "link",
+        "name": "Downloaden"
+      },
+      {
+        "role": "button",
+        "name": "Sluiten"
+      },
+      {
+        "role": "dialog",
+        "name": "rea-proof.txt"
+      }
+    ],
+    "endWaitMs": 20892
+  }
+}

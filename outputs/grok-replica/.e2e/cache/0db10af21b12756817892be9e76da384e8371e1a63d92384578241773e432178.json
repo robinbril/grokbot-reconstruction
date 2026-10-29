@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:44:26.779Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Terug naar concept\" in \"Dit is een lokale voorbeeldreactie. Je …\"",
+        "target": {
+          "role": "button",
+          "name": "Terug naar concept",
+          "within": "Dit is een lokale voorbeeldreactie. Je bericht is in deze browser opgeslagen; er"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/queue-draft-recovery.e2e.ts::queued%20draft%20recovery%20restores%20exact%20text%20reply%20skill%20and%20original%20attachment%20across%20reload",
+      "targetId": "web",
+      "instructionDigest": "dd1ae4d8c734f95ef04a2b97ed24709684536416fd7b7fe633cd824adfb49833",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped 'Terug naar concept'. The queued message is gone from the chat and its content is back in the composer: @RecoverySkill, 'QUEUED_RECOVERY exact raw text', the reply context and the pipeline.txt attachment. Nothing was sent.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Antwoordcontext verwijderen",
+        "text": "×"
+      },
+      {
+        "role": "button",
+        "name": "Bijlage verwijderen: pipeline.txt",
+        "text": "×"
+      },
+      {
+        "text": "maximaal 10 bestanden, 5 MiB per bestand en 20 MiB per concept."
+      },
+      {
+        "role": "button",
+        "name": "Bericht sturen"
+      },
+      {
+        "role": "region",
+        "name": "Antwoordcontext"
+      },
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "value": "@RecoverySkill QUEUED_RECOVERY exact raw text"
+      },
+      {
+        "text": "QUEUED_RECOVERY exact raw text"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "Wacht op verbinding"
+      },
+      {
+        "role": "button",
+        "name": "Terug naar concept"
+      },
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot"
+      },
+      {
+        "role": "button",
+        "name": "Spraakmodus"
+      },
+      {
+        "role": "group",
+        "name": "Antwoord op Dit is een lokale voorbeeldreactie. Je bericht is in deze browser opgeslagen; er"
+      },
+      {
+        "role": "button",
+        "name": "Naar oorspronkelijk bericht"
+      },
+      {
+        "text": "QUEUED_RECOVERYexact raw text"
+      }
+    ],
+    "endWaitMs": 18357
+  }
+}

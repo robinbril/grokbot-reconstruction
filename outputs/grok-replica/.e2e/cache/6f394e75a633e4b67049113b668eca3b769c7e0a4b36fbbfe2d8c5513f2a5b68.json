@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T11:44:39.655Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/transcript-unread-live.e2e.ts::real%20canonical%20delivery%20while%20away%20projects%20over%20SSE%20into%20one%20durable%20unread%20receipt%20and%20the%20reopened%20exact%20source%20divider",
+      "targetId": "web",
+      "instructionDigest": "031b7c4b3e7895cda75cc6beefc7cb797953014aa006e1d35849bbd76409c466",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Marketing Agent geopend zonder bericht te verzenden. Het gesprek toont de kop 'Marketing Agent' en het berichtveld is leeg.",
+    "startPath": "http://127.0.0.1:19103/",
+    "endPath": "http://127.0.0.1:19103/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Gespreksopties"
+      },
+      {
+        "role": "button",
+        "name": "Gespreksdetails"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Aan:"
+      },
+      {
+        "role": "button",
+        "name": "Start a chat with..."
+      }
+    ],
+    "endWaitMs": 20924
+  }
+}

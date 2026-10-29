@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-15T15:40:29.044Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap link \"Open prompt- en toolregister →\"",
+        "target": {
+          "role": "link",
+          "name": "Open prompt- en toolregister →"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap node \"SendMessage\" in \"12\"",
+        "target": {
+          "text": "SendMessage",
+          "within": "12"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/report.e2e.ts::bronkaart%20maakt%20de%20herkomst%20en%20het%20volledige%20SendMessage-schema%20bereikbaar",
+      "targetId": "web",
+      "instructionDigest": "d403e431eda01519d8ab4f56f0dffaa10c7250f7170ee68637aa902708737d60",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Opened prompt- en toolregister via bronkaart, tapped SendMessage (#12); the detail now shows Bronregel 1622, the description, the 'Exact geparseerd schema' heading with the JSON schema (type enum text/attachment/widget/cursor-agent/secret-request) and a Sectie-SHA256.",
+    "startPath": "http://127.0.0.1:8764/grok-reconstruction/index.html",
+    "endPath": "http://127.0.0.1:8764/grok-reconstruction/conversation.html",
+    "endAnchors": [
+      {
+        "role": "link",
+        "name": "← Bronkaart"
+      },
+      {
+        "role": "link",
+        "name": "Echte gesprekken"
+      },
+      {
+        "role": "link",
+        "name": "51 tools"
+      },
+      {
+        "role": "link",
+        "name": "Reforge-bouwplan"
+      },
+      {
+        "text": "Bronnen hebben afzonderlijke versies en bewijskracht"
+      },
+      {
+        "role": "heading",
+        "name": "Wat de bot zegt. Wat de client doet. Wat de gebruiker ziet."
+      },
+      {
+        "text": "De gepubliceerde prompt, de geleverde client en de echte gespreksproeven vormen samen een reconstructiebasis. Een gedeeld tool-schema bewijst nog geen actieve tool, en een bronlink is geen uitvoeringsreceipt."
+      },
+      {
+        "text": "51 / 51"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "link",
+        "name": "Grok Bot / bronkaart"
+      },
+      {
+        "role": "link",
+        "name": "61 views"
+      },
+      {
+        "role": "link",
+        "name": "Dekkingsregister"
+      },
+      {
+        "text": "Reverse engineering · 0.70.2 · 15 oktober 2026"
+      },
+      {
+        "role": "heading",
+        "name": "Een kaart die iedere claim naar zijn bron brengt."
+      },
+      {
+        "text": "Volledige productdekking nog niet bewezen"
+      },
+      {
+        "text": "Alle onderstaande bronverzamelingen hebben een eigen controleerbare noemer. Bestandsdekking, begrepen gedrag, live werking en een exacte kopie zijn afzonderlijke bewijzen."
+      },
+      {
+        "text": "/ 673"
+      }
+    ],
+    "endWaitMs": 14681
+  }
+}

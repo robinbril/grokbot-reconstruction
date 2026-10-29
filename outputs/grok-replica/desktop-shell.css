@@ -1,0 +1,17 @@
+/* Local native-window adaptation. Preserve the web layout and its light footprint. */
+html[data-desktop-shell] .traffic-lights {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Drag existing toolbar backgrounds without placing a hit target over controls. */
+html[data-desktop-shell] :is(.sidebar-top, .conversation-header, .source-inspector-toolbar) {
+  -webkit-app-region: drag;
+  app-region: drag;
+}
+
+html[data-desktop-shell] :is(button, a, input, textarea, select, summary,
+  [role="button"], [role="textbox"], [contenteditable="true"], [tabindex]) {
+  -webkit-app-region: no-drag;
+  app-region: no-drag;
+}

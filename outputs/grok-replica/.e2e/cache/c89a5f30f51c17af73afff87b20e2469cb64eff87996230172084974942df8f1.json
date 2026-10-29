@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T11:42:21.333Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "scrollUntil",
+        "summary": "scroll down until \"Naar oorspronkelijk bericht\" shows (already there)",
+        "text": "Naar oorspronkelijk bericht",
+        "direction": "down"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Naar oorspronkelijk bericht\" in \"Synthetic original source\"",
+        "target": {
+          "role": "button",
+          "name": "Naar oorspronkelijk bericht",
+          "within": "Synthetic original source"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/transcript-history.e2e.ts::actual%20same%20conversation%20quote%20loads%20older%20persisted%20history%20and%20centers%20its%20exact%20original",
+      "targetId": "web",
+      "instructionDigest": "b7d800381da186542e0194bb0b71ac6af9e75c512a112da7165aeae30e977add",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Ik heb op de geciteerde bron (Naar oorspronkelijk bericht) getikt. Het gesprek scrolde naar de oudere berichten en SYNTHETIC_HISTORY_history-20 staat nu in beeld, tussen history-19 en history-21.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "text": "SYNTHETIC_HISTORY_history-0"
+      },
+      {
+        "text": "SYNTHETIC_HISTORY_history-1"
+      },
+      {
+        "text": "SYNTHETIC_HISTORY_history-2"
+      },
+      {
+        "text": "SYNTHETIC_HISTORY_history-3"
+      },
+      {
+        "text": "SYNTHETIC_HISTORY_history-4"
+      },
+      {
+        "text": "SYNTHETIC_HISTORY_history-5"
+      },
+      {
+        "text": "SYNTHETIC_HISTORY_history-6"
+      },
+      {
+        "text": "SYNTHETIC_HISTORY_history-7"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Synthetic original source"
+      },
+      {
+        "text": "Lokaal"
+      },
+      {
+        "text": "Uitvoering"
+      },
+      {
+        "role": "radio",
+        "name": "Lokale voorbeelden",
+        "states": [
+          "checked"
+        ]
+      },
+      {
+        "text": "Lokale voorbeelden"
+      },
+      {
+        "role": "radio",
+        "name": "Echte harness"
+      },
+      {
+        "text": "Echte harness"
+      },
+      {
+        "role": "button",
+        "name": "Bijvoegen"
+      }
+    ],
+    "endWaitMs": 97492
+  }
+}

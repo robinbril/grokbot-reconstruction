@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-19T19:47:24.599Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Accountmenu\"",
+        "target": {
+          "role": "button",
+          "name": "Accountmenu"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap menuitem \"Instellingen\"",
+        "target": {
+          "role": "menuitem",
+          "name": "Instellingen"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/settings-controls.e2e.ts::taalkiezer%20filtert%20sluit%20zonder%20wijziging%20en%20bewaart%20een%20lokale%20keuze",
+      "targetId": "web",
+      "instructionDigest": "953fd7824cce64d05c891e134836cbbeedf2bc99db7c1c841219073fa5c54b5e",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Accountmenu geopend en Instellingen aangetikt; dialoog 'Instellingen' is nu open met sectie Algemeen (Thema, Botkleur, Taal, enz.).",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Sluiten"
+      },
+      {
+        "role": "heading",
+        "name": "Instellingen"
+      },
+      {
+        "role": "button",
+        "name": "Algemeen"
+      },
+      {
+        "role": "button",
+        "name": "Computer"
+      },
+      {
+        "role": "button",
+        "name": "Gebruik en facturering"
+      },
+      {
+        "role": "button",
+        "name": "Updates"
+      },
+      {
+        "role": "heading",
+        "name": "Algemeen"
+      },
+      {
+        "text": "Thema"
+      }
+    ],
+    "endWaitMs": 16286
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-18T17:02:22.936Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Annuleren: PROTOCOL_FIFO_THIRD\" in \"PROTOCOL_FIFO_THIRD\"",
+        "target": {
+          "role": "button",
+          "name": "Annuleren: PROTOCOL_FIFO_THIRD",
+          "text": "Annuleren",
+          "within": "PROTOCOL_FIFO_THIRD"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-workflows.e2e.ts::busy%20explicit%20FIFO%20keeps%20Shift%20Enter%20newline%20cancels%20unsent%20third%20and%20reload%20retains%20second",
+      "targetId": "web",
+      "instructionDigest": "c7ffc86b9a464bc957c8a48784da713dc9d7397c53ab70a27845b18d4295d487",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped Annuleren for PROTOCOL_FIFO_THIRD. Echte wachtrij now shows '1 wachtend of bezig' with only PROTOCOL_FIFO_SECOND (In wachtrij, Annuleren) remaining; THIRD is gone.",
+    "startPath": "http://127.0.0.1:18876/",
+    "endPath": "http://127.0.0.1:18876/",
+    "endAnchors": [
+      {
+        "text": "1 wachtend of bezig"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "2 wachtend of bezig"
+      },
+      {
+        "text": "PROTOCOL_FIFO_THIRD"
+      },
+      {
+        "role": "button",
+        "name": "Annuleren: PROTOCOL_FIFO_THIRD",
+        "text": "Annuleren"
+      }
+    ],
+    "endWaitMs": 13810
+  }
+}

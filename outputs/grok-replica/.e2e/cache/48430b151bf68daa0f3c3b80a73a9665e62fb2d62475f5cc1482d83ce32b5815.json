@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T09:04:56.534Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Afwijzen\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Afwijzen",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/tool-denial.e2e.ts::explicit%20refusal%20produces%20a%20safe%20answer%20and%20advances%20queued%20work%20without%20executing%20the%20rejected%20operation",
+      "targetId": "web",
+      "instructionDigest": "4b9de43237e0e5d4eaa1aa1d37ca0f2a7d2cd8d67122cf11546354b0d9281417",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Op Afwijzen getikt voor de SyntheticApprovedEffect-aanvraag; Goedkeuren is niet gebruikt. Status is nu 'Afgewezen' en de melding 'De geweigerde actie is niet uitgevoerd.' staat in het gesprek. De knoppen Goedkeuren en Afwijzen zijn verdwenen.",
+    "startPath": "http://127.0.0.1:18886/",
+    "endPath": "http://127.0.0.1:18886/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Voltooid"
+      },
+      {
+        "role": "status",
+        "name": "Afgewezen"
+      },
+      {
+        "text": "De geweigerde actie is niet uitgevoerd."
+      },
+      {
+        "text": "SyntheticApprovedEffect"
+      },
+      {
+        "text": "Mislukt"
+      },
+      {
+        "text": "grok_workspace"
+      },
+      {
+        "text": "Aanroep en resultaat"
+      },
+      {
+        "text": "SendMessage"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "Wacht op toestemming"
+      },
+      {
+        "role": "status",
+        "name": "In wachtrij"
+      },
+      {
+        "role": "button",
+        "name": "Stoppen"
+      },
+      {
+        "role": "button",
+        "name": "Goedkeuren"
+      },
+      {
+        "role": "button",
+        "name": "Afwijzen"
+      },
+      {
+        "text": "Echte wachtrij"
+      },
+      {
+        "text": "1 wachtend of bezig"
+      },
+      {
+        "text": "Bezig met de huidige opdracht"
+      }
+    ],
+    "endWaitMs": 16368
+  }
+}

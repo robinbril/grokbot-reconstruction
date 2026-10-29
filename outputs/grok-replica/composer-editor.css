@@ -1,0 +1,19 @@
+/* Native-shaped contenteditable root. It inherits the current pane typography. */
+.composer-editor-host,[data-composer-editor-host]{display:contents}
+.composer .composer-editor{outline:none;border:0;background:none;flex:1;min-width:0;width:100%;padding:0;min-height:20px;max-height:180px;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;font-size:14px;line-height:20px;cursor:text}
+.composer-editor p{margin:0;min-height:20px}
+.composer-editor[data-composer-empty=true]::before{content:attr(data-placeholder);color:var(--muted);pointer-events:none;position:absolute}
+.composer-inline-skill{display:inline;border:.5px solid var(--line);border-radius:5px;background:var(--pill);color:var(--ink);padding:1px 5px;font-size:.93em;font-weight:500;white-space:pre-wrap;box-decoration-break:clone;-webkit-box-decoration-break:clone;cursor:default}
+.composer-inline-skill.ProseMirror-selectednode{outline:2px solid var(--accent);outline-offset:1px}
+.composer-editor[data-composer-persistence-error]{text-decoration-color:var(--accent)}
+@media(forced-colors:active){.composer-inline-skill{border-color:CanvasText;background:Canvas;color:CanvasText}.composer-inline-skill.ProseMirror-selectednode{outline-color:Highlight}}
+.composer-editor :is(ul,ol){margin:0;padding-left:24px}
+.composer-editor ul{list-style-type:disc}
+.composer-editor ul ul{list-style-type:circle}
+.composer-editor li{margin:0;padding:0}
+.composer-editor a{color:var(--accent);text-decoration:underline;text-underline-offset:2px;cursor:text}
+
+.composer-inline-quote{display:inline-flex;align-items:center;vertical-align:top;max-width:min(100%,170px);gap:3px;border:.5px solid var(--line);border-radius:5px;background:var(--pill);color:var(--ink);padding:1px 5px;font-size:.93em;font-weight:500;white-space:nowrap;box-decoration-break:clone;-webkit-box-decoration-break:clone;cursor:default}
+.composer-inline-quote.ProseMirror-selectednode{outline:2px solid var(--accent);outline-offset:1px}
+@media(forced-colors:active){.composer-inline-quote{border-color:CanvasText;background:Canvas;color:CanvasText}.composer-inline-quote.ProseMirror-selectednode{outline-color:Highlight}}
+.composer-quote-icon{display:inline-flex;flex:0 0 14px;align-items:center}.composer-quote-icon svg{display:block}.composer-quote-label{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}

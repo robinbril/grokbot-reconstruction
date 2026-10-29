@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-19T19:44:13.567Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Vingerafdruk tonen\" in \"Lokale buildgegevens\"",
+        "target": {
+          "role": "button",
+          "name": "Vingerafdruk tonen",
+          "within": "Lokale buildgegevens"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/product-primary-motion-proof.e2e.ts::build%20fingerprint%20collapse%20reveals%20the%20actual%20digest%20with200ms%20source%20geometry%20and%20accessible%20retirement",
+      "targetId": "web",
+      "instructionDigest": "b0923eeda03c5311193c55b82ee451b32ec024e43cc69c10835fa4e679fc17d3",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Op 'Vingerafdruk tonen' getikt; de knop is nu uitgeklapt en de vingerafdruk is zichtbaar: f592b4ff2552ac436a485cf28e1b9313dd55c0e8fcd0d1db86aef06c8793e1df (versie 0.71.2, kanaal stable).",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Vingerafdruk tonen",
+        "states": [
+          "expanded"
+        ]
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "button",
+        "name": "Vingerafdruk tonen"
+      }
+    ],
+    "endWaitMs": 13797
+  }
+}

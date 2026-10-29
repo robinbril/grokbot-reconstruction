@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:16:04.173Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Een deel van de pagina selecteren\" in \"Canvassen\"",
+        "target": {
+          "role": "button",
+          "name": "Een deel van de pagina selecteren",
+          "within": "Canvassen"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-canvas-selection.e2e.ts::actual%20chosen%20repeated%20element%20inserts%20at%20caret%2C%20survives%20pane%20closure%20and%20sends%20true%20source%20and%20instance%20context",
+      "targetId": "web",
+      "instructionDigest": "e7b1632dcd9d1a47c02a037dcd1a022053f815d5c91fc7bced652aef73c72da6",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped 'Een deel van de pagina selecteren'. Selectiemodus is actief: knop 'Ontwerpmodus verlaten' [pressed] en tekst 'Klik op een deel van de pagina om het te selecteren.' zijn zichtbaar. Er is geen bericht verstuurd.",
+    "startPath": "http://127.0.0.1:19034/",
+    "endPath": "http://127.0.0.1:19034/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Ontwerpmodus verlaten",
+        "states": [
+          "pressed"
+        ]
+      },
+      {
+        "text": "Klik op een deel van de pagina om het te selecteren."
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "button",
+        "name": "Een deel van de pagina selecteren"
+      }
+    ],
+    "endWaitMs": 15899
+  }
+}

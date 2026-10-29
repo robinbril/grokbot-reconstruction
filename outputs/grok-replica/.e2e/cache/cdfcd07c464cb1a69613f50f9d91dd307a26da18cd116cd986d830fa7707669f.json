@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-17T11:09:26.928Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Goedkeuren\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Goedkeuren",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-harness.e2e.ts::real%20installed%20model%20uses%20approved%20native%20terminal%20custom%20MCP%20and%20owned%20browser%20and%20survives%20reload",
+      "targetId": "web",
+      "instructionDigest": "7d55a7c75ed85ea64bffa39cb81f84ec2817191107510721de563c09223b7822",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped Goedkeuren on the request for the printf 'LIVE_APPROVAL_TERMINAL_OK' command. The request status now reads \"Goedgekeurd\", the command execution shows \"Voltooid\", and the approve/reject buttons are gone.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Goedgekeurd"
+      },
+      {
+        "text": "Voltooid"
+      },
+      {
+        "text": "custom_math_proof"
+      },
+      {
+        "text": "{ \"server\": \"custom_math_proof\", \"tool\": \"sum\", \"arguments\": { \"a\": 19, \"b\": 23 }, \"message\": \"Allow the custom_math_proof MCP server to run tool \\\"sum\\\"?\" }"
+      }
+    ],
+    "endWaitMs": 16375
+  }
+}

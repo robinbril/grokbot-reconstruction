@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:15:14.895Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Naar laatste bericht\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Naar laatste bericht",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/jump-latest.e2e.ts::actual%20canonical%20arrivals%20follow%20a%20latest%20jump%20and%20preserve%20a%20reader%20who%20subsequently%20scrolls%20away",
+      "targetId": "web",
+      "instructionDigest": "b019494b7357cd2bfacca3ea8a3e4aec31dc1e24863eb41291d82c40b839c723",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Eén keer op 'Naar laatste bericht' getikt; de knop is daarna verdwenen (gespreksweergave staat onderaan). Het concept in het tekstvak (KEEP_UNSENT_READER_DRAFT) is niet gewijzigd en er is niets verzonden.",
+    "startPath": "http://127.0.0.1:19046/",
+    "endPath": "http://127.0.0.1:19046/",
+    "goneAnchors": [
+      {
+        "role": "button",
+        "name": "Naar laatste bericht"
+      }
+    ],
+    "endWaitMs": 15996
+  }
+}

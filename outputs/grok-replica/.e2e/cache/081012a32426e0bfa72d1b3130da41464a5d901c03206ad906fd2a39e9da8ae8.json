@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:57:08.017Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Beoordelingsregels\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Beoordelingsregels",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/product-primary-motion-proof.e2e.ts::approval%20task%20rule%20link%20saves%20a%20real%20rule%20and%20rejection%20retires%20actual%20sidebar%20attention",
+      "targetId": "web",
+      "instructionDigest": "754b0028f3e1100dd3309c626aaf58f7d9ccf73f020c218d32e066d901147f07",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped Beoordelingsregels; dialog 'Beoordelingsregels' opened with textbox 'Lokale beoordelingsregel' (value 'Vraag voor een lokale tekstbewerking') and 'Regel bewaren' button.",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Sluiten"
+      },
+      {
+        "role": "heading",
+        "name": "Beoordelingsregels"
+      },
+      {
+        "role": "textbox",
+        "name": "Lokale beoordelingsregel",
+        "value": "Vraag voor een lokale tekstbewerking"
+      },
+      {
+        "text": "Deze regel geldt alleen voor de lokale taakinterface."
+      },
+      {
+        "role": "button",
+        "name": "Regel bewaren"
+      },
+      {
+        "role": "dialog",
+        "name": "Beoordelingsregels"
+      },
+      {
+        "text": "Lokale regel"
+      }
+    ],
+    "endWaitMs": 19222
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:10:40.598Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/composer-canvas-selection.e2e.ts::real%20canvas%20selection%20inserts%20at%20the%20actual%20caret%20and%20survives%20undo%20clipboard%20reload%20and%20Bot%20switching%20without%20skill%20authority",
+      "targetId": "web",
+      "instructionDigest": "6d2dba86a81871aa33869590770b868035db061138a10fa89e72016dc05906e6",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped Marketing Agent; the conversation opened with header 'Marketing Agent'. No message sent; execution mode still 'Lokale voorbeelden'.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Gespreksopties"
+      },
+      {
+        "role": "button",
+        "name": "Gespreksdetails"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Aan:"
+      },
+      {
+        "role": "button",
+        "name": "Start a chat with..."
+      }
+    ],
+    "endWaitMs": 16835
+  }
+}

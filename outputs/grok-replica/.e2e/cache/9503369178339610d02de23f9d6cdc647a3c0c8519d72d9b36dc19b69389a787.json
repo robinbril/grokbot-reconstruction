@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-20T13:32:52.357Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Terug naar concept\" in \"pipeline.txt\"",
+        "target": {
+          "role": "button",
+          "name": "Terug naar concept",
+          "within": "pipeline.txt"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/queue-draft-recovery.e2e.ts::recovering%20one%20conversation%20preserves%20an%20unrelated%20unsaved%20attachment%20for%20retry",
+      "targetId": "web",
+      "instructionDigest": "c559b93a9b2dbeebf9b070b3f2f7b6d3dead0755e601d53762420d67580749ae",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Na Terug naar concept staat PRESERVE_OTHER_UPLOAD terug in het invoerveld en pipeline.txt als concept-bijlage (met verwijderknop). De andere gesprekken staan nog in de lijst. Ik heb hun bijlagen niet apart gecontroleerd.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Bijlage verwijderen: pipeline.txt",
+        "text": "×"
+      },
+      {
+        "text": "maximaal 10 bestanden, 5 MiB per bestand en 20 MiB per concept."
+      },
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "placeholder": "Bericht sturen naar Marketing Agent",
+        "value": "PRESERVE_OTHER_UPLOAD"
+      },
+      {
+        "role": "button",
+        "name": "Bericht sturen"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "Wacht op verbinding"
+      },
+      {
+        "role": "button",
+        "name": "Terug naar concept"
+      },
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "placeholder": "Bericht sturen naar Marketing Agent"
+      },
+      {
+        "role": "button",
+        "name": "Spraakmodus"
+      },
+      {
+        "text": "PRESERVE_OTHER_UPLOAD"
+      }
+    ],
+    "endWaitMs": 15557
+  }
+}

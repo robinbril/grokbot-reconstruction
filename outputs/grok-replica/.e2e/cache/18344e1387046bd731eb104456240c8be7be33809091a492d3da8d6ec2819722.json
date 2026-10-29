@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-19T18:10:42.893Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap radio \"Echte harness\" in \"Marketing Agent\"",
+        "target": {
+          "role": "radio",
+          "name": "Echte harness",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/streaming-attachments.e2e.ts::preaccept%20model%20rejection%20retains%20image%20text%20PDF%20and%20DOCX%20chips%20and%20the%20draft",
+      "targetId": "web",
+      "instructionDigest": "9b7809b14cf774cc421c0e02c98d140b6d50e051a73b06fd4530a4258c6a026e",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped 'Echte harness' in Uitvoering; the radio is now checked and focused. The screen shows the status 'Grok Bot-harness · scripted UI transport · Model geconfigureerd' and the text 'Echte uitvoering in de taskbox van dit gesprek'. I did not send a message or open any tools.",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Grok Bot-harness · scripted UI transport · Model geconfigureerd"
+      },
+      {
+        "role": "radio",
+        "name": "Lokale voorbeelden"
+      },
+      {
+        "role": "radio",
+        "name": "Echte harness",
+        "states": [
+          "checked"
+        ]
+      },
+      {
+        "text": "Echte uitvoering in de taskbox van dit gesprek"
+      },
+      {
+        "role": "button",
+        "name": "Computer openen"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "radio",
+        "name": "Lokale voorbeelden",
+        "states": [
+          "checked"
+        ]
+      },
+      {
+        "role": "radio",
+        "name": "Echte harness"
+      }
+    ],
+    "endWaitMs": 14284
+  }
+}

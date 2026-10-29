@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:57:51.843Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "hover",
+        "summary": "hover over button \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/product-primary-motion-proof.e2e.ts::compact%20roster%20hover%20exposes%20actual%20blocked%20status%20and%20collapsed%20section%20count%20matches%20saved%20membership",
+      "targetId": "web",
+      "instructionDigest": "6a4dde0e13bd68ba0d15b798ca26275b55fe840221b86b3b4ee8fdf834d73343",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Hovered over Marketing Agent in the sidebar. A tooltip appeared: 'Wacht op jou Marketing Agent Wacht op jouw antwoord', with status 'Wacht op jou'.",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Wacht op jou"
+      },
+      {
+        "text": "Wacht op jouw antwoord"
+      },
+      {
+        "role": "tooltip",
+        "name": "Wacht op jou Marketing Agent Wacht op jouw antwoord"
+      }
+    ],
+    "endWaitMs": 15599
+  }
+}

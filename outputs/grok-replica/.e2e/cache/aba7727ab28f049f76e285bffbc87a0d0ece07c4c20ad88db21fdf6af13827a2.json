@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-20T13:32:22.694Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Terug naar concept\" in \"OLDER_QUEUED_DRAFT\"",
+        "target": {
+          "role": "button",
+          "name": "Terug naar concept",
+          "within": "OLDER_QUEUED_DRAFT"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/queue-draft-recovery.e2e.ts::recovering%20an%20older%20queued%20message%20refuses%20to%20overwrite%20newer%20text%20or%20files",
+      "targetId": "web",
+      "instructionDigest": "8248910e8c11e0d6adfac22ba87b15b2b843db7214d1e72afd9cc0aa4e27fb2c",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Klikte Terug naar concept bij OLDER_QUEUED_DRAFT. App toonde 'Concept niet teruggezet. Bewaar of wis eerst je nieuwere concept.'; het nieuwere concept NEWER_UNSENT_DRAFT bleef in het tekstveld staan met bijlage source-table.csv. Niets verzonden.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Concept niet teruggezet. Bewaar of wis eerst je nieuwere concept."
+      }
+    ],
+    "endWaitMs": 14740
+  }
+}

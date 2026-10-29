@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:16:21.681Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Nieuw canvas\" in \"Canvassen\"",
+        "target": {
+          "role": "button",
+          "name": "Nieuw canvas",
+          "within": "Canvassen"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-canvas.e2e.ts::actual%20saved%20TSX%20renders%20interactive%20isolated%20preview%20and%20revision%20update%20survives%20reload%20without%20changing%20another%20conversation",
+      "targetId": "web",
+      "instructionDigest": "5675c06e110117ee9652a448db5636400da46e3f8714240afb1005c15a6f7d71",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Nieuw canvas aangemaakt: editor toont titel 'Nieuw canvas', tab Broncode met standaardbroncode ongewijzigd, status 'Nog niet opgeslagen.' Niet opgeslagen.",
+    "startPath": "http://127.0.0.1:18954/",
+    "endPath": "http://127.0.0.1:18954/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Nog niet opgeslagen."
+      },
+      {
+        "role": "button",
+        "name": "Canvassen"
+      },
+      {
+        "role": "button",
+        "name": "Opslaan"
+      },
+      {
+        "text": "Canvastitel"
+      },
+      {
+        "role": "textbox",
+        "name": "Canvastitel",
+        "value": "Nieuw canvas"
+      },
+      {
+        "role": "tab",
+        "name": "Voorbeeld"
+      },
+      {
+        "role": "tab",
+        "name": "Broncode",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "text": "Canvasbroncode"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "heading",
+        "name": "Canvassen"
+      },
+      {
+        "role": "button",
+        "name": "Nieuw canvas"
+      },
+      {
+        "text": "Bewaard bij dit gesprek op deze Mac."
+      },
+      {
+        "role": "button",
+        "name": "Vernieuwen"
+      },
+      {
+        "text": "Nog geen canvassen in dit gesprek."
+      }
+    ],
+    "endWaitMs": 15396
+  }
+}

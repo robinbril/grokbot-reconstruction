@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-20T12:35:47.914Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Bericht sturen\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Bericht sturen",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/outgoing-delivery.e2e.ts::outgoing%20file-only%20delivery%20downloads%20exact%20owned%20bytes%20and%20quotes%20jump%20across%20reload%20in%20both%20themes",
+      "targetId": "web",
+      "instructionDigest": "e6ed5a1d7595ba869499906b22599a3fcfa471ab991489b9ae6c6f36cefcd50b",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped Bericht sturen; message 'Create the synthetic report.' appears in the chat, and the agent replied with report.csv attachment (25 bytes), workspace_write and SendMessage tool calls, status Voltooid.",
+    "startPath": "http://127.0.0.1:18877/",
+    "endPath": "http://127.0.0.1:18877/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Voltooid"
+      },
+      {
+        "role": "status",
+        "name": "Grok Bot-harness · synthetic-delivery-fixture · Verbonden"
+      },
+      {
+        "text": "Create the synthetic report."
+      },
+      {
+        "text": "Lokaal"
+      },
+      {
+        "text": "Jij"
+      },
+      {
+        "text": "report.csv"
+      },
+      {
+        "text": "25 bytes"
+      },
+      {
+        "role": "button",
+        "name": "Bijlage openen: report.csv"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "Grok Bot-harness · synthetic-delivery-fixture · Model geconfigureerd"
+      },
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "placeholder": "Bericht sturen naar Marketing Agent",
+        "value": "Create the synthetic report."
+      },
+      {
+        "role": "button",
+        "name": "Bericht sturen"
+      }
+    ],
+    "endWaitMs": 51988
+  }
+}

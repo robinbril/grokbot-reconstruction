@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-19T19:46:05.358Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Apps verbinden\"",
+        "target": {
+          "role": "button",
+          "name": "Apps verbinden"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"10 verbonden\" in \"Apps verbinden\"",
+        "target": {
+          "role": "button",
+          "name": "10 verbonden",
+          "within": "Apps verbinden"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/replica.e2e.ts::ge%C3%AFnstalleerde%20plugins%20onderscheiden%20authenticatie%20en%20foutstatus",
+      "targetId": "web",
+      "instructionDigest": "f6b9cf155d0fb5773b5f673a36a69dab083cc98c93e1c7bc3d16ec44c22e3117",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Apps verbinden geopend en op '10 verbonden' getapt. De dialog 'Plug-ins en vaardigheden beheren' is open en toont '10 geïnstalleerd' plug-ins en Privévaardigheden. De GitHub-regel meldt 'Kan connector niet laden'.",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Sluiten"
+      },
+      {
+        "role": "button",
+        "name": "Terug"
+      },
+      {
+        "role": "heading",
+        "name": "Plug-ins en vaardigheden beheren"
+      },
+      {
+        "role": "button",
+        "name": "Apps toevoegen"
+      },
+      {
+        "role": "heading",
+        "name": "Privévaardigheden"
+      },
+      {
+        "role": "button",
+        "name": "Toevoegen"
+      },
+      {
+        "text": "Vaardigheden die je zelf toevoegt, zijn alleen voor jou beschikbaar."
+      },
+      {
+        "role": "heading",
+        "name": "Plug-ins"
+      }
+    ],
+    "endWaitMs": 15827
+  }
+}

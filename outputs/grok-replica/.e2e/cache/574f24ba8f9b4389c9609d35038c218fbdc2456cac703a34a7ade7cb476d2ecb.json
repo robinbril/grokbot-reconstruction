@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:51:06.449Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Routine opslaan\" in \"Routine toevoegen\"",
+        "target": {
+          "role": "button",
+          "name": "Routine opslaan",
+          "within": "Routine toevoegen"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-workflows-rejected-text.e2e.ts::real%20whitespace-only%20prompt%20rejection%20preserves%20input%20and%20accepts%20one%20corrected%20routine",
+      "targetId": "web",
+      "instructionDigest": "989300c1903af6a68d8e92b0060ae5c02a894e31d1846b998330d2294d0abb1e",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Routine opslaan is één keer aangeklikt. De routine \"Correctable text routine\" is opgeslagen met de prompt CORRECTED_NONEMPTY_ROUTINE_PROMPT. De detailweergave toont status Actief en Echte harness, met de planning 2026-10-23T08:50:42.199Z.",
+    "startPath": "http://127.0.0.1:18876/",
+    "endPath": "http://127.0.0.1:18876/",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "Correctable text routine"
+      },
+      {
+        "text": "CORRECTED_NONEMPTY_ROUTINE_PROMPT"
+      },
+      {
+        "text": "Status"
+      },
+      {
+        "text": "Actief"
+      },
+      {
+        "text": "Planning"
+      },
+      {
+        "text": "Europe/Amsterdam"
+      },
+      {
+        "text": "Volgende uitvoering"
+      },
+      {
+        "role": "button",
+        "name": "Bewerken"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "heading",
+        "name": "Routine toevoegen"
+      },
+      {
+        "text": "Naam"
+      },
+      {
+        "role": "textbox",
+        "name": "Naam",
+        "value": "Correctable text routine"
+      },
+      {
+        "text": "Opdracht"
+      },
+      {
+        "role": "textbox",
+        "name": "Opdracht",
+        "value": "CORRECTED_NONEMPTY_ROUTINE_PROMPT"
+      },
+      {
+        "text": "Herhaling"
+      },
+      {
+        "role": "option",
+        "name": "Eenmalig",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "option",
+        "name": "Dagelijks"
+      }
+    ],
+    "endWaitMs": 16333
+  }
+}

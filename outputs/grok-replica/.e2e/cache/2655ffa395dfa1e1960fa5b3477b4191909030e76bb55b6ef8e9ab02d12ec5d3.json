@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T10:25:42.340Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/transcript-navigation-lifecycle.e2e.ts::synthetic%20row%20geometry%20growth%20retargets%20an%20acquired%20spring%20then%20preserves%20the%20arrived%20semantic%20anchor",
+      "targetId": "web",
+      "instructionDigest": "031b7c4b3e7895cda75cc6beefc7cb797953014aa006e1d35849bbd76409c466",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Marketing Agent geopend via de zijbalk zonder bericht te verzenden; het gesprek toont kop 'Marketing Agent' en het lege berichtenveld.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Gespreksopties"
+      },
+      {
+        "role": "button",
+        "name": "Gespreksdetails"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Aan:"
+      },
+      {
+        "role": "button",
+        "name": "Start a chat with..."
+      }
+    ],
+    "endWaitMs": 17986
+  }
+}

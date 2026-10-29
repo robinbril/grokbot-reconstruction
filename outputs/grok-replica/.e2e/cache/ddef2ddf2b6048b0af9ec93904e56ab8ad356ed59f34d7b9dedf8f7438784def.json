@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-17T11:31:26.346Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Bijvoegen\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Bijvoegen",
+          "within": "Marketing Agent"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap menuitem \"Lokale taak\"",
+        "target": {
+          "role": "menuitem",
+          "name": "Lokale taak"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/product-transcript.e2e.ts::local%20processing%20uses%20actual%20input%20and%20produces%20cancellable%20task%20progress%20in%20conversation",
+      "targetId": "web",
+      "instructionDigest": "6143ffa707c29699420a136108bc885df9391e994333f2834e080f4437e89706",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Opened Bijvoegen menu and chose 'Lokale taak'; dialog 'Lokale taak' is now open with text field, Bewerking select, checkboxes, and 'Taak starten' button.",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Sluiten"
+      },
+      {
+        "role": "heading",
+        "name": "Lokale taak"
+      },
+      {
+        "text": "Verwerk tekst in deze browser. Er wordt geen model of externe tool aangeroepen."
+      },
+      {
+        "text": "Tekst voor lokale taak"
+      },
+      {
+        "role": "textbox",
+        "name": "Tekst voor lokale taak"
+      },
+      {
+        "text": "Bewerking"
+      },
+      {
+        "role": "option",
+        "name": "Woorden tellen",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "option",
+        "name": "Hoofdletters"
+      }
+    ],
+    "endWaitMs": 14245
+  }
+}

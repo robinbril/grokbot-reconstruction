@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:53:53.129Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Ontvangst controleren\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Ontvangst controleren",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-workflows.e2e.ts::lost%20durable%20queue%20ACK%20preserves%20newer%20same-text%20different-file%20draft%20and%20pinned%20original",
+      "targetId": "web",
+      "instructionDigest": "98d7a1e7f74ab1b96c53ccd211061755234b19f3db1a87c086c2d9f98d6dc82e",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Ontvangst controleren aangetikt. De melding over de verloren respons en de knop zijn weg. Het bericht staat nu in de echte wachtrij als \"In wachtrij\", met \"Terug naar concept\" en \"Annuleren\". Het concept \"SAME_TEXT_NEW_FILE\" staat nog in het tekstveld en source-table.csv staat nog als Gereed bij de…",
+    "startPath": "http://127.0.0.1:18902/",
+    "endPath": "http://127.0.0.1:18902/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Terug naar concept: SAME_TEXT_NEW_FILE",
+        "text": "Terug naar concept"
+      },
+      {
+        "role": "button",
+        "name": "In wachtrij"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "Test-only lost response after REAL durable acceptance"
+      },
+      {
+        "role": "button",
+        "name": "Ontvangst controleren"
+      },
+      {
+        "role": "button",
+        "name": "Bericht sturen"
+      }
+    ],
+    "endWaitMs": 22669
+  }
+}

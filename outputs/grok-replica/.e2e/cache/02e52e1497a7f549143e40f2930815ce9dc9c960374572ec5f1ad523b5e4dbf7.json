@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T11:42:45.866Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Naar oorspronkelijk bericht\" in \"Synthetic original source\"",
+        "target": {
+          "role": "button",
+          "name": "Naar oorspronkelijk bericht",
+          "within": "Synthetic original source"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/transcript-history.e2e.ts::actual%20cross%20conversation%20quote%20loads%20older%20persisted%20history%20and%20centers%20its%20exact%20original",
+      "targetId": "web",
+      "instructionDigest": "b7d800381da186542e0194bb0b71ac6af9e75c512a112da7165aeae30e977add",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Naar oorspronkelijk bericht is aangeklikt. Het gesprek Find Customers is geopend met de oudere berichten (other-history-0 t/m 234+), waaronder SYNTHETIC_HISTORY_other-history-20, de geciteerde bron. Ik heb niet gecontroleerd of dat bericht gemarkeerd of in beeld gescrold is.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "text": "Nieuw"
+      },
+      {
+        "text": "Owned persisted source. Owned persisted source. Owned persisted source. Owned persisted source."
+      },
+      {
+        "role": "separator",
+        "name": "Nieuwe berichten"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Synthetic original source"
+      },
+      {
+        "text": "Lokaal"
+      },
+      {
+        "text": "Uitvoering"
+      },
+      {
+        "role": "radio",
+        "name": "Lokale voorbeelden",
+        "states": [
+          "checked"
+        ]
+      },
+      {
+        "text": "Lokale voorbeelden"
+      },
+      {
+        "role": "radio",
+        "name": "Echte harness"
+      },
+      {
+        "text": "Echte harness"
+      },
+      {
+        "role": "button",
+        "name": "Bijvoegen"
+      }
+    ],
+    "endWaitMs": 25203
+  }
+}

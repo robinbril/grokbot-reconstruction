@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-19T19:43:24.582Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Herziening maken\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Herziening maken",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/product-primary-motion-proof.e2e.ts::Herziening%20maken%20changes%20actual%20recipient%2Fbody%20and%20fades%20only%20real%20inserted%20spans",
+      "targetId": "web",
+      "instructionDigest": "8a583b2f5265ffb32f0d0572c11cdaa12ca51b26db652b0bee95d57e3220bf21",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Herziening maken aangetikt; dialoog 'Concept herzien' opent met type E-mail, Aan alpha@example.test, Onderwerp Afspraak, de conceptinhoud en knoppen Annuleren en Herziening bewaren.",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Sluiten"
+      },
+      {
+        "role": "heading",
+        "name": "Concept herzien"
+      },
+      {
+        "text": "Een lokaal concept. Verzenden legt een record vast in deze browser."
+      },
+      {
+        "text": "Type"
+      },
+      {
+        "role": "option",
+        "name": "E-mail",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "option",
+        "name": "Slack"
+      },
+      {
+        "role": "textbox",
+        "name": "Aan",
+        "value": "alpha@example.test"
+      },
+      {
+        "role": "textbox",
+        "name": "Onderwerp",
+        "value": "Afspraak"
+      }
+    ],
+    "endWaitMs": 14607
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:38:22.151Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Apps verbinden\"",
+        "target": {
+          "role": "button",
+          "name": "Apps verbinden"
+        }
+      },
+      {
+        "name": "type",
+        "summary": "type \"Context7\" into combobox \"Zoeken in apps en vaardigheden\" in \"Apps verbinden\"",
+        "target": {
+          "role": "combobox",
+          "name": "Zoeken in apps en vaardigheden",
+          "placeholder": "Zoeken in apps en vaardigheden",
+          "within": "Apps verbinden"
+        },
+        "value": "Context7"
+      },
+      {
+        "name": "tap",
+        "summary": "tap option \"Context7 Find current library documenta…\" in \"Apps verbinden\"",
+        "target": {
+          "role": "option",
+          "name": "Context7 Find current library documentation.",
+          "within": "Apps verbinden"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/connectors-controls.e2e.ts::reopening%20a%20demo%20connector%20never%20duplicates%20tool%20permission%20controls",
+      "targetId": "web",
+      "instructionDigest": "60053f4904d6a35b7359d454743e6e15dba061d0a87bbdaf884d2a778fc20430",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Opened Apps verbinden, searched Context7, and opened its details dialog (Context7 MCP, 3 skills, Onderzoek category). Did not tap Toevoegen; it is still unconnected.",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Sluiten"
+      },
+      {
+        "role": "button",
+        "name": "Terug"
+      },
+      {
+        "role": "heading",
+        "name": "Context7"
+      },
+      {
+        "text": "Context7 MCP"
+      },
+      {
+        "role": "button",
+        "name": "Delen"
+      },
+      {
+        "role": "button",
+        "name": "Toevoegen"
+      },
+      {
+        "text": "Find current library documentation."
+      },
+      {
+        "text": "Context7"
+      }
+    ],
+    "endWaitMs": 14101
+  }
+}

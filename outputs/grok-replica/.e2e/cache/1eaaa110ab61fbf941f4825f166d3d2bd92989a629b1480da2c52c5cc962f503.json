@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:41:59.422Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Terug naar concept: @LiveRecoverySkill …\" in \"@LiveRecoverySkill LIVE_QUEUE_RECOVER e…\"",
+        "target": {
+          "role": "button",
+          "name": "Terug naar concept: @LiveRecoverySkill LIVE_QUEUE_RECOVER exact original payload",
+          "text": "Terug naar concept",
+          "within": "@LiveRecoverySkill LIVE_QUEUE_RECOVER exact original payload"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-queue-draft-recovery.e2e.ts::real%20model%20queue%20restores%20the%20complete%20original%20draft%20and%20requeues%20one%20new%20execution",
+      "targetId": "web",
+      "instructionDigest": "9c40aafbf22db9d1b2527554eba1c1ae646c365074bdd4461ec7c0ed50001533",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped 'Terug naar concept' for LIVE_QUEUE_RECOVER. The Echte wachtrij region is gone. The composer holds the original payload with the skill reference and pipeline.txt attachment. The current task is still 'Bezig' with Stoppen available. Nothing was sent.",
+    "startPath": "http://127.0.0.1:18881/",
+    "endPath": "http://127.0.0.1:18881/",
+    "endAnchors": [
+      {
+        "text": "Jij"
+      },
+      {
+        "role": "button",
+        "name": "Antwoordcontext verwijderen",
+        "text": "×"
+      },
+      {
+        "text": "pipeline.txt"
+      },
+      {
+        "text": "Gereed"
+      },
+      {
+        "role": "button",
+        "name": "Bijlage verwijderen: pipeline.txt",
+        "text": "×"
+      },
+      {
+        "text": "Bij verzending gedeeld met het ingestelde model."
+      },
+      {
+        "role": "image",
+        "name": "LiveRecoverySkill · Versie 1",
+        "text": "@LiveRecoverySkill"
+      },
+      {
+        "role": "button",
+        "name": "In wachtrij"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "In wachtrij"
+      },
+      {
+        "text": "Echte wachtrij"
+      },
+      {
+        "text": "1 wachtend of bezig"
+      },
+      {
+        "text": "Bezig met de huidige opdracht"
+      },
+      {
+        "text": "@LiveRecoverySkill LIVE_QUEUE_RECOVER exact original payload"
+      },
+      {
+        "role": "button",
+        "name": "Terug naar concept: @LiveRecoverySkill LIVE_QUEUE_RECOVER exact original payload",
+        "text": "Terug naar concept"
+      },
+      {
+        "role": "button",
+        "name": "Annuleren: @LiveRecoverySkill LIVE_QUEUE_RECOVER exact original payload",
+        "text": "Annuleren"
+      },
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot"
+      }
+    ],
+    "endWaitMs": 19462
+  }
+}

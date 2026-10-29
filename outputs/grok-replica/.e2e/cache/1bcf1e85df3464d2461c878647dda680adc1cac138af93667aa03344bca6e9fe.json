@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T10:25:12.672Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Naar oorspronkelijk bericht\" in \"Bot\"",
+        "target": {
+          "role": "button",
+          "name": "Naar oorspronkelijk bericht",
+          "within": "Bot"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/transcript-navigation.e2e.ts::canonical%20reply%20near%20original%20uses%20native%20motion%20and%20centers%20its%20exact%20delivery",
+      "targetId": "web",
+      "instructionDigest": "2b5d42ad1481cc4810f1fb17f626fb954d4ebb8d79ac1c90f834e1abb3bb5bd2",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped 'Naar oorspronkelijk bericht' in the reply; the view moved away from the latest message and a new 'Naar laatste bericht' button appeared, which shows the jump to the original bot message (SYNTHETIC_NEAR_REPLY_SOURCE) happened.",
+    "startPath": "http://127.0.0.1:19053/",
+    "endPath": "http://127.0.0.1:19053/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Naar laatste bericht"
+      }
+    ],
+    "endWaitMs": 16195
+  }
+}

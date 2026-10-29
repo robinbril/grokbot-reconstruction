@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-19T19:23:01.833Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Routine opslaan\" in \"Routine bewerken\"",
+        "target": {
+          "role": "button",
+          "name": "Routine opslaan",
+          "within": "Routine bewerken"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-workflows-rejected-save.e2e.ts::a%20server-rejected%20zone%20edit%20retains%20inputs%20and%20correction%20changes%20the%20same%20routine%20only%20once",
+      "targetId": "web",
+      "instructionDigest": "785215f0d8c840418294f6f55191c2605ab969844d3ffda7e4720b04958e483a",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Ik heb op 'Routine opslaan' getikt. De routine is niet opgeslagen: de app toont tweemaal de status 'Use a valid IANA timeZone' omdat de tijdzone 'Owned/InvalidZone' ongeldig is. De dialoog 'Routine bewerken' staat nog open, zodat de tijdzone gecorrigeerd kan worden.",
+    "startPath": "http://127.0.0.1:18876/",
+    "endPath": "http://127.0.0.1:18876/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Use a valid IANA timeZone"
+      }
+    ],
+    "endWaitMs": 18426
+  }
+}

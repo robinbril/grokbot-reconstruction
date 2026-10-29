@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-19T19:44:05.715Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Bericht sturen\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Bericht sturen",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/product-primary-motion-proof.e2e.ts::queued%20message%20delays%20its%20actual%20progress%20slot%20and%20preserves%20same%20nonce%20timeline%20across%20rerender",
+      "targetId": "web",
+      "instructionDigest": "6fef0e9876d83e18b691fe770eaec2db38b2589de1d1f794ed439b2723126055",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped 'Bericht sturen'; status now shows 'Bericht staat in de lokale wachtrij' with 'Wachtrij verzenden' and 'Wachtrij annuleren' buttons. The textbox still holds 'Bewaar dit concept met echte nonce'.",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Bericht staat in de lokale wachtrij Wachtrij verzenden Wachtrij annuleren"
+      },
+      {
+        "text": "Bericht staat in de lokale wachtrij"
+      },
+      {
+        "role": "button",
+        "name": "Wachtrij verzenden"
+      },
+      {
+        "role": "button",
+        "name": "Wachtrij annuleren"
+      },
+      {
+        "role": "tooltip",
+        "name": "Bericht sturen"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "Offlinemodus Wachtrij instellen"
+      },
+      {
+        "text": "Offlinemodus"
+      },
+      {
+        "role": "button",
+        "name": "Wachtrij instellen"
+      }
+    ],
+    "endWaitMs": 15164
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:25:19.309Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Toevoegen aan chat\"",
+        "target": {
+          "role": "button",
+          "name": "Toevoegen aan chat"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/quote-selection.e2e.ts::selected%20conversation%20text%20becomes%20a%20real%20inline%20quote%20at%20the%20current%20caret%20and%20survives%20send%20and%20reload",
+      "targetId": "web",
+      "instructionDigest": "1616c070dd453f68cb236bdb3e5a0bce2074992970e5932b85d5b05b8ff7b141",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Op 'Toevoegen aan chat' getikt. De composer toont nu een fragment 'SYNTHETIC selected text' (value 'left \\n“SYNTHETIC selected t…”\\n right') en de selectietoolbar is verdwenen. Er is geen bericht verzonden.",
+    "startPath": "http://127.0.0.1:18899/",
+    "endPath": "http://127.0.0.1:18899/",
+    "endAnchors": [
+      {
+        "text": "“SYNTHETIC selected t…”"
+      },
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "value": "left “SYNTHETIC selected t…” right"
+      },
+      {
+        "role": "image",
+        "name": "SYNTHETIC selected text"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "button",
+        "name": "Toevoegen aan chat"
+      },
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "value": "left right"
+      },
+      {
+        "role": "toolbar",
+        "name": "Selectieacties"
+      }
+    ],
+    "endWaitMs": 17065
+  }
+}

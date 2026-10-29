@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-27T09:48:57.593Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Opnieuw proberen\" in \"Gmail\"",
+        "target": {
+          "role": "button",
+          "name": "Opnieuw proberen",
+          "within": "Gmail"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/source-chat-reference.e2e.ts::reference%20retry%20stays%20an%20explicit%20local%20demonstration",
+      "targetId": "web",
+      "instructionDigest": "2965727bfe36b37e273961ffaef73cd9527c9b932ffbea590d454f4da6c4af8c",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Op 'Opnieuw proberen' geklikt in het synthetische Gmail-voorbeeld; de melding 'Synthetisch voorbeeld. Er is geen autorisatie gestart.' verscheen.",
+    "startPath": "/?reset=1#reference-chat",
+    "endPath": "/?reset=1#reference-chat",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Synthetisch voorbeeld. Er is geen autorisatie gestart."
+      }
+    ],
+    "endWaitMs": 17220
+  }
+}

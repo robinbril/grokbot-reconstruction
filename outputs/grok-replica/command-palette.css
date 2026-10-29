@@ -1,0 +1,18 @@
+/* The native palette is a compact search header and a single flat result list. */
+.command-palette{width:min(640px,calc(100vw - 32px));max-height:min(570px,calc(100dvh - 80px));padding:0;border:1px solid var(--line);border-radius:12px;background:var(--elevated);color:var(--ink);box-shadow:0 18px 65px #0003;margin:80px auto auto;overflow:hidden}
+.command-palette::backdrop{background:#0003}
+.jump-search{display:flex;align-items:center;gap:12px;padding:14px;border-bottom:1px solid var(--line)}
+.jump-search>.icon{width:20px;height:20px;color:var(--muted,#777);flex:none}
+.jump-search input{border:0;outline:0;background:transparent;color:inherit;min-width:0;width:100%;font:inherit;font-size:16px;padding:2px 0}
+#jump-results{max-height:min(402px,calc(100dvh - 160px));overflow:auto;padding:6px}
+#jump-results>[role=option]{display:flex;align-items:center;gap:12px;width:100%;min-height:44px;padding:8px 12px;border:0;border-radius:8px;background:transparent;color:inherit;font:inherit;font-size:14px;text-align:left;cursor:pointer}
+#jump-results>[role=option][aria-selected=true]{background:var(--hover,#f2f2f2)}
+#jump-results>[role=option]>.icon,#jump-results .avatar{width:24px;height:24px;flex:none}
+.jump-label{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.jump-detail,.jump-current{font-size:12px;color:var(--muted,#777);white-space:nowrap}
+.jump-current{padding:2px 6px;background:var(--hover,#eee);border-radius:4px}
+.jump-empty{margin:22px;text-align:center;color:var(--muted,#777);font-size:14px}
+
+.jump-tabs{display:flex;gap:4px;padding:4px 8px;border-bottom:1px solid var(--line)}
+.jump-tabs button{padding:7px 12px;color:var(--secondary);font-size:13px;border-radius:6px}
+.jump-tabs button[aria-selected=true]{background:var(--hover);color:var(--ink)}

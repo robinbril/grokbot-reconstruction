@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:43:11.400Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Terug naar concept: LIVE_QUEUE_OLDER_DR…\" in \"LIVE_QUEUE_OLDER_DRAFT\"",
+        "target": {
+          "role": "button",
+          "name": "Terug naar concept: LIVE_QUEUE_OLDER_DRAFT",
+          "text": "Terug naar concept",
+          "within": "LIVE_QUEUE_OLDER_DRAFT"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-queue-draft-recovery.e2e.ts::newer%20live%20text%20and%20attachment%20block%20recovery%20before%20any%20server%20cancellation",
+      "targetId": "web",
+      "instructionDigest": "9cede5e5acca5967e2f403ef33d37432bdf331cd9c4c4ff06d9e46baf7a89206",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped 'Terug naar concept' for LIVE_QUEUE_OLDER_DRAFT. The app showed a draft-conflict status ('Een eerdere actie is nog niet bevestigd. Kies Ontvangst controleren...') with an 'Ontvangst controleren' button. The queue item is still 'In wachtrij' with its buttons disabled. The composer still holds…",
+    "startPath": "http://127.0.0.1:18881/",
+    "endPath": "http://127.0.0.1:18881/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "draft-conflict"
+      },
+      {
+        "role": "status",
+        "name": "Een eerdere actie is nog niet bevestigd. Kies Ontvangst controleren voordat je deze actie opnieuw uitvoert."
+      },
+      {
+        "role": "button",
+        "name": "Ontvangst controleren: Terug naar concept: LIVE_QUEUE_OLDER_DRAFT"
+      },
+      {
+        "role": "button",
+        "name": "In wachtrij"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "button",
+        "name": "Bericht sturen"
+      },
+      {
+        "role": "tooltip",
+        "name": "In wachtrij"
+      }
+    ],
+    "endWaitMs": 17631
+  }
+}

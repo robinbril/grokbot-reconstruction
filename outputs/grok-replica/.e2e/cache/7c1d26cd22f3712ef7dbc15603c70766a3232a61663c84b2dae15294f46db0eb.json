@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-20T14:31:32.919Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Terug naar concept: LIVE_QUEUE_LOST_ACK\" in \"LIVE_QUEUE_LOST_ACK\"",
+        "target": {
+          "role": "button",
+          "name": "Terug naar concept: LIVE_QUEUE_LOST_ACK",
+          "text": "Terug naar concept",
+          "within": "LIVE_QUEUE_LOST_ACK"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-queue-draft-recovery.e2e.ts::lost%20cancellation%20ACK%20and%20denied%20local%20retirement%20recover%20one%20cancelled%20task%20across%20reload",
+      "targetId": "web",
+      "instructionDigest": "a98911084240046a1edf13a4740c3be557df2e19582e2503c235c62c27d416a0",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Eenmaal op 'Terug naar concept' voor LIVE_QUEUE_LOST_ACK getipt. Het scherm toont 'Synthetic lost cancellation ACK', 0 wachtend en de melding dat een eerdere actie nog niet bevestigd is, met knop 'Ontvangst controleren'. Ontvangst niet gecontroleerd, niets verzonden.",
+    "startPath": "http://127.0.0.1:18881/",
+    "endPath": "http://127.0.0.1:18881/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Synthetic lost cancellation ACK"
+      },
+      {
+        "role": "status",
+        "name": "Een eerdere actie is nog niet bevestigd. Kies Ontvangst controleren voordat je deze actie opnieuw uitvoert."
+      },
+      {
+        "text": "0 wachtend of bezig"
+      },
+      {
+        "role": "button",
+        "name": "Ontvangst controleren: Terug naar concept: LIVE_QUEUE_LOST_ACK"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "In wachtrij"
+      },
+      {
+        "text": "1 wachtend of bezig"
+      },
+      {
+        "text": "LIVE_QUEUE_LOST_ACK"
+      },
+      {
+        "role": "button",
+        "name": "Terug naar concept: LIVE_QUEUE_LOST_ACK",
+        "text": "Terug naar concept"
+      },
+      {
+        "role": "button",
+        "name": "Annuleren: LIVE_QUEUE_LOST_ACK",
+        "text": "Annuleren"
+      }
+    ],
+    "endWaitMs": 18275
+  }
+}

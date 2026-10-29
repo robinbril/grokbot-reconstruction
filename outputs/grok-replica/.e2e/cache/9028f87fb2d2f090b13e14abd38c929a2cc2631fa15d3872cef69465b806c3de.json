@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:05:09.238Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Beantwoorden\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Beantwoorden",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/chat-delivery.e2e.ts::acceptance%20failure%20retains%20real%20composer%20and%20reply%20without%20starting%20a%20run",
+      "targetId": "web",
+      "instructionDigest": "998b7bc3797d418f04f2566192dd254efd94d63979033b55535582d96ff79936",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Op Beantwoorden getikt; er verscheen een region 'Antwoordcontext' met de botreactie en een verwijderknop, en het berichtveld heeft focus.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "text": "Dit is een lokale voorbeeldreactie. Je bericht is in deze browser opgeslagen; er"
+      },
+      {
+        "role": "button",
+        "name": "Antwoordcontext verwijderen",
+        "text": "×"
+      },
+      {
+        "role": "tooltip",
+        "name": "Beantwoorden"
+      },
+      {
+        "role": "region",
+        "name": "Antwoordcontext"
+      }
+    ],
+    "endWaitMs": 13973
+  }
+}

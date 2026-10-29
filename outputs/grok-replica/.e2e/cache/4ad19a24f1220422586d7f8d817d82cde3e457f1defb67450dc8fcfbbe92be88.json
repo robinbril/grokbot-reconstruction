@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-18T17:02:50.645Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Bericht sturen\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Bericht sturen",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-workflows.e2e.ts::upload%20fails%20retries%20same%20reservation%20and%20exact%20original%20download%20survives%20attachment-only%20acceptance",
+      "targetId": "web",
+      "instructionDigest": "6963d9cd74b6c0b017a6334b41e0e2f4afd33c821a18db7109c690d17f1f8a5b",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped 'Bericht sturen' with only the pipeline.txt attachment (Gereed) and no text. The message now shows in the chat with a pipeline.txt link (Lokaal) and a Marketing Agent reply with status 'Voltooid'. The attachment chip is gone from the composer.",
+    "startPath": "http://127.0.0.1:18876/",
+    "endPath": "http://127.0.0.1:18876/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Voltooid"
+      },
+      {
+        "role": "status",
+        "name": "Codex CLI op deze Mac · model via OpenAI · protocol-fixture-model"
+      },
+      {
+        "role": "link",
+        "name": "pipeline.txt"
+      },
+      {
+        "text": "Lokaal"
+      },
+      {
+        "text": "Protocol fixture output:"
+      },
+      {
+        "role": "button",
+        "name": "Spraakmodus"
+      },
+      {
+        "role": "tooltip",
+        "name": "Spraakmodus"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "Codex CLI op deze Mac · modelprovider nog niet geverifieerd"
+      },
+      {
+        "text": "pipeline.txt"
+      },
+      {
+        "text": "Gereed"
+      },
+      {
+        "role": "button",
+        "name": "Bijlage verwijderen: pipeline.txt",
+        "text": "×"
+      },
+      {
+        "role": "button",
+        "name": "Bericht sturen"
+      },
+      {
+        "name": "Bijlagen"
+      }
+    ],
+    "endWaitMs": 19671
+  }
+}

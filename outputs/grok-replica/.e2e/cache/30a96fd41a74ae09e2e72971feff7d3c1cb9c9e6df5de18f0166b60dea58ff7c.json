@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:45:29.575Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Terug naar concept\" in \"ATOMIC_RECOVERY_PROBE\"",
+        "target": {
+          "role": "button",
+          "name": "Terug naar concept",
+          "within": "ATOMIC_RECOVERY_PROBE"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/queue-draft-recovery.e2e.ts::a%20denied%20recovery%20write%20retains%20the%20queue%20and%20draft%20until%20an%20explicit%20successful%20retry",
+      "targetId": "web",
+      "instructionDigest": "add2fffabaf99f4f52eeaae15b483e5dbd4fcf96cedc03424607dc3430f8cd05",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped 'Terug naar concept' for ATOMIC_RECOVERY_PROBE. The app showed 'Concept niet teruggezet. Ontvangst of opslag kon niet veilig worden bevestigd.' The message is still in the conversation with 'Wacht op verbinding', and the composer is not refilled. Nothing was sent.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Concept niet teruggezet. Ontvangst of opslag kon niet veilig worden bevestigd."
+      },
+      {
+        "role": "status",
+        "name": "Opslaan in deze browser is niet beschikbaar. Wijzigingen blijven bewaard tot je herlaadt."
+      }
+    ],
+    "endWaitMs": 17607
+  }
+}

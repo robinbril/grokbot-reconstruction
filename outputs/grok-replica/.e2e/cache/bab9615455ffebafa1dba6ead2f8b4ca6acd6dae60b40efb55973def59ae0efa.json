@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:36:48.685Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Beantwoorden\" in \"# Eigen vraag Regel met **opmaak** en β.\"",
+        "target": {
+          "role": "button",
+          "name": "Beantwoorden",
+          "within": "# Eigen vraag Regel met **opmaak** en β."
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/chat-formats.e2e.ts::ordinary%20own-message%20toolbar%20and%20context%20reply%20preserve%20raw%20quote%20draft%20and%20single%20delivery",
+      "targetId": "web",
+      "instructionDigest": "7c9b3109da1a7fb24cae203a35d47941f6927503c8bc13577e034a321580fff2",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Op Beantwoorden bij het eigen bericht getikt. Het gebied 'Antwoordcontext' met 'Eigen vraag' en het citaat van het bericht verscheen boven het invoerveld; de concepttekst bleef behouden.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "text": "Eigen vraag"
+      },
+      {
+        "text": "Eigen vraag Regel met **opmaak** en β."
+      },
+      {
+        "role": "button",
+        "name": "Antwoordcontext verwijderen",
+        "text": "×"
+      },
+      {
+        "role": "tooltip",
+        "name": "Beantwoorden"
+      },
+      {
+        "role": "region",
+        "name": "Antwoordcontext"
+      }
+    ],
+    "endWaitMs": 17536
+  }
+}

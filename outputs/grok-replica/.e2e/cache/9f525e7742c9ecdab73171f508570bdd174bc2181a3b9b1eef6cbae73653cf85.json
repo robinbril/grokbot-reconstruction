@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T11:38:42.151Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Apps verbinden\"",
+        "target": {
+          "role": "button",
+          "name": "Apps verbinden"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/transcript-covered.e2e.ts::ordinary%20catalog%20dialog%20does%20not%20cover%20the%20transcript%20or%20fabricate%20agent-exchange%20state",
+      "targetId": "web",
+      "instructionDigest": "7690ee954c4281aab124d3e912c09ea48ac80cf481f91a4e080c45fafd9f74cf",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped 'Apps verbinden'; the dialog 'Apps verbinden' is now open, showing '10 verbonden', a search box, categories and app cards.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Sluiten"
+      },
+      {
+        "role": "heading",
+        "name": "Apps verbinden"
+      },
+      {
+        "text": "10 verbonden"
+      },
+      {
+        "role": "combobox",
+        "name": "Zoeken in apps en vaardigheden",
+        "placeholder": "Zoeken in apps en vaardigheden"
+      },
+      {
+        "role": "button",
+        "name": "Bot-sjablonen"
+      },
+      {
+        "role": "button",
+        "name": "Alle"
+      },
+      {
+        "role": "button",
+        "name": "Wachtwoordbeheerders"
+      },
+      {
+        "role": "button",
+        "name": "Productiviteit"
+      }
+    ],
+    "endWaitMs": 16163
+  }
+}

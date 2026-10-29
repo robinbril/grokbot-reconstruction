@@ -1,0 +1,22 @@
+import {test,afterEach} from '@e2e-dev/web';
+import {expect} from 'e2e';
+import {startCloudHistoryFixture} from './fixtures/cloud-history-fixture.mjs';
+let server:Awaited<ReturnType<typeof startCloudHistoryFixture>>|undefined;
+afterEach(async()=>{await server?.close();server=undefined;});
+test('server tail excludes older bytes until an actual quote fetches preceding cursor pages',async({browser,screen,app})=>{
+ server=await startCloudHistoryFixture();await browser.goto(server.baseUrl);
+ await expect.poll(()=>browser.evaluate(()=>Boolean(JSON.parse(localStorage.getItem('grok-local-replica-v1')!).liveHarness?.principalScope)),{timeout:15000}).toBe(true);
+ const cookie=(await browser.cookies()).filter(row=>row.name==='grok_harness_owner').map(row=>row.name+'='+row.value).join(';');
+ await server.seed(cookie);
+ await expect(screen.getByRole('button',{name:'Synthetische cloudgeschiedenis',exact:true})).toBeVisible({timeout:15000});
+ await screen.getByRole('button',{name:'Synthetische cloudgeschiedenis',exact:true}).click();
+ await expect(browser.locator('.message[data-message-id]')).toHaveCount(500,{timeout:15000});
+ expect(await browser.evaluate(()=>JSON.parse(localStorage.getItem('grok-local-replica-v1')!).messages['cloud-proof'].length)).toBe(500);
+ await expect(browser.locator('[data-live-message-id="cloud-delivery-0"]')).toHaveCount(0);
+ await screen.getByRole('button',{name:'Naar oorspronkelijk bericht',exact:true}).click();
+ await expect(browser.locator('[data-live-message-id="cloud-delivery-0"]')).toBeVisible({timeout:60000});
+ expect(await browser.evaluate(()=>JSON.parse(localStorage.getItem('grok-local-replica-v1')!).messages['cloud-proof'].length)).toBe(1250);
+ await expect(screen.getByRole('textbox',{name:'Bericht sturen naar Bot',exact:true})).toHaveText('');
+ const status=await server.handler.history.readStatus((await server.handler.sessions.resolve(cookie.split('=')[1])).owner,'cloud-proof');expect(status.unreadCount).toBe(0);
+ await app.screenshot('actual-server-older-page-source-jump');
+});

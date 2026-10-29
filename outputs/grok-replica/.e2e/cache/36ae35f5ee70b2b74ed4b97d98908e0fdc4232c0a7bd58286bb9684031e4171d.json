@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-19T19:46:52.663Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap node \"SendMessage\" in \"12\"",
+        "target": {
+          "text": "SendMessage",
+          "within": "12"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/report.e2e.ts::bronkaart%20maakt%20de%20herkomst%20en%20het%20volledige%20SendMessage-schema%20bereikbaar",
+      "targetId": "web",
+      "instructionDigest": "0ccdd03790b5e6bfa7099d7c493e49376f4b368bd246b292351ca77362d270d1",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped SendMessage (#12) in the tool register. Its details opened, showing the description, the heading 'Exact geparseerd schema' with the full JSON schema (type enum text/attachment/widget/...), and a section SHA256.",
+    "startPath": "http://127.0.0.1:8764/grok-reconstruction/conversation.html",
+    "endPath": "http://127.0.0.1:8764/grok-reconstruction/conversation.html",
+    "endAnchors": [
+      {
+        "text": "Bronregel 1622 · verplicht: type"
+      },
+      {
+        "text": "**Description:** ``` Say something to the user in the Grok Bot chat. This is your only voice. The user only ever sees the content of SendMessage calls; your plain assistant text is invisible to them (it is just your private scratchpad), so a reply counts only once it is inside SendMessage, includin…"
+      },
+      {
+        "role": "heading",
+        "name": "Exact geparseerd schema"
+      },
+      {
+        "text": "{ \"type\": \"object\", \"properties\": { \"type\": { \"type\": \"string\", \"enum\": [ \"text\", \"attachment\", \"widget\", \"cursor-agent\", \"secret-request\" ], \"description\": \"text for chat messages, attachment for actual files or standalone media, widget for an interactive question with selectable options, cursor-a…"
+      }
+    ],
+    "endWaitMs": 13779
+  }
+}

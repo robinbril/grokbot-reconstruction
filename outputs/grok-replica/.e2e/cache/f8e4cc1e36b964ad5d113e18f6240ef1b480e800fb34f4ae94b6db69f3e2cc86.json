@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:43:28.283Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Ontvangst controleren: Terug naar conce…\" in \"Echte wachtrij\"",
+        "target": {
+          "role": "button",
+          "name": "Ontvangst controleren: Terug naar concept: LIVE_QUEUE_RACING_DRAFT",
+          "within": "Echte wachtrij"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-queue-draft-recovery.e2e.ts::a%20newer%20draft%20during%20cancellation%20survives%20and%20the%20pending%20recovery%20does%20not%20steal%20another%20conversation",
+      "targetId": "web",
+      "instructionDigest": "aeacd00e6d848d30403c36963a6d21e75dd719f6ea401d5e08db317639b29f04",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Ontvangst controleren getapt. De waarschuwingen over een onbevestigde actie en de Echte wachtrij-regio zijn weg. Het concept LIVE_QUEUE_RACING_DRAFT staat weer in het invoerveld en de knop 'In wachtrij' is zichtbaar. Er is niets verzonden.",
+    "startPath": "http://127.0.0.1:18881/",
+    "endPath": "http://127.0.0.1:18881/",
+    "endAnchors": [
+      {
+        "text": "LIVE_QUEUE_RACING_DRAFT"
+      },
+      {
+        "role": "button",
+        "name": "In wachtrij"
+      },
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "value": "LIVE_QUEUE_RACING_DRAFT"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "De actie is ontvangen, maar de bevestiging kon niet worden opgeslagen. Kies Ontvangst controleren."
+      },
+      {
+        "role": "status",
+        "name": "Een eerdere actie is nog niet bevestigd. Kies Ontvangst controleren voordat je deze actie opnieuw uitvoert."
+      },
+      {
+        "text": "Echte wachtrij"
+      },
+      {
+        "text": "0 wachtend of bezig"
+      },
+      {
+        "text": "Bezig met de huidige opdracht"
+      },
+      {
+        "role": "button",
+        "name": "Ontvangst controleren: Terug naar concept: LIVE_QUEUE_RACING_DRAFT"
+      },
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot"
+      },
+      {
+        "role": "button",
+        "name": "Spraakmodus"
+      }
+    ],
+    "endWaitMs": 15704
+  }
+}

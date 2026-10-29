@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-20T14:32:38.539Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Terug naar concept: FIXTURE_DEFER LIVE_…\" in \"FIXTURE_DEFER LIVE_QUEUE_ALREADY_STARTED\"",
+        "target": {
+          "role": "button",
+          "name": "Terug naar concept: FIXTURE_DEFER LIVE_QUEUE_ALREADY_STARTED",
+          "text": "Terug naar concept",
+          "within": "FIXTURE_DEFER LIVE_QUEUE_ALREADY_STARTED"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-queue-draft-recovery.e2e.ts::a%20task%20that%20starts%20before%20cancellation%20reaches%20the%20server%20remains%20running%20and%20is%20never%20restored",
+      "targetId": "web",
+      "instructionDigest": "005bab4118478f0ef2a671e2541662349298b5b5f8eb0781962b0e80d23098d3",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Eenmaal op 'Terug naar concept' bij LIVE_QUEUE_ALREADY_STARTED getikt. De knoppen Terug naar concept en Annuleren zijn nu uitgeschakeld. De melding 'Een eerdere actie is nog niet bevestigd. Kies Ontvangst controleren…' staat er en de knop 'Ontvangst controleren' is zichtbaar (#n6015). De huidige ui…",
+    "startPath": "http://127.0.0.1:18881/",
+    "endPath": "http://127.0.0.1:18881/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Een eerdere actie is nog niet bevestigd. Kies Ontvangst controleren voordat je deze actie opnieuw uitvoert."
+      },
+      {
+        "role": "button",
+        "name": "Ontvangst controleren: Terug naar concept: FIXTURE_DEFER LIVE_QUEUE_ALREADY_STARTED"
+      }
+    ],
+    "endWaitMs": 15018
+  }
+}

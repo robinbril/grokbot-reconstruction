@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-20T13:11:05.580Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Bericht sturen\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Bericht sturen",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-workflows.e2e.ts::upload%20fails%20retries%20same%20reservation%20and%20exact%20original%20download%20survives%20attachment-only%20acceptance",
+      "targetId": "web",
+      "instructionDigest": "6963d9cd74b6c0b017a6334b41e0e2f4afd33c821a18db7109c690d17f1f8a5b",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "pipeline.txt (64 bytes) is zonder tekst verstuurd. Het staat als bericht in het gesprek met Marketing Agent. De agent antwoordde met 'Protocol fixture output' en de bijlage-inhoud, en de invoer is leeg.",
+    "startPath": "http://127.0.0.1:18876/",
+    "endPath": "http://127.0.0.1:18876/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Voltooid"
+      },
+      {
+        "role": "status",
+        "name": "Grok Bot-harness · deterministic-workflow-fixture · Verbonden"
+      },
+      {
+        "text": "64 bytes"
+      },
+      {
+        "role": "button",
+        "name": "Bijlage openen: pipeline.txt",
+        "text": "Openen"
+      },
+      {
+        "role": "link",
+        "name": "Bijlage bewaren: pipeline.txt",
+        "text": "Bewaren"
+      },
+      {
+        "text": "Lokaal"
+      },
+      {
+        "text": "Protocol fixture output:"
+      },
+      {
+        "text": "</attachment-data>"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "Grok Bot-harness · deterministic-workflow-fixture · Model geconfigureerd"
+      },
+      {
+        "text": "Gereed"
+      },
+      {
+        "role": "button",
+        "name": "Bijlage verwijderen: pipeline.txt",
+        "text": "×"
+      },
+      {
+        "text": "Bij verzending gedeeld met het ingestelde model."
+      },
+      {
+        "role": "button",
+        "name": "Bericht sturen"
+      },
+      {
+        "name": "Bijlagen"
+      }
+    ],
+    "endWaitMs": 33399
+  }
+}

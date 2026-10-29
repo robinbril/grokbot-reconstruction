@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-15T23:15:46.453Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Nieuwe chat\"",
+        "target": {
+          "role": "button",
+          "name": "Nieuwe chat"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap menuitem \"Nieuwe Bot\"",
+        "target": {
+          "role": "menuitem",
+          "name": "Nieuwe Bot"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/product-workspaces.e2e.ts::real%20bot%20create%20dialog%20has%20native%20shape%20and%20color%20choices%20and%20persists%20created%20bot",
+      "targetId": "web",
+      "instructionDigest": "cd2b2fe5f7149b79d98b1f70ea0f24e16e43fa302fd6664b21028a099af8fc81",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Opened the Nieuwe chat plus menu and tapped 'Nieuwe Bot'. The dialog 'Nieuwe Bot maken' is now open with the Bot-naam field focused and the Maken button disabled.",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Sluiten"
+      },
+      {
+        "role": "heading",
+        "name": "Nieuwe Bot maken"
+      },
+      {
+        "role": "button",
+        "name": "Personage"
+      },
+      {
+        "role": "textbox",
+        "name": "Bot-naam",
+        "placeholder": "Geef je Bot een naam"
+      },
+      {
+        "role": "button",
+        "name": "Vorm van personage blob"
+      },
+      {
+        "role": "button",
+        "name": "Vorm van personage wolk"
+      },
+      {
+        "role": "button",
+        "name": "Vorm van personage vierkant"
+      },
+      {
+        "role": "button",
+        "name": "Vorm van personage sprankel"
+      }
+    ],
+    "endWaitMs": 15892
+  }
+}

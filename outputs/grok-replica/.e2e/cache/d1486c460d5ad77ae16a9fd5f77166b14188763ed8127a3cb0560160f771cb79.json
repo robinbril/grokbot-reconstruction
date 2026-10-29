@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T11:46:12.363Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Ongelezen melding sluiten\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Ongelezen melding sluiten",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/transcript-unread.e2e.ts::dismissing%20the%20unread%20pill%20retains%20the%20divider%20and%20a%20real%20reopen%20uses%20the%20persisted%20read%20receipt",
+      "targetId": "web",
+      "instructionDigest": "95bc89a9d76bfd15ec4b1f10f7b88ad6598688a4e345aa2aba76231abb8afe3e",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped 'Ongelezen melding sluiten'. The unread notification ('Naar ongelezen berichten' / '24 nieuwe berichten') and its close button are gone. The messages and the 'Nieuw' separator are still on screen.",
+    "startPath": "/",
+    "endPath": "/",
+    "goneAnchors": [
+      {
+        "text": "24 nieuwe berichten"
+      },
+      {
+        "role": "button",
+        "name": "Ongelezen melding sluiten"
+      },
+      {
+        "role": "button",
+        "name": "Naar ongelezen berichten"
+      }
+    ],
+    "endWaitMs": 17672
+  }
+}

@@ -1,0 +1,30 @@
+/* R8/ZX geometry and exact native spring keyframes; named properties adapt theme tokens only. */
+.product-agent-exchange{--exchange-spring:linear(0,.01588 2%,.05618 4%,.11201 6%,.1768 8%,.2458 10%,.31562 12%,.38392 14%,.44914 16%,.51029 18%,.56683 20%,.61852 22%,.66534 24%,.70743 26%,.74501 28%,.77838 30%,.80788 32%,.83383 34%,.85658 36%,.87645 38%,.89376 40%,.92183 44%,.94282 48%,.95838 52%,.96984 56%,.97823 60%,.98435 64%,.98878 68%,.99198 72%,.99594 80%,.99829 90%,1 100%);position:absolute;inset:0;z-index:2;pointer-events:none}
+.product-agent-exchange{inset-inline-end:var(--visible-info-width,0px)}
+.product-agent-exchange .sand-exchange-sheet__sheet{position:absolute;inset:0;pointer-events:none;animation:sand-x1hx13-B .3s var(--exchange-spring) both}
+.product-agent-exchange .sand-exchange-sheet__scrim{position:absolute;inset:0;width:100%;height:100%;padding:0;margin:0;border:0;background:transparent;cursor:default;pointer-events:auto}
+.product-agent-exchange .sand-exchange-sheet__scrim-tint{position:absolute;inset:0;background:var(--chrome);pointer-events:none}
+.product-agent-exchange .sand-exchange-sheet__messages{position:absolute;inset-inline:0;top:0;bottom:64px;z-index:1;display:flex;flex-direction:column;overflow-x:hidden;overflow-y:auto;overflow-anchor:none;pointer-events:auto;padding:24px max(16px,calc((100% - 960px)/2)) 52px;scrollbar-gutter:stable;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.product-agent-exchange .sand-exchange-sheet__messages::-webkit-scrollbar{width:6px}
+.product-agent-exchange .sand-exchange-sheet__messages::-webkit-scrollbar-thumb{border-radius:999px;background:var(--line)}
+.product-agent-exchange .sand-exchange-sheet__fade-bottom{position:absolute;inset-inline:0;bottom:64px;height:40px;z-index:3;pointer-events:none;background-image:linear-gradient(to top,var(--chrome),transparent)}
+.product-agent-exchange .sand-exchange-sheet__footer{position:absolute;inset-inline:0;bottom:12px;z-index:3;pointer-events:none;animation:sand-1aw1ihd-B .3s var(--exchange-spring) .3s both}
+.product-agent-exchange .sand-exchange-readonly-notice{display:flex;align-items:center;justify-content:center;min-height:40px;padding:6px 14px;text-align:center;user-select:none}
+.product-agent-exchange[data-exiting] .sand-exchange-sheet__sheet{animation-name:sand-1p3jh78-B}
+.product-agent-exchange[data-exiting] .sand-exchange-sheet__footer{animation-name:sand-2is9k8-B;animation-delay:0s}
+.product-agent-exchange[data-reduced-motion] .sand-exchange-sheet__sheet,.product-agent-exchange[data-reduced-motion] .sand-exchange-sheet__footer{animation-name:none;animation-delay:0s}
+.product-agent-exchange[data-reduced-motion] .sand-exchange-sheet__footer{pointer-events:auto}
+.product-exchange-entry{margin:0 0 20px;min-width:0}
+.product-exchange-author{display:flex;align-items:center;gap:8px;margin-bottom:8px;color:var(--secondary);font-size:12px}
+.product-exchange-author .avatar{width:20px;height:20px}
+.product-exchange-bubble{width:fit-content;max-width:100%;padding:10px 14px;border-radius:16px;background:var(--pill);overflow-wrap:anywhere}
+.product-exchange-bubble>:first-child{margin-top:0}.product-exchange-bubble>:last-child{margin-bottom:0}
+.product-exchange-close{min-height:40px;padding:8px 16px;pointer-events:auto}
+.product-exchange-peer-references{display:flex;gap:6px;flex-wrap:wrap;margin:5px 0}
+.product-exchange-peer{color:var(--secondary);font-size:12px;text-decoration:underline;text-underline-offset:3px}
+.product-exchange-peer:hover{color:var(--ink)}
+@keyframes sand-x1hx13-B{0%{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes sand-1p3jh78-B{to{opacity:0;transform:translateY(20px)}}
+@keyframes sand-1aw1ihd-B{0%{opacity:0;transform:translateY(6px);pointer-events:none}to{opacity:1;transform:translateY(0);pointer-events:auto}}
+@keyframes sand-2is9k8-B{to{opacity:0;transform:translateY(6px);pointer-events:none}}
+@media(prefers-reduced-motion:reduce){.product-agent-exchange .sand-exchange-sheet__sheet,.product-agent-exchange .sand-exchange-sheet__footer{animation-name:none;animation-delay:0s}.product-agent-exchange .sand-exchange-sheet__footer{pointer-events:auto}}

@@ -1,0 +1,176 @@
+{
+  "$comment": "Canonical gate for the exported repository. Checks run in outputs/grok-replica; retained app-local config describes the standalone layout.",
+  "prepare": [
+    {
+      "id": "npm",
+      "cwd": "outputs/grok-replica",
+      "when": [
+        "outputs/grok-replica/package-lock.json"
+      ],
+      "creates": "outputs/grok-replica/node_modules",
+      "run": "npm ci --no-audit --no-fund",
+      "$why": "Verse worktree of gewijzigde lockfile: eerst installeren, anders faalt elke check op iets wat niets met de wijziging te maken heeft.",
+      "if": "test -f package-lock.json"
+    },
+    {
+      "id": "pnpm",
+      "cwd": "outputs/grok-replica",
+      "when": [
+        "outputs/grok-replica/pnpm-lock.yaml"
+      ],
+      "creates": "outputs/grok-replica/node_modules",
+      "run": "pnpm install --frozen-lockfile",
+      "if": "test -f pnpm-lock.yaml"
+    },
+    {
+      "id": "yarn",
+      "cwd": "outputs/grok-replica",
+      "when": [
+        "outputs/grok-replica/yarn.lock"
+      ],
+      "creates": "outputs/grok-replica/node_modules",
+      "run": "yarn install --frozen-lockfile",
+      "if": "test -f yarn.lock"
+    }
+  ],
+  "checks": [
+    {
+      "id": "pre-commit",
+      "tier": "commit",
+      "when": ".",
+      "run": "pre-commit run --files {files}",
+      "if": "test -f .pre-commit-config.yaml",
+      "ifHint": "geen .pre-commit-config.yaml",
+      "needs": "command -v pre-commit",
+      "needsHint": "pipx install pre-commit",
+      "all": false,
+      "cwd": "outputs/grok-replica"
+    },
+    {
+      "id": "typecheck",
+      "tier": "push",
+      "cwd": "outputs/grok-replica",
+      "when": [
+        "^outputs/grok-replica/.*\\.(ts|tsx|mts|cts|vue)$",
+        "^outputs/grok-replica/(tsconfig[^/]*\\.json|package\\.json|package-lock\\.json|pnpm-lock\\.yaml|yarn\\.lock)$"
+      ],
+      "$why": "Het typecheck-script van de repo, anders tsc -b bij project references (Vite), anders tsc --noEmit. Lockfiles in when: een dependency-update kan types breken.",
+      "run": "node {poort}/checks/typecheck.mjs",
+      "if": "test -f tsconfig.json",
+      "ifHint": "geen tsconfig.json",
+      "needs": "test -x node_modules/.bin/tsc || test -x node_modules/.bin/vue-tsc",
+      "needsHint": "npm ci (of pnpm install / yarn install)",
+      "timeout": 240,
+      "heavy": true
+    },
+    {
+      "id": "vitest",
+      "tier": "push",
+      "cwd": "outputs/grok-replica",
+      "when": [
+        "^outputs/grok-replica/.*\\.(ts|tsx|mts|cts|js|jsx|mjs|cjs|vue)$",
+        "^outputs/grok-replica/(package\\.json|package-lock\\.json|pnpm-lock\\.yaml|yarn\\.lock|vite(st)?\\.config\\.[cm]?[jt]s)$"
+      ],
+      "fullOn": "^outputs/grok-replica/(package\\.json|package-lock\\.json|pnpm-lock\\.yaml|yarn\\.lock|vite(st)?\\.config\\.[cm]?[jt]s)$",
+      "$why": "Alleen de tests die bij de gewijzigde bestanden horen (vitest related); na een dependency- of config-wijziging alle tests (fullOn).",
+      "run": "if printf '%s\\n' {files} | grep -qE '(^|/)(package\\.json|package-lock\\.json|pnpm-lock\\.yaml|yarn\\.lock|vite(st)?\\.config\\.[cm]?[jt]s)$'; then npx --no-install vitest run --passWithNoTests; else npx --no-install vitest related --run --passWithNoTests {files}; fi",
+      "if": "grep -q '\"vitest\"' package.json",
+      "ifHint": "vitest niet in package.json",
+      "needs": "test -x node_modules/.bin/vitest",
+      "needsHint": "npm ci (of pnpm install / yarn install)",
+      "timeout": 240,
+      "heavy": true
+    },
+    {
+      "id": "e2e-replay",
+      "tier": "push",
+      "type": "e2e",
+      "dir": "outputs/grok-replica",
+      "$why": "Recorded UI replay for the complete 409-case suite. The measured complete run took 1641.74 seconds, exceeding the old 1200-second gate budget even before repairs. A bounded 3600-second gate accommodates the expanded suite and shared-machine load. Per-operation product deadlines and test assertions are unchanged.",
+      "when": "^outputs/grok-replica/(src/|app/|pages/|components/|assets/|[^/]+\\.(html|css|js|mjs)$|tests/[^/]*\\.e2e\\.ts$|e2e\\.config\\.m?ts$|\\.e2e/cache/)",
+      "if": "test -f e2e.config.ts || test -f e2e.config.mts",
+      "ifHint": "geen e2e.config.ts",
+      "needs": "test -d node_modules/e2e",
+      "needsHint": "npm i -D e2e @e2e-dev/web",
+      "timeout": 3600,
+      "heavy": true,
+      "cwd": "outputs/grok-replica"
+    },
+    {
+      "id": "stale-branch",
+      "tier": "push",
+      "when": ".",
+      "cache": false,
+      "$why": "Blokkeert alleen een echt inhoudsconflict met de target-branch (git merge-tree); achterstand is advies. De branch komt uit POORT_BASE_REF, die poort zet.",
+      "run": "node {poort}/checks/stale-branch.mjs",
+      "timeout": 60,
+      "cwd": "outputs/grok-replica"
+    },
+    {
+      "id": "ripple",
+      "tier": "push",
+      "when": "^outputs/grok-replica/.*\\.(ts|tsx|mts|cts|js|jsx|mjs|vue)$",
+      "$why": "Advies: dezelfde functie elders nog eens gedefinieerd (een kopie die niet meeverandert). The repository-wide static name scan uses the shared heavy slot after a real 60-second startup-contention timeout. Detection and its 60-second budget remain unchanged.",
+      "run": "node {poort}/checks/ripple.mjs {files}",
+      "timeout": 60,
+      "cwd": "outputs/grok-replica",
+      "heavy": true
+    },
+    {
+      "id": "grok-harness-focused",
+      "tier": "push",
+      "cwd": "outputs/grok-replica",
+      "when": "^outputs/grok-replica/(harness/|tests/|[^/]+\\.(js|mjs|json|ts|css|html)$|\\.e2e/cache/)",
+      "run": "node --test --test-concurrency=2 tests/grok-*.test.mjs tests/model-*.test.mjs tests/claude-seat-model.test.mjs tests/harness-attachments*.test.mjs tests/harness-store.test.mjs tests/harness-workflows-receipts.test.mjs tests/harness-workflows.test.mjs tests/live-harness-surface.test.mjs tests/live-streaming-client.test.mjs tests/attachment-sharing-copy.test.mjs tests/newcommandpalette.test.mjs tests/live-attachment-preview.test.mjs tests/pdf-preview.test.mjs tests/document-preview.test.mjs tests/document-preview-http.test.mjs tests/static-assets.test.mjs tests/send-journal.test.mjs tests/send-draft-recovery.test.mjs tests/attachment-draft-recovery.test.mjs tests/live-queued-drafts.test.mjs tests/live-queue-draft-recovery.test.mjs tests/live-workflows-draft-actions.test.mjs tests/live-workflows-save-journal.test.mjs tests/live-workflows-action-ack.test.mjs tests/live-workflows-ownership.test.mjs tests/live-workflows-blocked-cancel.test.mjs tests/product-transcript-reply.test.mjs tests/tool-result-images.test.mjs tests/live-incoming-replies.test.mjs tests/live-provider-catalog.test.mjs tests/live-skills-controller.test.mjs tests/live-skills-projection.test.mjs tests/skill-reference-journals.test.mjs tests/composer-skill-query.test.mjs tests/composer-input.test.mjs tests/rich-queue-key.test.mjs tests/composer-document.test.mjs tests/composer-document-view.test.mjs tests/rich-text-journals.test.mjs tests/rich-text-transport.test.mjs tests/chat-rich-draft.test.mjs tests/chat-run-controller.test.mjs tests/composer-commands.test.mjs tests/composer-native-document.test.mjs tests/composer-quote.test.mjs tests/composer-emoji-index.test.mjs tests/composer-mentions.test.mjs tests/pr-reference.test.mjs tests/composer-mcp-reference.test.mjs tests/composer-todo-reference.test.mjs tests/canvas-*.test.mjs tests/live-canvas-controller.test.mjs tests/composer-canvas-reference.test.mjs tests/composer-canvas-view.test.mjs tests/composer-canvas-selection.test.mjs tests/skill-file-import.test.mjs tests/live-skill-import.test.mjs tests/composer-draft-retention.test.mjs tests/transcript-keyboard.test.mjs tests/transcript-reader-state.test.mjs tests/transcript-reader-dom.test.mjs tests/transcript-navigation-state.test.mjs tests/transcript-navigation-runtime.test.mjs tests/transcript-navigation-reader.test.mjs tests/transcript-history.test.mjs tests/transcript-unread*.test.mjs tests/transcript-covered.test.mjs tests/transcript-canonical-metadata.test.mjs tests/conversation-history*.test.mjs tests/device-sessions*.test.mjs tests/cloud-history*.test.mjs tests/product-devices.test.mjs tests/server-address.test.mjs tests/harness-health.test.mjs",
+      "timeout": 360,
+      "heavy": true,
+      "$why": "Focused acceptance of the independent host, real provider input/stream contracts, attachment boundaries, persistence and changed UI controllers. No historical Codex adapter tests or real account credentials. Limit Node file concurrency to two: the full 1367-case run passed at this setting, while the unbounded focused gate exhausted the streaming test polling window under concurrent UI load. Assertions and per-test deadlines remain unchanged. The isolated focused run with file concurrency two passed in 137.258 seconds; concurrent gate execution reached the old 180-second whole-check budget with zero assertion failures and 38 cancelled tests. A bounded 360-second check budget allows completion under shared-machine load without changing individual test deadlines."
+    },
+    {
+      "id": "e2e-live-harness",
+      "tier": "push",
+      "type": "e2e",
+      "dir": "outputs/grok-replica",
+      "when": "^outputs/grok-replica/(harness/|tests/|[^/]+\\.(js|mjs|json|ts|css|html)$|\\.e2e/cache/)",
+      "run": "npx --no-install e2e run --config e2e.live-harness.config.ts --strict-cache --reporter list,markdown",
+      "timeout": 900,
+      "heavy": true,
+      "$why": "Required genuine Claude-seat inference with real terminal, custom MCP, owned browser, acceptance recovery and ownership persistence. Six cases run on their own configured server; none are skipped for missing credentials.",
+      "cwd": "outputs/grok-replica"
+    },
+    {
+      "id": "e2e-streaming-attachments",
+      "tier": "push",
+      "type": "e2e",
+      "dir": "outputs/grok-replica",
+      "when": "^outputs/grok-replica/(harness/|tests/|[^/]+\\.(js|mjs|json|ts|css|html)$|\\.e2e/cache/)",
+      "run": "npx --no-install e2e run --config e2e.streaming.config.ts --strict-cache --trace off --reporter list,markdown",
+      "timeout": 180,
+      "heavy": true,
+      "$why": "Dedicated gated SSE fixture has its own server and test discovery. Always replay the streaming, cancellation and attachment draft-correction UI checks separately from the normal app suite.",
+      "cwd": "outputs/grok-replica"
+    },
+    {
+      "id": "autonomy-probe-smoke",
+      "tier": "push",
+      "cwd": "outputs/grok-replica",
+      "when": "^outputs/grok-replica/(scripts/verify-multistep-autonomy\\.mjs|harness/(send-message|model-provider|http)\\.mjs)$",
+      "run": "node scripts/verify-multistep-autonomy.mjs --validator-smoke",
+      "needs": "command -v node",
+      "needsHint": "Node.js 22.13 or newer is required",
+      "timeout": 30,
+      "heavy": true,
+      "$why": "Eight pre-execution validator cases for the opt-in real-provider probe: authoritative native replies are accepted; foreign replies, attachments, unexpected tools, batches, order violations and duplicates are rejected. This flag starts no server, model or effect."
+    },
+    {
+      "id": "desktop-node",
+      "tier": "push",
+      "when": "^outputs/(grok-desktop/|grok-replica/(harness/http\\.mjs|index\\.html|desktop-shell\\.(js|css)))",
+      "run": "node --test tests/*.test.mjs",
+      "cwd": "outputs/grok-desktop",
+      "timeout": 60,
+      "heavy": true,
+      "$why": "Local desktop lifecycle, strict backend identity probe and renderer isolation; synthetic HTTP servers and child processes only. No Electron installation or GUI required for these Node tests."
+    }
+  ]
+}

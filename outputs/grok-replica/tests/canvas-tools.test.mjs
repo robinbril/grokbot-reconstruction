@@ -1,0 +1,22 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {mkdtemp,rm} from 'node:fs/promises';
+import path from 'node:path';
+import os from 'node:os';
+import {HarnessStore} from '../harness/store.mjs';
+import {createGrokToolHost} from '../harness/grok-tool-host.mjs';
+const id='11111111-1111-4111-8111-111111111111';
+test('actual tool host exposes scoped canvas tools and immutable call-ID write receipts',async t=>{
+ const dataDir=await mkdtemp(path.join(os.tmpdir(),'grok-canvas-tools-'));t.after(()=>rm(dataDir,{recursive:true,force:true}));
+ const store=await new HarnessStore({dataDir}).init();await store.transaction('owner',id,()=>{});const state=store.get('owner',id);
+ const host=await createGrokToolHost({runtime:{store},c:{owner:'owner',id},workspace:state.workspaceRoot,state});t.after(()=>host.close());
+ const tools=host.getDefinitions().filter(tool=>tool.serverId==='grok_canvas');assert.deepEqual(tools.map(tool=>tool.name),['canvas_list','canvas_read','canvas_create','canvas_update']);assert.ok(tools.every(tool=>tool.inputSchema.additionalProperties===false));
+ const args={title:'Actual canvas',source:'export default function App(){return <h1>Proof</h1>}'};const options={runId:'run',callId:'call-create'};
+ const created=await host.call('canvas_create',args,options);assert.equal(created.canvas.revision,1);assert.deepEqual(await host.call('canvas_create',args,options),created);
+ await assert.rejects(host.call('canvas_create',{...args,title:'Different'},options),{code:'IDEMPOTENCY_CONFLICT'});
+ const list=await host.call('canvas_list',{});assert.equal(list.canvases.length,1);assert.equal('source' in list.canvases[0],false);
+ assert.equal((await host.call('canvas_read',{canvasId:created.canvas.id})).canvas.source,args.source);
+ const updated=await host.call('canvas_update',{canvasId:created.canvas.id,title:'Edited',source:args.source,expectedRevision:1},{runId:'run',callId:'call-edit'});assert.equal(updated.canvas.revision,2);
+ await assert.rejects(host.call('canvas_create',{...args,extra:true},{runId:'run',callId:'invalid'}));await assert.rejects(host.call('canvas_create',args),{code:'CANVAS_CALL_ID_REQUIRED'});
+ assert.equal(store.get('owner',id).canvases.length,1);
+});

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T09:07:08.476Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Find Customers\"",
+        "target": {
+          "role": "button",
+          "name": "Find Customers"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/workflow-delivery.e2e.ts::two%20offline%20messages%20survive%20reload%20and%20repeated%20reconnect%20delivers%20each%20nonce%20once%20in%20order",
+      "targetId": "web",
+      "instructionDigest": "b29eb04f03ef8a9b8061264aa5336ae6f8eda126d93592ced8bf20b0d0733827",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped 'Find Customers' in sidebar; the conversation header now shows 'Find Customers' as the open chat.",
+    "startPath": "/",
+    "endPath": "/",
+    "goneAnchors": [
+      {
+        "text": "eerste wachtrijbericht"
+      },
+      {
+        "text": "Dit is een lokale voorbeeldreactie. Je bericht is in deze browser opgeslagen; er is geen model of externe dienst aangeroepen."
+      }
+    ],
+    "endWaitMs": 18706
+  }
+}

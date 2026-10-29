@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-17T11:09:26.926Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "select",
+        "summary": "select \"Echte harness\" in combobox \"Uitvoering\" in \"Marketing Agent\"",
+        "target": {
+          "role": "combobox",
+          "name": "Uitvoering",
+          "within": "Marketing Agent"
+        },
+        "value": "Echte harness"
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-harness.e2e.ts::real%20installed%20model%20uses%20approved%20native%20terminal%20custom%20MCP%20and%20owned%20browser%20and%20survives%20reload",
+      "targetId": "web",
+      "instructionDigest": "b2afffef7ebbfab2d50a1defeda53ab88c958e80cf1482783aef38b6265e2a84",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Selected \"Echte harness\" in the Uitvoering combobox. It now has value \"live\" with that option selected. The screen shows the status \"Codex CLI op deze Mac · model via OpenAI · gpt-6.1-sol\". No message was submitted.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Codex CLI op deze Mac · model via OpenAI · gpt-6.1-sol"
+      },
+      {
+        "role": "option",
+        "name": "Lokale voorbeelden"
+      },
+      {
+        "role": "option",
+        "name": "Echte harness",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "text": "Echte uitvoering in de eigen werkmap op deze Mac"
+      },
+      {
+        "role": "button",
+        "name": "Computer openen"
+      },
+      {
+        "role": "combobox",
+        "name": "Uitvoering",
+        "value": "live"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "option",
+        "name": "Lokale voorbeelden",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "option",
+        "name": "Echte harness"
+      },
+      {
+        "role": "combobox",
+        "name": "Uitvoering",
+        "value": "demo"
+      }
+    ],
+    "endWaitMs": 15835
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-17T11:28:32.755Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap group in \"Terug\" (1 of 3)",
+        "target": {
+          "role": "group",
+          "within": "Terug",
+          "position": {
+            "index": 0,
+            "of": 3
+          }
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/product-faithful-workflows.e2e.ts::actual%20tool%20permission%20and%20app%20install%20update%20source%20recommendation%20logos%20without%20installed-logo%20substitution",
+      "targetId": "web",
+      "instructionDigest": "9b542ee48d0f7825ac00032bc0a8a1a209f9ab5b18cae13f6465566402d381b3",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Eerste vaardigheid 'Search 21st.dev' opengeklapt: toont beschrijving, 'twentyone_01', 'Deze tool inschakelen' en een aangevinkt checkbox 'Search 21st.dev inschakelen'.",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "text": "Deze gereconstrueerde vaardigheid toont de interface en het invoercontract. Er wordt geen externe tool aangeroepen."
+      },
+      {
+        "text": "Deze tool inschakelen"
+      },
+      {
+        "role": "checkbox",
+        "name": "Search 21st.dev inschakelen",
+        "states": [
+          "checked"
+        ]
+      }
+    ],
+    "endWaitMs": 14015
+  }
+}

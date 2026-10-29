@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-17T11:30:04.039Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Nieuw document\"",
+        "target": {
+          "role": "button",
+          "name": "Nieuw document"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/product-primary-motion-proof.e2e.ts::document%20title%20rename%20cancels%20and%20commits%20while%20actual%20find%20navigates%20real%20sent%20text%20and%20restores%20focus",
+      "targetId": "web",
+      "instructionDigest": "5848fc1477c91e10a63f3bfda3afb74332f686503ce77667c753a147cff4f038",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Op 'Nieuw document' in de Bibliotheek-tab van Marketing Agent getikt. Er opende een dialoog 'Naamloos document' met een tekstopmaak-werkbalk, het invoerveld 'Documentinhoud', de status 'Niet opgeslagen' en de knop 'Document opslaan'. Het document is nog niet opgeslagen.",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Niet opgeslagen"
+      },
+      {
+        "role": "button",
+        "name": "Sluiten"
+      },
+      {
+        "text": "Naamloos document"
+      },
+      {
+        "text": "B"
+      },
+      {
+        "text": "I"
+      },
+      {
+        "role": "button",
+        "name": "Link invoegen"
+      },
+      {
+        "role": "button",
+        "name": "Document koppelen"
+      },
+      {
+        "role": "button",
+        "name": "Ongedaan maken"
+      }
+    ],
+    "endWaitMs": 14504
+  }
+}

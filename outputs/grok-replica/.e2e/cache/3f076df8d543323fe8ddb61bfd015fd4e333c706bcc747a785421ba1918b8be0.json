@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T10:23:32.865Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Naar oorspronkelijk bericht\" in \"Synthetic source\"",
+        "target": {
+          "role": "button",
+          "name": "Naar oorspronkelijk bericht",
+          "within": "Synthetic source"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/transcript-navigation.e2e.ts::quoted%20far%20original%20actually%20reaches%20its%20centered%20viewport%20target",
+      "targetId": "web",
+      "instructionDigest": "3592c75a42c8186ab5996c7526df547229c7259fc5fbfb2e4a0d7c4837ce93db",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped 'Naar oorspronkelijk bericht' in the last message (quote of SYNTHETIC_NAVIGATION_4). A 'Naar laatste bericht' button appeared, which shows the view jumped away from the bottom to the quoted source message. I did not check the scroll position separately.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Naar laatste bericht"
+      }
+    ],
+    "endWaitMs": 23634
+  }
+}

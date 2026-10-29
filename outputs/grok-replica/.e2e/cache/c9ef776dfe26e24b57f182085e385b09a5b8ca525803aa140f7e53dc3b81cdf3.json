@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-18T16:59:16.415Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Bijvoegen\" in \"Aan:\"",
+        "target": {
+          "role": "button",
+          "name": "Bijvoegen",
+          "within": "Aan:"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap menuitem \"Taak plannen\"",
+        "target": {
+          "role": "menuitem",
+          "name": "Taak plannen"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-workflows-ownership.e2e.ts::planning%20from%20the%20live%20landing%20promotes%20a%20visible%20conversation%20and%20survives%20reload",
+      "targetId": "web",
+      "instructionDigest": "994b33c062de694d48254dedb56ac3a442c5ce5b2cbe6d2698fb572a04b71b32",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Opened Bijvoegen menu in the new live chat and tapped 'Taak plannen'; the 'Routine toevoegen' dialog is now open (fields Naam, Opdracht, Herhaling, Datum en tijd, Tijdzone).",
+    "startPath": "http://127.0.0.1:18876/",
+    "endPath": "http://127.0.0.1:18876/",
+    "endAnchors": [
+      {
+        "text": "Grok Bot"
+      },
+      {
+        "text": "Nieuw gesprek"
+      },
+      {
+        "role": "button",
+        "name": "Meer opties voor Grok Bot"
+      },
+      {
+        "role": "button",
+        "name": "Gespreksopties"
+      },
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "placeholder": "Bericht sturen naar Grok Bot"
+      },
+      {
+        "role": "button",
+        "name": "Sluiten"
+      },
+      {
+        "role": "heading",
+        "name": "Routine toevoegen"
+      },
+      {
+        "text": "Naam"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Aan:"
+      },
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "placeholder": "Bericht sturen naar Bot"
+      },
+      {
+        "role": "button",
+        "name": "Start a chat with..."
+      }
+    ],
+    "endWaitMs": 13910
+  }
+}

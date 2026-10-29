@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:26:59.625Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Import opnieuw proberen\" in \"Controleer je import\"",
+        "target": {
+          "role": "button",
+          "name": "Import opnieuw proberen",
+          "within": "Controleer je import"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/skill-import.e2e.ts::folder%20import%20exact-name%20update%20and%20duplicate%20suffix%20retry%20the%20same%20accepted%20request%20after%20a%20lost%20ACK",
+      "targetId": "web",
+      "instructionDigest": "7c053434f7975bb7cd657f759592fa105e8ff2df8fe81130322402e808add56b",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Op 'Import opnieuw proberen' getapt. De import is gelukt: status '2 skills geïmporteerd.'; exact is nu Versie 2 en exact-2 is Versie 1.",
+    "startPath": "http://127.0.0.1:19042/",
+    "endPath": "http://127.0.0.1:19042/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "2 skills geïmporteerd."
+      },
+      {
+        "text": "· Versie 2"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "alert",
+        "name": "Failed to fetch"
+      },
+      {
+        "role": "heading",
+        "name": "Controleer je import"
+      },
+      {
+        "text": "Deze lokale import wordt pas na bevestiging opgeslagen. Bestaande versies blijven beschikbaar."
+      },
+      {
+        "text": "Bijwerken van versie 1"
+      },
+      {
+        "text": "Nieuwe skill"
+      },
+      {
+        "role": "button",
+        "name": "Import opnieuw proberen"
+      },
+      {
+        "role": "button",
+        "name": "Import sluiten"
+      },
+      {
+        "role": "region",
+        "name": "Import controleren"
+      }
+    ],
+    "endWaitMs": 14501
+  }
+}

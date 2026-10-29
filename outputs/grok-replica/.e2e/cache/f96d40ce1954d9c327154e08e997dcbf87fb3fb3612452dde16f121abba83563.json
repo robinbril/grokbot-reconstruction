@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-18T17:02:50.643Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Upload opnieuw proberen: pipeline.txt\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Upload opnieuw proberen: pipeline.txt",
+          "text": "Opnieuw proberen",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-workflows.e2e.ts::upload%20fails%20retries%20same%20reservation%20and%20exact%20original%20download%20survives%20attachment-only%20acceptance",
+      "targetId": "web",
+      "instructionDigest": "84422eea9a6bc031c20bed8fd31a4ec3bdba346f50cac331107282175d623881",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped 'Upload opnieuw proberen: pipeline.txt'. Attachment pipeline.txt now shows status 'Gereed' (retry button gone, remove button remains).",
+    "startPath": "http://127.0.0.1:18876/",
+    "endPath": "http://127.0.0.1:18876/",
+    "endAnchors": [
+      {
+        "text": "Gereed"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Upload mislukt"
+      },
+      {
+        "role": "button",
+        "name": "Upload opnieuw proberen: pipeline.txt",
+        "text": "Opnieuw proberen"
+      }
+    ],
+    "endWaitMs": 15052
+  }
+}

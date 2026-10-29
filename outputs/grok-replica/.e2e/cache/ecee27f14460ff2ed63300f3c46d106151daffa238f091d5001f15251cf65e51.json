@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:43:01.604Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Ontvangst controleren: Nu uitvoeren: Ow…\" in \"Owned run-now ACK routine\"",
+        "target": {
+          "role": "button",
+          "name": "Ontvangst controleren: Nu uitvoeren: Owned run-now ACK routine",
+          "within": "Owned run-now ACK routine"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-workflows-action-ack.e2e.ts::failed%20run-now%20ACK%20retirement%20recovers%20one%20occurrence%20and%20a%20later%20explicit%20run-now%20admits%20exactly%20one%20more",
+      "targetId": "web",
+      "instructionDigest": "b4f115ba8f729e82652b469417e612d89b2091515aa1fba4762baea12a738e66",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped 'Ontvangst controleren' in the routine dialog. The 'eerdere actie is nog niet bevestigd' warning and the Echte wachtrij ACK button are gone. Bewerken, Pauzeren, Nu uitvoeren and Verwijderen are listed again, and the dialog still shows the history entry.",
+    "startPath": "http://127.0.0.1:18876/",
+    "endPath": "http://127.0.0.1:18876/",
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "Een eerdere actie is nog niet bevestigd. Kies Ontvangst controleren voordat je deze actie opnieuw uitvoert."
+      },
+      {
+        "text": "Echte wachtrij"
+      },
+      {
+        "text": "0 wachtend of bezig"
+      },
+      {
+        "role": "button",
+        "name": "Ontvangst controleren: Nu uitvoeren: Owned run-now ACK routine"
+      },
+      {
+        "role": "region",
+        "name": "Echte wachtrij"
+      }
+    ],
+    "endWaitMs": 15711
+  }
+}

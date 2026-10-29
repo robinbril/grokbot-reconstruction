@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-20T16:14:51.154Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Bericht sturen\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Bericht sturen",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/pdf-page-input.e2e.ts::mixed%20scanned%20PDF%20sends%20real%20page%20pixels%20and%20selectable%20text%20and%20retains%20original%20across%20reload",
+      "targetId": "web",
+      "instructionDigest": "14bec65add1a26246995e6cc71b7804b8a4fc6a8a3d942836af4d78e334af858",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Bericht sturen eenmaal getapt. Het bericht 'Lees beide pagina’s van deze PDF.' met bijlage mixed-pages.pdf staat in het gesprek, en de bot antwoordde 'PDF-transport: 1 paginabeeld, tekstpagina ontvangen.' (Voltooid).",
+    "startPath": "http://127.0.0.1:18884/",
+    "endPath": "http://127.0.0.1:18884/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Voltooid"
+      },
+      {
+        "role": "status",
+        "name": "Grok Bot-harness · synthetic-pdf-transport · Verbonden"
+      },
+      {
+        "text": "15.0 KiB"
+      },
+      {
+        "role": "button",
+        "name": "Bijlage openen: mixed-pages.pdf",
+        "text": "Openen"
+      },
+      {
+        "role": "link",
+        "name": "Bijlage bewaren: mixed-pages.pdf",
+        "text": "Bewaren"
+      },
+      {
+        "text": "Lokaal"
+      },
+      {
+        "text": "PDF-transport: 1 paginabeeld, tekstpagina ontvangen."
+      },
+      {
+        "text": "SendMessage"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "Grok Bot-harness · synthetic-pdf-transport · Model geconfigureerd"
+      },
+      {
+        "text": "Gereed"
+      },
+      {
+        "text": "Documentcontrole bij verzending"
+      },
+      {
+        "role": "button",
+        "name": "Bijlage verwijderen: mixed-pages.pdf",
+        "text": "×"
+      },
+      {
+        "text": "Bij verzending gedeeld met het ingestelde model."
+      },
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "placeholder": "Bericht sturen naar Marketing Agent",
+        "value": "Lees beide pagina’s van deze PDF."
+      },
+      {
+        "role": "button",
+        "name": "Bericht sturen"
+      },
+      {
+        "name": "Bijlagen"
+      }
+    ],
+    "endWaitMs": 24463
+  }
+}

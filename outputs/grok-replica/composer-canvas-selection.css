@@ -1,0 +1,7 @@
+.composer-inline-canvas-selection,.inline-canvas-selection{display:inline-flex;align-items:center;gap:4px;padding-inline:3px;margin-inline:-3px;border-radius:6px;box-sizing:border-box;height:1lh;vertical-align:top;white-space:nowrap;max-width:min(100%,220px);min-width:0;color:inherit;background:transparent}
+.composer-inline-canvas-selection:hover,.inline-canvas-selection:hover{background:color-mix(in srgb,currentColor 20%,transparent)}
+.composer-inline-canvas-selection.ProseMirror-selectednode{background:var(--sand-bg-active,var(--pill))}
+.canvas-selection-label{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0;font-weight:500}
+.canvas-selection-icon{display:inline-flex;width:16px;height:16px;align-items:center;justify-content:center;flex-shrink:0}
+.canvas-selection-icon svg{display:block;width:12px;height:12px}
+@media(forced-colors:active){.composer-inline-canvas-selection.ProseMirror-selectednode{background:Highlight;color:HighlightText}}

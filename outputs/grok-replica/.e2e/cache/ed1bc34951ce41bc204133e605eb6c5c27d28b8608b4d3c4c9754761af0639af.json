@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:55:19.649Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Bijlage openen: report.csv\" in \"Jij\"",
+        "target": {
+          "role": "button",
+          "name": "Bijlage openen: report.csv",
+          "within": "Jij"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/outgoing-delivery.e2e.ts::outgoing%20file-only%20delivery%20downloads%20exact%20owned%20bytes%20and%20quotes%20jump%20across%20reload%20in%20both%20themes",
+      "targetId": "web",
+      "instructionDigest": "5dde43a3f182f669769653ea9fee660bd72dd162d1171fd6c2f9979101cfdc26",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped 'Bijlage openen: report.csv'. A dialog 'report.csv' opened with a Downloaden link, a Sluiten button and a table: header 'label | value', row 'synthetic | 42'.",
+    "startPath": "http://127.0.0.1:18877/",
+    "endPath": "http://127.0.0.1:18877/",
+    "endAnchors": [
+      {
+        "role": "link",
+        "name": "Downloaden"
+      },
+      {
+        "role": "button",
+        "name": "Sluiten"
+      },
+      {
+        "role": "columnheader",
+        "name": "label"
+      },
+      {
+        "role": "columnheader",
+        "name": "value"
+      },
+      {
+        "role": "cell",
+        "name": "synthetic"
+      },
+      {
+        "role": "dialog",
+        "name": "report.csv"
+      },
+      {
+        "role": "row",
+        "name": "label value"
+      },
+      {
+        "role": "row",
+        "name": "synthetic 42"
+      }
+    ],
+    "endWaitMs": 21148
+  }
+}

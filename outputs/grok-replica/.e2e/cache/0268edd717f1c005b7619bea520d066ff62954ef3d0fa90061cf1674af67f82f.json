@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-17T11:27:21.099Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "check",
+        "summary": "check radio \"Echte harness\" in \"Marketing Agent\"",
+        "target": {
+          "role": "radio",
+          "name": "Echte harness",
+          "within": "Marketing Agent"
+        },
+        "checked": true
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-harness.e2e.ts::direct%20terminal%20shows%20true%20stdout%20stderr%20exit%20and%20stop%20with%20actual%20owned%20browser%20interaction%20and%20frame",
+      "targetId": "web",
+      "instructionDigest": "96a0d60266f071375bb59fb00d519ce5588169e964c0cdf7873bb3377eadbcfa",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Checked the 'Echte harness' radio in the Uitvoering group. It now shows [checked focused] and 'Lokale voorbeelden' is unchecked. A status line appeared: 'Codex CLI op deze Mac · model via OpenAI · gpt-6.1-sol'. No message was submitted.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Codex CLI op deze Mac · model via OpenAI · gpt-6.1-sol"
+      },
+      {
+        "role": "radio",
+        "name": "Lokale voorbeelden"
+      },
+      {
+        "role": "radio",
+        "name": "Echte harness",
+        "states": [
+          "checked"
+        ]
+      },
+      {
+        "text": "Echte uitvoering in de eigen werkmap op deze Mac"
+      },
+      {
+        "role": "button",
+        "name": "Computer openen"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "radio",
+        "name": "Lokale voorbeelden",
+        "states": [
+          "checked"
+        ]
+      },
+      {
+        "role": "radio",
+        "name": "Echte harness"
+      }
+    ],
+    "endWaitMs": 13680
+  }
+}

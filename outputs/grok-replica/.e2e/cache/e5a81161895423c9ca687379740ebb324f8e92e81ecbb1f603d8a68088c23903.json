@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T09:03:14.580Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Accountmenu\"",
+        "target": {
+          "role": "button",
+          "name": "Accountmenu"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap menuitem \"Help en feedback\"",
+        "target": {
+          "role": "menuitem",
+          "name": "Help en feedback"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Gespreksvoorbeelden openen\" in \"Help en feedback\"",
+        "target": {
+          "role": "button",
+          "name": "Gespreksvoorbeelden openen",
+          "within": "Help en feedback"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/rich-transcript.e2e.ts::rijke%20lokale%20voorbeelden%20tonen%20tabel%20code%20formule%20en%20veilige%20bronlinks",
+      "targetId": "web",
+      "instructionDigest": "aa80eacb809e6b25e0ab728210bb559d25f0ce65edc57d7b32478775b24feb48",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Accountmenu → Help en feedback → Gespreksvoorbeelden openen gedaan. Het gesprek 'Gespreksvoorbeelden' staat nu open met lokale voorbeeldberichten (tabel, code, keuzegroep).",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "text": "Gespreksvoorbeelden"
+      },
+      {
+        "text": "Lokaal voorbeeld van berichtweergave"
+      },
+      {
+        "role": "button",
+        "name": "Meer opties voor Gespreksvoorbeelden"
+      },
+      {
+        "role": "button",
+        "name": "Gespreksopties"
+      },
+      {
+        "text": "Lokaal gespreksvoorbeeld · geen modeluitvoering"
+      },
+      {
+        "role": "heading",
+        "name": "Pipelinekwaliteit"
+      },
+      {
+        "text": "Dit is een lokaal voorbeeld van Markdown, geen gegenereerde analyse."
+      },
+      {
+        "role": "columnheader",
+        "name": "Groep"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Aan:"
+      },
+      {
+        "role": "button",
+        "name": "Start a chat with..."
+      }
+    ],
+    "endWaitMs": 20816
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "areas": {
+    "outputs": {
+      "responsibility": "Runnable web application and isolated desktop client, each with its own manifest and tests."
+    },
+    "docs": {
+      "responsibility": "Architecture and original documentation assets; no runtime dependency or research dump."
+    }
+  },
+  "allowedRootFiles": [
+    "package.json",
+    ".env.example",
+    ".env",
+    "poort.config.json"
+  ],
+  "boundariesDocument": "docs/ARCHITECTURE.md",
+  "forbiddenDependencies": [
+    {
+      "from": "outputs",
+      "to": "docs"
+    }
+  ]
+}

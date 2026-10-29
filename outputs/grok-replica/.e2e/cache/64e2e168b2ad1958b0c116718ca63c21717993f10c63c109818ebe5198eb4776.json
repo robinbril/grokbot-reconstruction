@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T11:45:55.387Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Naar ongelezen berichten\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Naar ongelezen berichten",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/transcript-unread.e2e.ts::unread%20pill%20jumps%20to%20the%20exact%20source%20divider%20with%20native%20smooth%20owner%20and%20preserves%20the%20actual%20draft",
+      "targetId": "web",
+      "instructionDigest": "3c03a438336a2c592e1b260d665a985b6ab8134008a5ec6aab5eaacc7ee7d08f",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped 'Naar ongelezen berichten'. The unread banner and its close button disappeared, and a 'Naar laatste bericht' button appeared. The 'Nieuw' separator before SYNTHETIC_UNREAD_6 is still in the list. I couldn't check the scroll position because no screenshot was available.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Naar laatste bericht"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "24 nieuwe berichten"
+      },
+      {
+        "role": "button",
+        "name": "Ongelezen melding sluiten"
+      },
+      {
+        "role": "button",
+        "name": "Naar ongelezen berichten"
+      }
+    ],
+    "endWaitMs": 74000
+  }
+}

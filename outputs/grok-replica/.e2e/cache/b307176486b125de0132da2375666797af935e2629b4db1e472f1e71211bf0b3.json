@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:10:58.168Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap option \"REA Wachtrijproef\"",
+        "target": {
+          "role": "option",
+          "name": "REA Wachtrijproef"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/composer-editor.e2e.ts::active-run%20queue%20keeps%20inline%20v1%20document%20while%20skill%20advances%20to%20v2%20and%20clears%20accepted%20editor%20history",
+      "targetId": "web",
+      "instructionDigest": "280fd4c9992f5ea48f3b3a3b4a75b01cef3f274971aaba0a3a32880f157b4ee8",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "REA Wachtrijproef gekozen uit de suggesties; de lijst sloot en het invoerveld toont nu een chip 'REA Wachtrijproef · Versie 1' met waarde '@REA Wachtrijproef '.",
+    "startPath": "http://127.0.0.1:18891/",
+    "endPath": "http://127.0.0.1:18891/",
+    "endAnchors": [
+      {
+        "role": "image",
+        "name": "REA Wachtrijproef · Versie 1",
+        "text": "@REA Wachtrijproef"
+      },
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "value": "@REA Wachtrijproef"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "REA Wachtrijproef"
+      },
+      {
+        "text": "Synthetische editorproef."
+      },
+      {
+        "text": "Vaardigheid"
+      },
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "value": "@REA Wachtrijproef",
+        "states": [
+          "expanded"
+        ]
+      },
+      {
+        "role": "listbox",
+        "name": "Vermelding"
+      },
+      {
+        "role": "option",
+        "name": "REA Wachtrijproef",
+        "states": [
+          "selected"
+        ]
+      }
+    ],
+    "endWaitMs": 14705
+  }
+}

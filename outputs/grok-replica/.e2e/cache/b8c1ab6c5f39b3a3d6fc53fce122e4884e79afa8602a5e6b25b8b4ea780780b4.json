@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-15T13:20:49.469Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Marketing Agent"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Gespreksdetails\" in \"Marketing Agent\" (1 of 2)",
+        "target": {
+          "role": "button",
+          "name": "Gespreksdetails",
+          "within": "Marketing Agent",
+          "position": {
+            "index": 0,
+            "of": 2
+          }
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/replica.e2e.ts::botdetails%20houden%20bibliotheek%20en%20computer%20apart",
+      "targetId": "web",
+      "instructionDigest": "b8d564dedaf96c96fe31e79aaa44975bf68706c47eff037d8c285eb62571e591",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Het gesprek met Marketing Agent is geopend en het paneel Gespreksdetails is zichtbaar (tab Details geselecteerd, Naam 'Marketing Agent').",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Gespreksopties"
+      },
+      {
+        "role": "tab",
+        "name": "Details",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "tab",
+        "name": "Bibliotheek"
+      },
+      {
+        "role": "tab",
+        "name": "Computer"
+      },
+      {
+        "role": "button",
+        "name": "Details sluiten"
+      },
+      {
+        "role": "button",
+        "name": "Bot-avatar wijzigen"
+      },
+      {
+        "role": "heading",
+        "name": "Marketing Agent"
+      },
+      {
+        "text": "Alleen jij"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Aan:"
+      },
+      {
+        "role": "button",
+        "name": "Start a chat with..."
+      }
+    ],
+    "endWaitMs": 14949
+  }
+}

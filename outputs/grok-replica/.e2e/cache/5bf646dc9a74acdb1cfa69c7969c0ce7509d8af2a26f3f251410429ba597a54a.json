@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-16T18:51:23.284Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap option \"Nieuwe Bot\" in \"Marketing Agent\"",
+        "target": {
+          "role": "option",
+          "name": "Nieuwe Bot",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/workflow-identity.e2e.ts::slash%20bot%20creation%20uses%20the%20canonical%20character%20picker%20and%20persists%20the%20chosen%20identity",
+      "targetId": "web",
+      "instructionDigest": "9dc4108a8f06e38336e6fa5027808b135fbb809971aaea6d63a0769c9d877c2a",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped the 'Nieuwe Bot' option in the slash suggestions. The dialog 'Nieuwe Bot maken' opened with an empty Bot-naam field (focused) and a disabled Maken button.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "placeholder": "Bericht sturen naar Marketing Agent"
+      },
+      {
+        "role": "button",
+        "name": "Spraakmodus"
+      },
+      {
+        "role": "button",
+        "name": "Sluiten"
+      },
+      {
+        "role": "heading",
+        "name": "Nieuwe Bot maken"
+      },
+      {
+        "role": "button",
+        "name": "Personage"
+      },
+      {
+        "role": "textbox",
+        "name": "Bot-naam",
+        "placeholder": "Geef je Bot een naam"
+      },
+      {
+        "role": "button",
+        "name": "Vorm van personage blob"
+      },
+      {
+        "role": "button",
+        "name": "Vorm van personage wolk"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "placeholder": "Bericht sturen naar Marketing Agent",
+        "value": "/bot",
+        "states": [
+          "expanded"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "Bericht sturen"
+      },
+      {
+        "text": "Nieuwe Bot"
+      },
+      {
+        "text": "Maak een Bot"
+      },
+      {
+        "text": "Actie"
+      },
+      {
+        "role": "listbox",
+        "name": "Vaardigheden en acties"
+      },
+      {
+        "role": "option",
+        "name": "Nieuwe Bot",
+        "states": [
+          "selected"
+        ]
+      }
+    ],
+    "endWaitMs": 16457
+  }
+}

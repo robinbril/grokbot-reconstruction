@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "description": "Verbatim copies of actual installed Codex schema export captured by the parent workflow investigation. Protocol declarations only; installed content inference is proved by the separate real provider execution.",
+  "files": [
+    {
+      "file": "TurnStartParams.json",
+      "sha256": "583aff13e7a2da43fbb0150e0edc3c73171f374f0aa745dddba256166988a005",
+      "source": "work/versions/0.71.2/workflows-2026-10-18/reference/installed-codex-schema/v2/TurnStartParams.json"
+    },
+    {
+      "file": "CommandExecutionRequestApprovalParams.json",
+      "sha256": "16a71816c2d66e319c2c4aa83dd636dfdc43c61e72b6d5475e421ce08d8e6558",
+      "source": "work/versions/0.71.2/workflows-2026-10-18/reference/installed-codex-schema/CommandExecutionRequestApprovalParams.json"
+    }
+  ]
+}

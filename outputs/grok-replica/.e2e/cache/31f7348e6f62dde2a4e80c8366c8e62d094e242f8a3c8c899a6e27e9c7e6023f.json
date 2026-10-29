@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:50:04.600Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Routine opslaan\" in \"Routine toevoegen\"",
+        "target": {
+          "role": "button",
+          "name": "Routine opslaan",
+          "within": "Routine toevoegen"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-workflows-rejected-save.e2e.ts::a%20server-rejected%20past%20routine%20retains%20the%20form%20and%20saves%20one%20corrected%20future%20job",
+      "targetId": "web",
+      "instructionDigest": "8ffd3f525fffe2500abffaf7bccaf58b429736ee8a5b41608809733f6d0e1dcc",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped Routine opslaan with corrected date 2026-10-23T08:49:28.534Z. Routine saved: dialog now shows 'Correctable past routine' details, status Actief, next run 23-10-2026 10:49:28.",
+    "startPath": "http://127.0.0.1:18876/",
+    "endPath": "http://127.0.0.1:18876/",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "Correctable past routine"
+      },
+      {
+        "text": "REJECTED_CREATE_PROMPT"
+      },
+      {
+        "text": "Status"
+      },
+      {
+        "text": "Actief"
+      },
+      {
+        "text": "Planning"
+      },
+      {
+        "text": "Europe/Amsterdam"
+      },
+      {
+        "text": "Volgende uitvoering"
+      },
+      {
+        "role": "button",
+        "name": "Bewerken"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "heading",
+        "name": "Routine toevoegen"
+      },
+      {
+        "text": "Naam"
+      },
+      {
+        "role": "textbox",
+        "name": "Naam",
+        "value": "Correctable past routine"
+      },
+      {
+        "text": "Opdracht"
+      },
+      {
+        "role": "textbox",
+        "name": "Opdracht",
+        "value": "REJECTED_CREATE_PROMPT"
+      },
+      {
+        "text": "Herhaling"
+      },
+      {
+        "role": "option",
+        "name": "Eenmalig",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "option",
+        "name": "Dagelijks"
+      }
+    ],
+    "endWaitMs": 34007
+  }
+}

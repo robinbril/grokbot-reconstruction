@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:49:06.132Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Bijvoegen\" in \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Bijvoegen",
+          "within": "Marketing Agent"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap menuitem \"Taak plannen\"",
+        "target": {
+          "role": "menuitem",
+          "name": "Taak plannen"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-workflows-ownership.e2e.ts::live%20queue%20upload%20chips%20and%20planner%20stay%20contained%20in%20light%20dark%20desktop%20and%20390px%20layouts",
+      "targetId": "web",
+      "instructionDigest": "287f396207c84762b7131b4796baad07370ed831f8e4f61d685b531f594d3063",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 3,
+      "agent": "default"
+    },
+    "summary": "Opened Bijvoegen menu and chose 'Taak plannen'. The 'Routine toevoegen' dialog is open (Naam, Opdracht, Herhaling, Datum en tijd, Tijdzone, Routine opslaan). Nothing was sent; pipeline.txt remains attached as Gereed.",
+    "startPath": "http://127.0.0.1:18876/",
+    "endPath": "http://127.0.0.1:18876/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Sluiten"
+      },
+      {
+        "role": "heading",
+        "name": "Routine toevoegen"
+      },
+      {
+        "text": "Naam"
+      },
+      {
+        "role": "textbox",
+        "name": "Naam"
+      },
+      {
+        "text": "Opdracht"
+      },
+      {
+        "role": "textbox",
+        "name": "Opdracht"
+      },
+      {
+        "text": "Herhaling"
+      },
+      {
+        "role": "option",
+        "name": "Eenmalig",
+        "states": [
+          "selected"
+        ]
+      }
+    ],
+    "endWaitMs": 18114
+  }
+}

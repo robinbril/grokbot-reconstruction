@@ -1,0 +1,24 @@
+{
+  "version": "0.75.5",
+  "scope": "Explicit synthetic reference only; original shipped bytes unchanged",
+  "files": [
+    {
+      "source": "/Users/robinbril/Documents/Codex/2026-10-15/if-you-were-to-be-an-2/repositories/grokbot-reconstruction/work/versions/0.71.2/screenshot-chat-2026-10-26/icons/0.75.5/index.eager-common-F4Y1-gMW.js",
+      "file": "index.eager-common-F4Y1-gMW.js",
+      "sha256": "246b816df876a6257fd643f0264acdb099e761ce932a6dcd0e6da2378f403964",
+      "bytes": 353729
+    },
+    {
+      "source": "/Users/robinbril/Documents/Codex/2026-10-15/if-you-were-to-be-an-2/repositories/grokbot-reconstruction/work/versions/0.71.2/screenshot-chat-2026-10-26/icons/0.75.5/chunk-rolldown-runtime-C0FnF6B9.js",
+      "file": "chunk-rolldown-runtime-C0FnF6B9.js",
+      "sha256": "e0a79ad36c6ca1ffbc796c80aa5661803a9d1bc684e29d1587f48b4ba9a82714",
+      "bytes": 1291
+    },
+    {
+      "source": "/Users/robinbril/Documents/Codex/2026-10-15/if-you-were-to-be-an-2/repositories/grokbot-reconstruction/work/versions/0.71.2/screenshot-chat-2026-10-26/icons/0.75.5/cursor-icons-16-QUmxS7q3.woff2",
+      "file": "cursor-icons-16-QUmxS7q3.woff2",
+      "sha256": "420c80f80c2e1f094b91ae993799c93dcba4afc7372a0ccfe8a29d53c64593a7",
+      "bytes": 126980
+    }
+  ]
+}

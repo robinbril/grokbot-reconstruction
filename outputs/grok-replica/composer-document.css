@@ -1,0 +1,10 @@
+/* Inline references use the existing Grok pane/ink tokens in both themes. */
+.composer-document{white-space:pre-wrap;overflow-wrap:anywhere}
+.composer-document p{margin:0}
+.composer-document ol,.composer-document ul{white-space:normal;margin:.4em 0;padding-inline-start:1.6em}
+.composer-document li{white-space:pre-wrap}
+.composer-document li p+p{margin-top:.4em}
+.composer-document a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.inline-quote-reference{display:inline;border:.5px solid var(--line);border-radius:5px;background:var(--pill);color:var(--ink);padding:1px 5px;font-size:.93em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.inline-skill-reference{display:inline;padding:1px 5px;border:.5px solid var(--line);border-radius:5px;background:var(--pill);color:var(--ink);font-size:.93em;font-weight:500;line-height:inherit;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+@media(forced-colors:active){.inline-skill-reference{border-color:CanvasText;background:Canvas;color:CanvasText}}

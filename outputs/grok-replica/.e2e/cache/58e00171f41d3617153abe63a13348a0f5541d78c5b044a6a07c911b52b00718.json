@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:51:39.353Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Routine opslaan\" in \"Routine bewerken\"",
+        "target": {
+          "role": "button",
+          "name": "Routine opslaan",
+          "within": "Routine bewerken"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-workflows-save-journal.e2e.ts::accepted%20edit%20ACK%20replay%20across%20reload%20retains%20original%20request%20identity%20and%20revision%20two",
+      "targetId": "web",
+      "instructionDigest": "c5eb91b0d5fa675e04e9c0f4c9e2b254d75c129210d221e119da51de8f01e587",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped Routine opslaan with the unchanged edit (Opdracht JOURNAL_EDIT_AFTER). The save went through: the dialog now shows the 'Journal edit routine' details (Status Actief, Planning 2026-10-23T08:51:21.509Z, Europe/Amsterdam) with no error.",
+    "startPath": "http://127.0.0.1:18876/",
+    "endPath": "http://127.0.0.1:18876/",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "Journal edit routine"
+      },
+      {
+        "text": "JOURNAL_EDIT_AFTER"
+      },
+      {
+        "text": "Status"
+      },
+      {
+        "text": "Actief"
+      },
+      {
+        "text": "Planning"
+      },
+      {
+        "text": "Europe/Amsterdam"
+      },
+      {
+        "text": "Volgende uitvoering"
+      },
+      {
+        "role": "button",
+        "name": "Bewerken"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "heading",
+        "name": "Routine bewerken"
+      },
+      {
+        "text": "Bewerken wijzigt alleen toekomstige uitvoeringen."
+      },
+      {
+        "role": "textbox",
+        "name": "Naam",
+        "value": "Journal edit routine"
+      },
+      {
+        "text": "Opdracht"
+      },
+      {
+        "role": "textbox",
+        "name": "Opdracht",
+        "text": "JOURNAL_EDIT_AFTER",
+        "value": "JOURNAL_EDIT_AFTER"
+      },
+      {
+        "text": "Herhaling"
+      },
+      {
+        "role": "option",
+        "name": "Eenmalig",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "option",
+        "name": "Dagelijks"
+      }
+    ],
+    "endWaitMs": 18791
+  }
+}

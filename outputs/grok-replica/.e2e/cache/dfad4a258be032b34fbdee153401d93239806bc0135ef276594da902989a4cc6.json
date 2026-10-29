@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:38:02.599Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap option \"REA Composerproef\"",
+        "target": {
+          "role": "option",
+          "name": "REA Composerproef"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/composer-editor.e2e.ts::inline%20skill%20editing%20keeps%20cursor%2C%20undo%20history%20and%20draft%20identity%20through%20reload%20and%20bot%20switching",
+      "targetId": "web",
+      "instructionDigest": "3528c08653435fcf89dafcf3a047f4bac4632598b127c9770596aac29df315ac",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "REA Composerproef gekozen uit de suggesties. Het bericht bevat nu de vermelding (chip 'REA Composerproef · Versie 1') en de suggestielijst is gesloten. Niets verzonden.",
+    "startPath": "http://127.0.0.1:18891/",
+    "endPath": "http://127.0.0.1:18891/",
+    "endAnchors": [
+      {
+        "role": "image",
+        "name": "REA Composerproef · Versie 1",
+        "text": "@REA Composerproef"
+      },
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "value": "Voor @REA Composerproef"
+      },
+      {
+        "text": "Voor"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Voor @REA Composerproef"
+      },
+      {
+        "text": "REA Composerproef"
+      },
+      {
+        "text": "Synthetische editorproef."
+      },
+      {
+        "text": "Vaardigheid"
+      },
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "value": "Voor @REA Composerproef",
+        "states": [
+          "expanded"
+        ]
+      },
+      {
+        "role": "listbox",
+        "name": "Vermelding"
+      },
+      {
+        "role": "option",
+        "name": "REA Composerproef",
+        "states": [
+          "selected"
+        ]
+      }
+    ],
+    "endWaitMs": 17408
+  }
+}

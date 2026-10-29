@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-20T10:49:44.126Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Toets indrukken\" in \"Pagina bedienen\"",
+        "target": {
+          "role": "button",
+          "name": "Toets indrukken",
+          "within": "Pagina bedienen"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/browser-actions.e2e.ts::owned%20browser%20UI%20types%20Enter%20selects%20scrolls%20and%20retains%20drafts%20after%20reload",
+      "targetId": "web",
+      "instructionDigest": "00891bfe0ff95cfb1b9b682a1100beb07431f7619e6831e6661afc9a851c11b7",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped 'Toets indrukken' with Browsertoets set to Enter (unchanged). A new 'browser_press' tool message with status Voltooid appeared, and the capture timestamp updated to 12:49:37.",
+    "startPath": "http://127.0.0.1:18876/",
+    "endPath": "http://127.0.0.1:18876/",
+    "endAnchors": [
+      {
+        "text": "browser_fill"
+      },
+      {
+        "text": "browser_press"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Vastgelegd: 20-10-2026, 12:49:31"
+      }
+    ],
+    "endWaitMs": 15561
+  }
+}

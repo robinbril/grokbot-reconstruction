@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:03:11.768Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Bijlage openen: facts.pdf\" in \"facts.pdf\"",
+        "target": {
+          "role": "button",
+          "name": "Bijlage openen: facts.pdf",
+          "within": "facts.pdf"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/attachment-preview.e2e.ts::actual%20PDF%20canvas%20and%20DOCX%20semantic%20content%20preserve%20original%20downloads",
+      "targetId": "web",
+      "instructionDigest": "06f6045b17affa185994075639bdb2cfd7aaa076be576c08bbc09e531b9f77fe",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped 'Bijlage openen: facts.pdf'; a dialog 'facts.pdf' opened showing 'Page 1 of 1' and text 'PDF_VERIFIED_NONCE_ORANGE_8294', with Downloaden and Sluiten buttons.",
+    "startPath": "http://127.0.0.1:18880/",
+    "endPath": "http://127.0.0.1:18880/",
+    "endAnchors": [
+      {
+        "role": "link",
+        "name": "Downloaden"
+      },
+      {
+        "role": "button",
+        "name": "Sluiten"
+      },
+      {
+        "name": "Page 1 of 1"
+      },
+      {
+        "role": "dialog",
+        "name": "facts.pdf"
+      }
+    ],
+    "endWaitMs": 16179
+  }
+}

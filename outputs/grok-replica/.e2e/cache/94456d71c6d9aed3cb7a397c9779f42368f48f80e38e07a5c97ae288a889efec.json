@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-17T11:34:43.305Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Accountmenu\"",
+        "target": {
+          "role": "button",
+          "name": "Accountmenu"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap menuitem \"Help en feedback\"",
+        "target": {
+          "role": "menuitem",
+          "name": "Help en feedback"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/version0712-tasks.e2e.ts::0712%20taken%20vastzetten%20behoudt%20volgorde%20en%20identiteit%20na%20herladen",
+      "targetId": "web",
+      "instructionDigest": "65a865123b1b78d48e38d3637504b58fac5157d27dfec9d1e9b515c7cd7a5e56",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Opened Accountmenu and tapped 'Help en feedback'; the dialog 'Help en feedback' is now open with help text and links (Gespreksvoorbeelden, Bewegingslab, Iconenlab, etc.).",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Sluiten"
+      },
+      {
+        "role": "heading",
+        "name": "Help en feedback"
+      },
+      {
+        "text": "Gebruik de catalogus, botdetails en instellingen om de gereconstrueerde interface te verkennen. Lokale voorbeelden blijven in deze browser. Echte harness voert opdrachten uit via Codex op deze Mac en bewaart geschiedenis op de lokale server."
+      },
+      {
+        "role": "button",
+        "name": "Gespreksvoorbeelden openen"
+      },
+      {
+        "role": "button",
+        "name": "0.71.2 voorbeelden openen"
+      },
+      {
+        "role": "button",
+        "name": "Bewegingslab openen"
+      },
+      {
+        "role": "button",
+        "name": "Iconenlab openen"
+      },
+      {
+        "role": "button",
+        "name": "Voorbeeldgegevens herstellen"
+      }
+    ],
+    "endWaitMs": 13838
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-19T19:45:48.630Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Apps verbinden\"",
+        "target": {
+          "role": "button",
+          "name": "Apps verbinden"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Meer\" in \"Apps verbinden\"",
+        "target": {
+          "role": "button",
+          "name": "Meer",
+          "within": "Apps verbinden"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap menuitem \"Onderzoek\" in \"Apps verbinden\"",
+        "target": {
+          "role": "menuitem",
+          "name": "Onderzoek",
+          "within": "Apps verbinden"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/replica.e2e.ts::catalogus%20filtert%20de%20extra%20categorie%C3%ABn%20en%20toont%20een%20lege%20zoektoestand",
+      "targetId": "web",
+      "instructionDigest": "4762ba1d1901ce94435a85fd441db6b62902b89e005aa0f8ae9a6628227e580c",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Apps verbinden geopend, via Meer de categorie Onderzoek gekozen. De dialog toont nu alleen de sectie Onderzoek (Parallel, Context.dev, Ahrefs, enz.) en de categorieknop Onderzoek staat in de navigatie.",
+    "startPath": "/?reset=1",
+    "endPath": "/?reset=1",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Sluiten"
+      },
+      {
+        "role": "heading",
+        "name": "Apps verbinden"
+      },
+      {
+        "text": "10 verbonden"
+      },
+      {
+        "role": "combobox",
+        "name": "Zoeken in apps en vaardigheden",
+        "placeholder": "Zoeken in apps en vaardigheden"
+      },
+      {
+        "role": "button",
+        "name": "Bot-sjablonen"
+      },
+      {
+        "role": "button",
+        "name": "Alle"
+      },
+      {
+        "role": "button",
+        "name": "Wachtwoordbeheerders"
+      },
+      {
+        "role": "button",
+        "name": "Productiviteit"
+      }
+    ],
+    "endWaitMs": 16250
+  }
+}

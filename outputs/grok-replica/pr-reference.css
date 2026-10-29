@@ -1,0 +1,7 @@
+/* Native Q7/e8 composition: inline medium text,18px mark frame,1px underline. */
+a.pr-reference{white-space:nowrap;font-weight:500;cursor:pointer;text-decoration:none;color:inherit}
+.pr-reference-mark{display:inline-block;overflow:hidden;width:18px;height:18px;vertical-align:round(calc((1cap - 18px)/2),1px);margin-inline-end:4px;color:var(--secondary)}
+.pr-reference-mark svg{width:16px;height:16px}
+.pr-reference-label{white-space:normal;text-decoration-line:underline;text-decoration-style:solid;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:var(--line)}
+a.pr-reference:hover .pr-reference-label{ text-decoration-color:currentColor }
+a.pr-reference:focus-visible{outline:1px solid var(--accent);outline-offset:1px}

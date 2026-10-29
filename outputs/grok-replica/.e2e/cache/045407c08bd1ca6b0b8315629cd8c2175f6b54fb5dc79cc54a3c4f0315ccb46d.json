@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-18T17:02:05.655Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Nu uitvoeren\" in \"Protocol routine exact\"",
+        "target": {
+          "role": "button",
+          "name": "Nu uitvoeren",
+          "within": "Protocol routine exact"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-workflows.e2e.ts::live%20routines%20create%20edit%20enable%20pause%20and%20canonical%20history%20survive%20reload",
+      "targetId": "web",
+      "instructionDigest": "8be765a27932988b5bea6dc37405ca8879c33adbbd403c371ddbdc304c28e15e",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped Nu uitvoeren in the paused 'Protocol routine exact' dialog. An 'Echte wachtrij' region appeared with '1 wachtend of bezig' and a PROTOCOL_ROUTINE_EDITED item 'In wachtrij'. Geschiedenis now has a run at 18-10-2026, 19:01:22 with status 'In wachtrij'. The routine stays Gepauzeerd.",
+    "startPath": "http://127.0.0.1:18876/",
+    "endPath": "http://127.0.0.1:18876/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Voltooid"
+      },
+      {
+        "text": "Lokaal"
+      },
+      {
+        "text": "Protocol fixture output: PROTOCOL_ROUTINE_EDITED"
+      },
+      {
+        "role": "button",
+        "name": "Uitvoering bekijken"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Nog geen uitvoeringen."
+      }
+    ],
+    "endWaitMs": 15162
+  }
+}

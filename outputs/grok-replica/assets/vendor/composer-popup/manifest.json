@@ -1,0 +1,38 @@
+{
+  "pins": {
+    "@floating-ui/dom": "1.8.0"
+  },
+  "bundled": [
+    {
+      "name": "@floating-ui/core",
+      "version": "1.8.0",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@floating-ui/dom",
+      "version": "1.8.0",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "@floating-ui/utils",
+      "version": "0.2.12",
+      "license": "MIT",
+      "licenseFiles": [
+        "LICENSE"
+      ]
+    }
+  ],
+  "recipe": "npm ci && node scripts/vendor-composer-popup.mjs",
+  "nativeBoundary": "Native middleware and options are recovered; its resolved package version is unavailable. This maintained local package pin is not native version parity.",
+  "artifact": {
+    "file": "assets/vendor/composer-popup/floating-ui.js",
+    "bytes": 16628,
+    "sha256": "672e4139ab29fda4d9167c23a0aabeb59f919692dfca698b23f5c359dae0db89"
+  }
+}

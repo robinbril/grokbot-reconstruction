@@ -1,0 +1,138 @@
+{
+  "kind": "bounded native source evidence; IDs are local span labels, not REA engine IDs",
+  "capturedAt": "2026-10-21T11:24:32.296636+00:00",
+  "records": [
+    {
+      "id": "pending-policy",
+      "path": "/Users/robinbril/Documents/Codex/2026-10-15/if-you-were-to-be-an-2/work/versions/0.71.2/artifact/dist/renderer/assets/index.eager-app-DSuGVQNC.js",
+      "fileSha256": "cb1f20a05ee14c4e6c8f5fe37e7cad7074ed432b7f67ca29b3fd928042f1547b",
+      "charStart": 1189576,
+      "charEnd": 1190007,
+      "byteStart": 1189619,
+      "byteEnd": 1190050,
+      "excerptSha256": "dd9b4aeca7c7947103e71c20df71b1bdfe646fdb7de9257757c28e5adb94087b",
+      "excerpt": "const Hve=20,qve=3e4;function jXe(e,t){const n=t.currentAgentId===e.agentId;return!n&&t.nowMs-e.parkedAtMs>qve?{kind:\"drop\"}:n?t.isEntryInWindow?{kind:\"reveal\"}:t.isWindowLoading?{kind:\"wait\"}:t.hasOlderHistory?t.isLoadingOlderHistory?{kind:\"wait\"}:e.pagesRequested>=Hve?{kind:\"drop\"}:{kind:\"load-older\",requested:{...e,pagesRequested:e.pagesRequested+1}}:{kind:\"drop\"}:t.currentAgentId===e.fromAgentId?{kind:\"wait\"}:{kind:\"drop\"}}"
+    },
+    {
+      "id": "history-page-request",
+      "path": "/Users/robinbril/Documents/Codex/2026-10-15/if-you-were-to-be-an-2/work/versions/0.71.2/artifact/dist/renderer/assets/index.eager-app-DSuGVQNC.js",
+      "fileSha256": "cb1f20a05ee14c4e6c8f5fe37e7cad7074ed432b7f67ca29b3fd928042f1547b",
+      "charStart": 1541982,
+      "charEnd": 1542147,
+      "byteStart": 1542029,
+      "byteEnd": 1542194,
+      "excerptSha256": "02da9d89db0000c1576ce3e0ca95ed0b428c01bc8b75f9901bb4d86902157e8e",
+      "excerpt": "function Rw(e){return e.cursor.kind===\"unprobed\"||e.cursor.kind===\"more\"}function sRe(e,t){return e.cursor.kind!==\"more\"?null:{beforeSeq:e.cursor.beforeSeq,limit:t}}"
+    },
+    {
+      "id": "history-page-install",
+      "path": "/Users/robinbril/Documents/Codex/2026-10-15/if-you-were-to-be-an-2/work/versions/0.71.2/artifact/dist/renderer/assets/index.eager-app-DSuGVQNC.js",
+      "fileSha256": "cb1f20a05ee14c4e6c8f5fe37e7cad7074ed432b7f67ca29b3fd928042f1547b",
+      "charStart": 1542147,
+      "charEnd": 1542578,
+      "byteStart": 1542194,
+      "byteEnd": 1542625,
+      "excerptSha256": "8bc42970b04167d23e195065b158d65ffeca3a7a379856bfa8ae6b3a23cb1edc",
+      "excerpt": "function rRe(e,t,n){const s=new so(n),r=Xu(t.beforeSeq,t.entries.filter(a=>!s.has(a))),o=e.pages.find(a=>a.beforeSeq===t.beforeSeq);return{pages:o===void 0?[...e.pages,r]:e.pages.map(a=>a===o?r:a),cursor:t.nextBeforeSeq!=null?{kind:\"more\",beforeSeq:t.nextBeforeSeq}:{kind:\"exhausted\"},precedingTimestampMs:t.nextBeforeSeq!=null?t.precedingTimestampMs??null:null,teamSetupRows:e.teamSetupRows-(o?.teamSetupRows??0)+r.teamSetupRows}}"
+    },
+    {
+      "id": "history-page-prefix",
+      "path": "/Users/robinbril/Documents/Codex/2026-10-15/if-you-were-to-be-an-2/work/versions/0.71.2/artifact/dist/renderer/assets/index.eager-app-DSuGVQNC.js",
+      "fileSha256": "cb1f20a05ee14c4e6c8f5fe37e7cad7074ed432b7f67ca29b3fd928042f1547b",
+      "charStart": 1543360,
+      "charEnd": 1543514,
+      "byteStart": 1543407,
+      "byteEnd": 1543561,
+      "excerptSha256": "6fc50d6b27b5cd8ac057d66e76a7233428c6ec9fc2a23ce44c353a5781c7ba05",
+      "excerpt": "function lRe(e){if(e.pages.length===0)return[];const t=[];for(let n=e.pages.length-1;n>=0;n-=1){const s=e.pages[n];s!=null&&t.push(...s.entries)}return t}"
+    },
+    {
+      "id": "history-limits",
+      "path": "/Users/robinbril/Documents/Codex/2026-10-15/if-you-were-to-be-an-2/work/versions/0.71.2/artifact/dist/renderer/assets/index.eager-app-DSuGVQNC.js",
+      "fileSha256": "cb1f20a05ee14c4e6c8f5fe37e7cad7074ed432b7f67ca29b3fd928042f1547b",
+      "charStart": 1552585,
+      "charEnd": 1553009,
+      "byteStart": 1552632,
+      "byteEnd": 1553056,
+      "excerptSha256": "fca2cc85e885c9cd59f729d889bea9304cbd2f7c81e0253b342b82abc399ea4b",
+      "excerpt": "const TRe=512,IRe=[1e3,2e3,4e3,8e3,16e3],RRe=new Set([\"refused\",\"timeout\",\"http_5xx\",\"dns\",\"network\"]),PRe=100,ORe=200,tm=500,Uw=1e3,Gw={opened:null,lastLeft:null},Qp={entries:[],hasTeamSetupRows:!1,sendStates:vd,cloudAgentPeerIds:null,windowEdge:aT,loadState:\"loading\",failure:null,isResyncing:!1,isShowingRestoredTranscript:!1,cloudAgentCards:\"settled\",hasOlder:!0,isLoadingOlder:!1,olderFailure:null,installGeneration:0};"
+    },
+    {
+      "id": "history-active-tail-limit",
+      "path": "/Users/robinbril/Documents/Codex/2026-10-15/if-you-were-to-be-an-2/work/versions/0.71.2/artifact/dist/renderer/assets/index.eager-app-DSuGVQNC.js",
+      "fileSha256": "cb1f20a05ee14c4e6c8f5fe37e7cad7074ed432b7f67ca29b3fd928042f1547b",
+      "charStart": 1564030,
+      "charEnd": 1564349,
+      "byteStart": 1564077,
+      "byteEnd": 1564396,
+      "excerptSha256": "ae1ced8070bdee546d040ddc95a84beb68e978e309e6df2eefa5d366187a9250",
+      "excerpt": "T=k=>r==null||k.agentId===r||k.agentId===o.opened||k.agentId===o.lastLeft,D=k=>T(k)?tm:ORe,K=k=>{const ne=k.unreadBoundaryAt;return ne==null||k.unreadAnchor?.boundaryAt===ne?{}:{unreadBoundaryAt:ne}},re=async k=>t.getAgentTranscriptTail({id:k.agentId,limit:D(k),...k.sessionId===ft?{}:{sessionId:k.sessionId},...K(k)}),"
+    },
+    {
+      "id": "history-page-fetch",
+      "path": "/Users/robinbril/Documents/Codex/2026-10-15/if-you-were-to-be-an-2/work/versions/0.71.2/artifact/dist/renderer/assets/index.eager-app-DSuGVQNC.js",
+      "fileSha256": "cb1f20a05ee14c4e6c8f5fe37e7cad7074ed432b7f67ca29b3fd928042f1547b",
+      "charStart": 1572286,
+      "charEnd": 1573120,
+      "byteStart": 1572333,
+      "byteEnd": 1573167,
+      "excerptSha256": "88b32ca5c34930132a279caef357364794863bca6d178acd5c1586d83038afc1",
+      "excerpt": "Me=e.olderPageLimit??PRe,Be=async k=>{const ne=sRe(k.history,Me);if(ne==null)return;const oe=k.replica.view().resyncRequests,de=k.pageGeneration;try{const be=await t.getAgentTranscriptTail({id:k.agentId,limit:ne.limit,beforeSeq:ne.beforeSeq,...k.sessionId===ft?{}:{sessionId:k.sessionId}});if(u||de!==k.pageGeneration||oe!==k.replica.view().resyncRequests)return;k.olderFailure=null;const Re=k.replica.view().value.entries;k.rowsHidden.noteOlderPage({page:be.entries,live:Re}),p(k,rRe(k.history,{beforeSeq:ne.beforeSeq,entries:be.entries,nextBeforeSeq:be.nextBeforeSeq,precedingTimestampMs:be.precedingTimestampMs},Re))}catch(be){if(u||de!==k.pageGeneration||oe!==k.replica.view().resyncRequests)return;if(!(be instanceof ye))throw be;if(be.failure.code===Rs){p(k,Pw(k.history)),k.olderFailure=null;return}k.olderFailure=be.failure}};"
+    },
+    {
+      "id": "history-load-dedup",
+      "path": "/Users/robinbril/Documents/Codex/2026-10-15/if-you-were-to-be-an-2/work/versions/0.71.2/artifact/dist/renderer/assets/index.eager-app-DSuGVQNC.js",
+      "fileSha256": "cb1f20a05ee14c4e6c8f5fe37e7cad7074ed432b7f67ca29b3fd928042f1547b",
+      "charStart": 1574079,
+      "charEnd": 1574389,
+      "byteStart": 1574126,
+      "byteEnd": 1574436,
+      "excerptSha256": "4d72ff470717508cb5d0dc1f36db0c705faf2bd55c13f1271877fce8b6bcef43",
+      "excerpt": "loadOlder:(k,ne)=>{if(u||k.length===0)return Promise.resolve();const oe=w(k,ne?.sessionId??ft);if(oe.olderInFlight!=null)return oe.olderInFlight;if(!Rw(oe.history))return Promise.resolve();const de=Be(oe).finally(()=>{oe.olderInFlight===de&&(oe.olderInFlight=null),$(oe)});return oe.olderInFlight=de,$(oe),de},"
+    },
+    {
+      "id": "pending-load-and-reveal",
+      "path": "/Users/robinbril/Documents/Codex/2026-10-15/if-you-were-to-be-an-2/work/versions/0.71.2/artifact/dist/renderer/assets/index-wlkGG389.js",
+      "fileSha256": "5194bef4ba4cbe4ffb697273f1458b7bca3733fb35d3c4c8d165fd4dbc9d0154",
+      "charStart": 1991739,
+      "charEnd": 1993601,
+      "byteStart": 1991753,
+      "byteEnd": 1993615,
+      "excerptSha256": "60921d8d163653bbbfbef8d95488213ca1bce6548b7359ca9fc2b4d6ac66717b",
+      "excerpt": "const Jt=jt,Ut=C.useRef(null),ft=C.useRef(!1);let wt;e[80]!==U?(wt=yt=>{Ut.current=yt,ft.current=!0,U().then(()=>{ft.current=!1}).catch(at=>{Ns(at,{level:\"warning\",tags:{sand_area:\"transcript-older-pull\"}}),ft.current=!1,Ut.current===yt&&(Ut.current=null)})},e[80]=U,e[81]=wt):wt=e[81];const Mt=wt;let Gt;e[82]!==a||e[83]!==Mt||e[84]!==ae?(Gt=()=>{a==null||ae==null||Mt({agentId:a,entryId:Lr,fromAgentId:a,pagesRequested:1,parkedAtMs:Date.now(),boundaryAt:ae})},e[82]=a,e[83]=Mt,e[84]=ae,e[85]=Gt):Gt=e[85];const zt=Gt;let dn;e[86]===Symbol.for(\"react.memo_cache_sentinel\")?(dn=()=>{Ut.current?.boundaryAt!=null&&(Ut.current=null)},e[86]=dn):dn=e[86];const mn=dn;let Sn;e[87]!==a||e[88]!==Mt||e[89]!==Ae||e[90]!==it||e[91]!==Xe?(Sn=yt=>{if(Xe.close(),a!=null&&!Ae().has(yt)&&it()){Mt({agentId:a,entryId:yt,fromAgentId:a,pagesRequested:1,parkedAtMs:Date.now()});return}Dt(yt)},e[87]=a,e[88]=Mt,e[89]=Ae,e[90]=it,e[91]=Xe,e[92]=Sn):Sn=e[92];const jn=Sn;let Cn;e[93]!==a||e[94]!==u||e[95]!==jn?(Cn=(yt,at)=>{if(yt===a){jn(at);return}Ut.current={agentId:yt,entryId:at,fromAgentId:a,pagesRequested:0,parkedAtMs:Date.now()},u(yt)},e[93]=a,e[94]=u,e[95]=jn,e[96]=Cn):Cn=e[96];const cn=Cn;let Vt;e[97]!==a||e[98]!==_e||e[99]!==ot||e[100]!==ne||e[101]!==te||e[102]!==Mt||e[103]!==jn||e[104]!==X?(Vt=()=>{const yt=Ut.current;if(yt==null)return;const at=D2e(yt,{currentAgentId:a,nowMs:Date.now(),isEntryInWindow:yt.boundaryAt!=null?!a0(_e,yt.boundaryAt,{mayHoldOlderHistory:X}):ot.has(yt.entryId),isWindowLoading:te,hasOlderHistory:X,isLoadingOlderHistory:ne||ft.current});e:switch(at.kind){case\"wait\":break e;case\"drop\":{Ut.current=null;break e}case\"reveal\":{Ut.current=null,yt.boundaryAt!=null?Wt(yt.entryId):jn(yt.entryId);break e}case\"load-older\":Mt(at.requested)}},e[97]=a,e[98]=_e,e[99]=ot,e[100]=ne,e[101]=te,e[102]=Mt,e[103]=jn,e[104]=X,e[105]=Vt):Vt=e[105],Hn(Vt);"
+    },
+    {
+      "id": "older-probe-threshold",
+      "path": "/Users/robinbril/Documents/Codex/2026-10-15/if-you-were-to-be-an-2/work/versions/0.71.2/artifact/dist/renderer/assets/index-wlkGG389.js",
+      "fileSha256": "5194bef4ba4cbe4ffb697273f1458b7bca3733fb35d3c4c8d165fd4dbc9d0154",
+      "charStart": 1723991,
+      "charEnd": 1724329,
+      "byteStart": 1724002,
+      "byteEnd": 1724340,
+      "excerptSha256": "6b1ee3706b574b4d81b6078a51fb24b2307101074e681b32adb85d2805f0b5a1",
+      "excerpt": "const $Ue=600,qC=[];function OUe(t){xfe({reason:t.reason,heldMs:t.heldMs,unsettledBodies:t.unsettled.bodies,unsettledPlaceholders:t.unsettled.placeholders,cloudAgentCards:t.cloudAgentCards})}const DUe=12;function qUe(){let t=()=>{},e=null;return{promote(n){t=n.maybeLoadOlder,n.wiringKey!==e&&(e=n.wiringKey,e!=null&&t())},probe:()=>t()}}"
+    },
+    {
+      "id": "older-scroll-probe-binding",
+      "path": "/Users/robinbril/Documents/Codex/2026-10-15/if-you-were-to-be-an-2/work/versions/0.71.2/artifact/dist/renderer/assets/index-wlkGG389.js",
+      "fileSha256": "5194bef4ba4cbe4ffb697273f1458b7bca3733fb35d3c4c8d165fd4dbc9d0154",
+      "charStart": 1726441,
+      "charEnd": 1726677,
+      "byteStart": 1726452,
+      "byteEnd": 1726688,
+      "excerptSha256": "8e60418fd7d4c0c5e028908de1cb0ca46f6cfa0db9c1d095e061a77386b571bf",
+      "excerpt": "const fn=()=>oe.probe();return yt.addEventListener(\"scroll\",fn,{passive:!0}),()=>{at.removeEventListener(\"pointerdown\",Tt),yt.removeEventListener(\"scroll\",fn),ee(null),ae(null),Y(null)}},e[3]=le,e[4]=ee,e[5]=oe,e[6]=se,e[7]=ce):ce=e[7];"
+    },
+    {
+      "id": "older-probe-consumer",
+      "path": "/Users/robinbril/Documents/Codex/2026-10-15/if-you-were-to-be-an-2/work/versions/0.71.2/artifact/dist/renderer/assets/index-wlkGG389.js",
+      "fileSha256": "5194bef4ba4cbe4ffb697273f1458b7bca3733fb35d3c4c8d165fd4dbc9d0154",
+      "charStart": 1731393,
+      "charEnd": 1731587,
+      "byteStart": 1731404,
+      "byteEnd": 1731598,
+      "excerptSha256": "952a95f10acbd43e2c93766ddbf75a7742a6bfdf471c055a95ead6037d6b7975",
+      "excerpt": "Ut=()=>{const an=T!=null&&Z;oe.promote({wiringKey:an?U:null,maybeLoadOlder:()=>{U==null||!an||te||U.scrollTop<=$Ue&&T()}})},e[95]=Z,e[96]=te,e[97]=T,e[98]=oe,e[99]=U,e[100]=Ut):Ut=e[100],Hn(Ut);"
+    }
+  ]
+}

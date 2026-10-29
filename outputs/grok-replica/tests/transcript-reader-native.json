@@ -1,0 +1,70 @@
+{
+  "records": [
+    {
+      "id": "kp",
+      "path": "/Users/robinbril/Documents/Codex/2026-10-15/if-you-were-to-be-an-2/work/versions/0.71.2/artifact/dist/renderer/assets/index.eager-platform-DKZJbDqM.js",
+      "fileSha256": "e9374e46362df4c5d3787441f83d8341c19ee4380939eb911b31380e89789dc9",
+      "charStart": 561265,
+      "charEnd": 561323,
+      "utf16Start": 561265,
+      "utf16End": 561323,
+      "excerptSha256": "d202fe7b8cae6370328c1883ce7402a79bee68c5043c0ec41f632cda007c27e4",
+      "excerpt": "function kp(e){return e.kind===\"undirected\"?0:e.direction}"
+    },
+    {
+      "id": "pI",
+      "path": "/Users/robinbril/Documents/Codex/2026-10-15/if-you-were-to-be-an-2/work/versions/0.71.2/artifact/dist/renderer/assets/index.eager-platform-DKZJbDqM.js",
+      "fileSha256": "e9374e46362df4c5d3787441f83d8341c19ee4380939eb911b31380e89789dc9",
+      "charStart": 563969,
+      "charEnd": 564006,
+      "utf16Start": 563969,
+      "utf16End": 564006,
+      "excerptSha256": "3e8cc65004cb4a7debd66a7baa247ef75892f51b11df8dc4a46534badd003e7c",
+      "excerpt": "function pI(e){return e<0?-1:e>0?1:0}"
+    },
+    {
+      "id": "wp",
+      "path": "/Users/robinbril/Documents/Codex/2026-10-15/if-you-were-to-be-an-2/work/versions/0.71.2/artifact/dist/renderer/assets/index.eager-platform-DKZJbDqM.js",
+      "fileSha256": "e9374e46362df4c5d3787441f83d8341c19ee4380939eb911b31380e89789dc9",
+      "charStart": 564006,
+      "charEnd": 564095,
+      "utf16Start": 564006,
+      "utf16End": 564095,
+      "excerptSha256": "700cc7f46f510b1fdae8924e6fc6a61be526e940ce51c9bef66fec7e8038ebd4",
+      "excerpt": "function wp(e){return e.isUserPointerDown||e.msSinceUserScrollInput<=e.userInputWindowMs}"
+    },
+    {
+      "id": "mI",
+      "path": "/Users/robinbril/Documents/Codex/2026-10-15/if-you-were-to-be-an-2/work/versions/0.71.2/artifact/dist/renderer/assets/index.eager-platform-DKZJbDqM.js",
+      "fileSha256": "e9374e46362df4c5d3787441f83d8341c19ee4380939eb911b31380e89789dc9",
+      "charStart": 564095,
+      "charEnd": 564172,
+      "utf16Start": 564095,
+      "utf16End": 564172,
+      "excerptSha256": "c804c4292e76e1cf7aba12b565219c589898394a8508851950b7d1cf07810060",
+      "excerpt": "function mI(e,t){const n=kp(e.userInput);return wp(e)&&(n===0||t===0||n===t)}"
+    },
+    {
+      "id": "gI",
+      "path": "/Users/robinbril/Documents/Codex/2026-10-15/if-you-were-to-be-an-2/work/versions/0.71.2/artifact/dist/renderer/assets/index.eager-platform-DKZJbDqM.js",
+      "fileSha256": "e9374e46362df4c5d3787441f83d8341c19ee4380939eb911b31380e89789dc9",
+      "charStart": 564172,
+      "charEnd": 564614,
+      "utf16Start": 564172,
+      "utf16End": 564614,
+      "excerptSha256": "7aded88e2c84f7715202331e2b2453929e7f66e0b70585836ad8e698802a7b09",
+      "excerpt": "function gI(e){if(!e.isScrolling)return{kind:\"settled\"};if(e.isProgrammaticScrollActive)return{kind:\"programmatic\"};const t=pI(e.clampedOffset-e.lastObservedScrollOffset);return mI(e,t)?{kind:\"reader\",direction:t}:e.viewportHeight!==e.lastObservedViewportHeight?{kind:\"geometry-change\",of:\"viewport\"}:Math.abs(e.totalHeight-e.lastObservedTotalHeight)>e.nearBottomThresholdPx?{kind:\"geometry-change\",of:\"content\"}:{kind:\"foreign\",direction:t}}"
+    },
+    {
+      "id": "bp",
+      "path": "/Users/robinbril/Documents/Codex/2026-10-15/if-you-were-to-be-an-2/work/versions/0.71.2/artifact/dist/renderer/assets/index.eager-platform-DKZJbDqM.js",
+      "fileSha256": "e9374e46362df4c5d3787441f83d8341c19ee4380939eb911b31380e89789dc9",
+      "charStart": 564614,
+      "charEnd": 566218,
+      "utf16Start": 564614,
+      "utf16End": 566218,
+      "excerptSha256": "92d0199aa0fb2751532b43929fb8860339e6e53807422379651b44ef9b29878e",
+      "excerpt": "function bp(e){const t=e.totalHeight-e.clampedOffset-e.viewportHeight,n=t<=e.nearBottomThresholdPx,r=gI(e),o=n&&e.totalHeight-e.viewportHeight<e.lastObservedTotalHeight-e.lastObservedViewportHeight,s=r.kind===\"reader\"?r.direction===-1&&!o:r.kind===\"foreign\"&&r.direction===-1&&!n;if(e.isReady&&s)return{atBottom:n,attribution:r,event:{kind:\"release-requested\",reason:r.kind===\"reader\"?\"attributed-scroll-away\":\"unattributed-scroll-away\"}};const i=e.userInput.kind===\"scroll\"&&e.userInput.direction===-1&&e.msSinceUserScrollInput<=e.userInputWindowMs&&e.clampedOffset<ye&&t>=ye;if(e.isReady&&i)return{atBottom:n,attribution:r,event:{kind:\"release-requested\",reason:\"scroll-away-at-top-edge\"}};const a=e.totalHeight<e.lastObservedTotalHeight,u=e.lastObservedTotalHeight-e.lastObservedScrollOffset-e.lastObservedViewportHeight<=e.nearBottomThresholdPx,l=e.allowAutomaticRelatch&&a&&u,d=e.allowAutomaticRelatch&&r.kind===\"settled\"&&!wp(e)&&!(a&&!u),f=e.allowScrollRangeClosedRelatch&&e.totalHeight-e.viewportHeight<=e.nearBottomThresholdPx&&e.lastObservedTotalHeight-e.lastObservedViewportHeight>e.nearBottomThresholdPx;let h;return r.kind===\"reader\"&&r.direction===1?h=\"attributed-scroll-to-bottom\":r.kind===\"foreign\"&&r.direction===1?h=\"unattributed-scroll-to-bottom\":l?h=\"content-shrink-at-bottom\":d?h=\"idle-at-bottom\":f&&(h=\"scroll-range-closed\"),e.isReady&&n&&h!==void 0?{atBottom:n,attribution:r,event:{kind:\"pin-requested\",reason:h}}:{atBottom:n,attribution:r,event:{kind:\"neutral\",reason:e.isReady?r.kind===\"programmatic\"?\"programmatic-scroll\":n?\"near-bottom\":\"unqualified-observation\":\"not-ready\"}}}"
+    }
+  ]
+}

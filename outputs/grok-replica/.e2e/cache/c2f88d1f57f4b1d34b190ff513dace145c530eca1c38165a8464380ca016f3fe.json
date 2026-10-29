@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T11:38:15.630Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Bot-uitwisseling met Find Customers ope…\" in \"Marketing Agent\" (2 of 2)",
+        "target": {
+          "role": "button",
+          "name": "Bot-uitwisseling met Find Customers openen",
+          "text": "Find Customers",
+          "within": "Marketing Agent",
+          "position": {
+            "index": 1,
+            "of": 2
+          }
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/transcript-covered.e2e.ts::actual%20peer%20exchange%20covers%20only%20its%20base%20viewport%20and%20closes%20after%20native%20sheet%20exit",
+      "targetId": "web",
+      "instructionDigest": "cfecfe8a786c71212eb5240cc2d056363ebf100d7cf1673e317484d68f7efe2c",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Het peerknopje in het bericht SYNTHETIC_EXCHANGE_INBOUND_6824 is aangeklikt. De dialoog 'Bot-uitwisseling' is open en toont OUTBOUND_4738 en INBOUND_6824, alleen-lezen. Er is niets verzonden; het concept staat nog in het invoerveld.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "dialog",
+        "name": "Bot-uitwisseling"
+      },
+      {
+        "role": "log",
+        "name": "Transcript van Bot-uitwisseling"
+      },
+      {
+        "role": "note",
+        "name": "Alleen-lezen Bot-gesprek"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Actual persisted reading position. Actual persisted reading position. Actual persisted reading position. Actual persisted reading position. Actual persisted reading position. Actual persisted reading position. Actual persisted reading position. Actual persisted reading position. Actual persisted re…"
+      },
+      {
+        "text": "Lokaal"
+      },
+      {
+        "role": "button",
+        "name": "Bot-uitwisseling met Find Customers openen",
+        "text": "Find Customers"
+      },
+      {
+        "role": "button",
+        "name": "Bot-uitwisseling met dealfinder openen",
+        "text": "dealfinder"
+      },
+      {
+        "name": "Berichten"
+      }
+    ],
+    "endWaitMs": 21033
+  }
+}

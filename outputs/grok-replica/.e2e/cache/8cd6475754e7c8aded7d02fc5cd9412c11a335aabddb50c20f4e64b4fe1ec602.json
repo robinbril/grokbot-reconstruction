@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:27:34.276Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Skill opslaan\" in \"Privéskills\"",
+        "target": {
+          "role": "button",
+          "name": "Skill opslaan",
+          "within": "Privéskills"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/skills-content.e2e.ts::skill-only%20queue%20retains%20selected%20v1%20through%20editing%20to%20v2%2C%20model%20context%20and%20reload",
+      "targetId": "web",
+      "instructionDigest": "fce37a5da954524c47c16fcdaf07b38689f061954aded41a320cff1f46e3368f",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Skill opslaan getapt; de lijst toont nu 'REA Versieproef · Versie 1' met de beschrijving. Het formulier is gesloten.",
+    "startPath": "http://127.0.0.1:18888/",
+    "endPath": "http://127.0.0.1:18888/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Skills vernieuwen"
+      },
+      {
+        "text": "REA Versieproef"
+      },
+      {
+        "text": "· Versie 1"
+      },
+      {
+        "text": "Een korte synthetische beschrijving zonder uitvoeringscode."
+      },
+      {
+        "role": "button",
+        "name": "Bewerken"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "heading",
+        "name": "Nieuwe privéskill"
+      },
+      {
+        "role": "textbox",
+        "name": "Naam",
+        "value": "REA Versieproef"
+      },
+      {
+        "role": "textbox",
+        "name": "Beschrijving",
+        "text": "Een korte synthetische beschrijving zonder uitvoeringscode.",
+        "value": "Een korte synthetische beschrijving zonder uitvoeringscode."
+      },
+      {
+        "role": "button",
+        "name": "Skill opslaan"
+      },
+      {
+        "role": "button",
+        "name": "Terug naar skills"
+      },
+      {
+        "text": "Naam"
+      },
+      {
+        "text": "Beschrijving"
+      },
+      {
+        "text": "Instructies"
+      }
+    ],
+    "endWaitMs": 15276
+  }
+}

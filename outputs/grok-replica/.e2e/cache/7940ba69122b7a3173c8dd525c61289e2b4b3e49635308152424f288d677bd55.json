@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T09:04:19.815Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap radio \"Echte harness\" in \"Marketing Agent\"",
+        "target": {
+          "role": "radio",
+          "name": "Echte harness",
+          "within": "Marketing Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/todo-references.e2e.ts::direct%20todo%20document%20reaches%20canonical%20model%20context%20and%20passive%20transcript%20without%20skill%20or%20tool%20authority",
+      "targetId": "web",
+      "instructionDigest": "854f355a91e3ad8866c11f282485689da9454c7a7eae8d4622206f806bf349e9",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped 'Echte harness' in Uitvoering; radio is now checked and the status shows 'Grok Bot-harness · deterministic-workflow-fixture · Model geconfigureerd'. No message submitted.",
+    "startPath": "http://127.0.0.1:18944/",
+    "endPath": "http://127.0.0.1:18944/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Grok Bot-harness · deterministic-workflow-fixture · Model geconfigureerd"
+      },
+      {
+        "role": "radio",
+        "name": "Lokale voorbeelden"
+      },
+      {
+        "role": "radio",
+        "name": "Echte harness",
+        "states": [
+          "checked"
+        ]
+      },
+      {
+        "text": "Echte uitvoering in de taskbox van dit gesprek"
+      },
+      {
+        "role": "button",
+        "name": "Computer openen"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "radio",
+        "name": "Lokale voorbeelden",
+        "states": [
+          "checked"
+        ]
+      },
+      {
+        "role": "radio",
+        "name": "Echte harness"
+      }
+    ],
+    "endWaitMs": 13901
+  }
+}

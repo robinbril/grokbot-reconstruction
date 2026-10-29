@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:38:02.595Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Marketing Agent\"",
+        "target": {
+          "role": "button",
+          "name": "Marketing Agent"
+        }
+      },
+      {
+        "name": "check",
+        "summary": "check radio \"Echte harness\" in \"Marketing Agent\"",
+        "target": {
+          "role": "radio",
+          "name": "Echte harness",
+          "within": "Marketing Agent"
+        },
+        "checked": true
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/composer-editor.e2e.ts::inline%20skill%20editing%20keeps%20cursor%2C%20undo%20history%20and%20draft%20identity%20through%20reload%20and%20bot%20switching",
+      "targetId": "web",
+      "instructionDigest": "c804ef9f243c3f88976b8c0a585937aae0e3270587a511ebf0f2a6503c9a9d10",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Marketing Agent geopend en 'Echte harness' geselecteerd (checked). Status toont 'Grok Bot-harness · Model geconfigureerd'. Geen bericht verzonden.",
+    "startPath": "http://127.0.0.1:18891/",
+    "endPath": "http://127.0.0.1:18891/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Grok Bot-harness · Model geconfigureerd"
+      },
+      {
+        "role": "button",
+        "name": "Gespreksopties"
+      },
+      {
+        "role": "radio",
+        "name": "Lokale voorbeelden"
+      },
+      {
+        "role": "radio",
+        "name": "Echte harness",
+        "states": [
+          "checked"
+        ]
+      },
+      {
+        "text": "Echte uitvoering in de taskbox van dit gesprek"
+      },
+      {
+        "role": "button",
+        "name": "Computer openen"
+      },
+      {
+        "role": "button",
+        "name": "Gespreksdetails"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Aan:"
+      },
+      {
+        "role": "radio",
+        "name": "Lokale voorbeelden",
+        "states": [
+          "checked"
+        ]
+      },
+      {
+        "role": "radio",
+        "name": "Echte harness"
+      },
+      {
+        "role": "button",
+        "name": "Start a chat with..."
+      }
+    ],
+    "endWaitMs": 16841
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T10:23:00.388Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Naar oorspronkelijk bericht\" in \"Synthetic source\"",
+        "target": {
+          "role": "button",
+          "name": "Naar oorspronkelijk bericht",
+          "within": "Synthetic source"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/transcript-navigation.e2e.ts::quoted%20near%20original%20actually%20reaches%20its%20centered%20viewport%20target",
+      "targetId": "web",
+      "instructionDigest": "3592c75a42c8186ab5996c7526df547229c7259fc5fbfb2e4a0d7c4837ce93db",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Op 'Naar oorspronkelijk bericht' in het laatste bericht (citeert SYNTHETIC_NAVIGATION_28) geklikt. Het gesprek is naar het bronbericht gesprongen en de knop 'Naar laatste bericht' verscheen. Zichtbaarheid van het bronbericht is niet apart gecontroleerd.",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Naar laatste bericht"
+      }
+    ],
+    "endWaitMs": 21597
+  }
+}

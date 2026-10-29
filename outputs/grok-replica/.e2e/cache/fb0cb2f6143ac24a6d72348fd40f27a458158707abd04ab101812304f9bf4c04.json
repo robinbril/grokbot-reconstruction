@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-19T11:12:02.407Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Ontvangst controleren: Pauzeren: Owned …\" in \"Owned pause ACK routine\"",
+        "target": {
+          "role": "button",
+          "name": "Ontvangst controleren: Pauzeren: Owned pause ACK routine",
+          "within": "Owned pause ACK routine"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/live-workflows-action-ack.e2e.ts::failed%20pause%20ACK%20retirement%20visibly%20recovers%20across%20reload%20before%20a%20fresh%20enable%20and%20pause",
+      "targetId": "web",
+      "instructionDigest": "8162b2c3ea27f4e7bb3f1e9c63f898e08a01d2e8da96cb657266d381a7a29761",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Ontvangst controleren getapt. De waarschuwing 'Een eerdere actie is nog niet bevestigd' is verdwenen en Bewerken, Hervatten, Nu uitvoeren en Verwijderen zijn weer actief. De routine toont nog steeds status Gepauzeerd.",
+    "startPath": "http://127.0.0.1:18876/",
+    "endPath": "http://127.0.0.1:18876/",
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "Een eerdere actie is nog niet bevestigd. Kies Ontvangst controleren voordat je deze actie opnieuw uitvoert."
+      },
+      {
+        "text": "Echte wachtrij"
+      },
+      {
+        "text": "0 wachtend of bezig"
+      },
+      {
+        "role": "button",
+        "name": "Ontvangst controleren: Pauzeren: Owned pause ACK routine"
+      },
+      {
+        "role": "region",
+        "name": "Echte wachtrij"
+      }
+    ],
+    "endWaitMs": 15394
+  }
+}

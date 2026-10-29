@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:19:09.148Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap option \"Synthetic MCP\"",
+        "target": {
+          "role": "option",
+          "name": "Synthetic MCP"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/mcp-references.e2e.ts::actual%20configured%20MCP%20reference%20inserts%20without%20skill%20authority%20and%20survives%20send%20reload%20and%20focused%20connector%20navigation",
+      "targetId": "web",
+      "instructionDigest": "0a0827bea8ca693effd257552295f53ae2f80f179b91d00d3bef1510bd571c68",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped the Synthetic MCP option. The suggestion list closed and the textbox now holds 'Synthetic MCP ' with a Synthetic MCP image chip added. The message was not sent and is still in the draft.",
+    "startPath": "http://127.0.0.1:18934/",
+    "endPath": "http://127.0.0.1:18934/",
+    "endAnchors": [
+      {
+        "role": "image",
+        "name": "Synthetic MCP"
+      },
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "value": "Synthetic MCP"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "@Synthetic"
+      },
+      {
+        "text": "Synthetic MCP"
+      },
+      {
+        "text": "verbonden"
+      },
+      {
+        "text": "Plug-in"
+      },
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "value": "@Synthetic",
+        "states": [
+          "expanded"
+        ]
+      },
+      {
+        "role": "listbox",
+        "name": "Vermelding"
+      },
+      {
+        "role": "option",
+        "name": "Synthetic MCP",
+        "states": [
+          "selected"
+        ]
+      }
+    ],
+    "endWaitMs": 16155
+  }
+}

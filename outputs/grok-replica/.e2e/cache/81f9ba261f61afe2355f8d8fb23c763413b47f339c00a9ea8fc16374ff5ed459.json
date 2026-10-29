@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-10-21T08:11:59.839Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap option \"Ambitious Autonomous Agent\"",
+        "target": {
+          "role": "option",
+          "name": "Ambitious Autonomous Agent"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/composer-mentions.e2e.ts::actual%20member%20menu%20inserts%20immutable%20mention%20atom%20without%20sending%20and%20local%20send%2Freload%20retains%20exact%20projection",
+      "targetId": "web",
+      "instructionDigest": "7b7998e4166a4a358cac9cac3475e9582dc99c9c15bdf61f9cc08226b7233666",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped the Ambitious Autonomous Agent option in the Vermelding listbox. The listbox closed and the textbox now holds the mention 'Ambitious Autonomous Agent' (chip '@Ambitious Autonomous Agent' added). The message was not sent and is still a draft.",
+    "startPath": "http://127.0.0.1:18910/",
+    "endPath": "http://127.0.0.1:18910/",
+    "endAnchors": [
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "value": "Ambitious Autonomous Agent"
+      },
+      {
+        "name": "@Ambitious Autonomous Agent"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "@Amb"
+      },
+      {
+        "text": "Bot"
+      },
+      {
+        "role": "textbox",
+        "name": "Bericht sturen naar Bot",
+        "value": "@Amb",
+        "states": [
+          "expanded"
+        ]
+      },
+      {
+        "role": "listbox",
+        "name": "Vermelding"
+      },
+      {
+        "role": "option",
+        "name": "Ambitious Autonomous Agent",
+        "states": [
+          "selected"
+        ]
+      }
+    ],
+    "endWaitMs": 14710
+  }
+}
