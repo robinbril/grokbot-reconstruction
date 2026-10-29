@@ -1,5 +1,5 @@
 {
-  "name": "grok-local-desktop",
+  "name": "@grokbot/desktop",
   "version": "0.1.0",
   "private": true,
   "type": "module",

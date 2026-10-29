@@ -34,8 +34,8 @@ This is an independent, source-informed reconstruction. It does not contain the 
 Requires **Node.js 22.13+**. Native terminal execution requires macOS.
 
 ```sh
-git clone https://github.com/robinbril/grokbot-reconstruction-public.git
-cd grokbot-reconstruction-public
+git clone https://github.com/robinbril/grokbot-reconstruction.git
+cd grokbot-reconstruction
 npm run setup
 cp .env.example .env
 npm start
@@ -51,6 +51,10 @@ The interface works without a model key. To execute model-driven tasks, configur
 | **Your Claude seat** | `GROK_MODEL_PROVIDER=claude-seat`, `CLAUDE_MODEL`, an authorized CLI login | CLI supplies inference only. The independent host owns tools, permissions, queue and transcripts. |
 
 No provider fallback. No shared keys. No Codex execution harness in the production composition.
+
+## Existing installations
+
+The applications now live in `apps/web` and `apps/desktop`. Before upgrading an existing installation, set `HARNESS_DATA_DIR` in your ignored root `.env` to the absolute path of its existing private runtime store. Git does not migrate ignored runtime data. Browser storage and device/session protocol names remain unchanged.
 
 ## Desktop
 
@@ -84,8 +88,8 @@ To share local history, open **Accountmenu → Apparaten**. Generate a single-us
 
 | Path | Responsibility |
 | --- | --- |
-| [`outputs/grok-replica/`](outputs/grok-replica/) | Web interface, independent harness, assets and tests. |
-| [`outputs/grok-desktop/`](outputs/grok-desktop/) | Electron window, launcher and lifecycle/security tests. |
+| [`apps/web/`](apps/web/) | Web interface, independent harness, assets and tests. |
+| [`apps/desktop/`](apps/desktop/) | Electron window, launcher and lifecycle/security tests. |
 | [`docs/`](docs/) | Architecture, setup details and explicit acceptance boundaries. |
 
 [Architecture and verification →](docs/ARCHITECTURE.md)
@@ -101,7 +105,7 @@ npm run check:push     # Local repository gate; does not push to GitHub
 
 UI recording uses the developer's authorized Claude seat. Replay cache belongs in the repository; credentials and runtime data do not. A saved focused result never substitutes for a full current gate.
 
-The latest complete UI run passed **409/412** cases. Its three failures subsequently passed targeted checks; a new complete green run is still unverified. The last committed focused checks passed **26 desktop tests** and **70 backend tests**. The configured Claude test seat requires sign-in before a new model-driven recording run.
+The latest complete UI run passed **409/412** cases. Its three failures subsequently passed targeted checks; a new complete green run is still unverified. After the application-directory migration, **883 maintained Node tests**, **26 desktop tests** and **3 fresh browser tests** passed. Root `npm run setup` and actual `npm start` were also verified. The configured Claude test seat requires sign-in before a new model-driven recording run.
 
 Research logs, screenshots and dated acceptance reports are kept in a separate local archive. Required source-reference fixtures remain beside their tests. These are historical source comparisons, not a claim that every native or private-cloud behavior is identical.
 

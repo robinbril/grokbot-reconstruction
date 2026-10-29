@@ -1,18 +1,18 @@
 {
-  "name": "grokbot-reconstruction",
+  "name": "grokbot-workspace",
   "version": "0.1.0",
   "private": true,
   "engines": {
     "node": ">=22.13.0"
   },
   "scripts": {
-    "setup": "npm ci --prefix outputs/grok-replica --no-audit --no-fund",
-    "start": "node --env-file-if-exists=.env outputs/grok-replica/server.mjs",
+    "setup": "npm ci --prefix apps/web --no-audit --no-fund",
+    "start": "node --env-file-if-exists=.env apps/web/server.mjs",
     "check:structure": "node .harness/projectstructuur/tools/project-structure-check.js --repo .",
-    "check:push": "node outputs/grok-replica/.poort/poort.mjs run push",
-    "verify:model": "node --env-file-if-exists=.env outputs/grok-replica/scripts/verify-model-stream.mjs",
-    "setup:desktop": "npm ci --prefix outputs/grok-desktop --no-audit --no-fund",
-    "desktop": "npm start --prefix outputs/grok-desktop",
-    "test:desktop": "npm test --prefix outputs/grok-desktop"
+    "check:push": "node apps/web/.poort/poort.mjs run push",
+    "verify:model": "node --env-file-if-exists=.env apps/web/scripts/verify-model-stream.mjs",
+    "setup:desktop": "npm ci --prefix apps/desktop --no-audit --no-fund",
+    "desktop": "npm start --prefix apps/desktop",
+    "test:desktop": "npm test --prefix apps/desktop"
   }
 }
