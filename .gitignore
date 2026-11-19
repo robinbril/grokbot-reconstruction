@@ -40,3 +40,18 @@ __pycache__/
 /docs/repository/
 /outputs/
 **/chat-evidence/
+
+# Process artifacts stay local (specs, loop state, handoffs, plans, caches, scratch)
+.harness/*
+!.harness/projectstructuur/
+.loops/
+.supergoal/
+.run/
+vite-cache/
+scratchpad/
+.tmp*/
+**/docs/overdracht/
+**/docs/tasks/
+**/docs/specs/
+**/docs/superplan/
+**/docs/plan-*.md
